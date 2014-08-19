@@ -2,3 +2,11 @@
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Evolu\IeC {\c c}\IeC {\~a}o da Computa\IeC {\c c}\IeC {\~a}o Gr\IeC {\'a}fica}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hist\IeC {\'o}ria}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Hardware}{21}{0}{2}
+\beamer@sectionintoc {3}{\IeC {\'A}reas Relacionadas}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Computa\IeC {\c c}\IeC {\~a}o Gr\IeC {\'a}fica}{23}{0}{3}
+\beamer@subsectionintoc {3}{2}{Processamento de Imagens}{28}{0}{3}
+\beamer@subsectionintoc {3}{3}{Vis\IeC {\~a}o Computacional}{31}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{1}{Exemplo de Vis\IeC {\~a}o Computacional}{37}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{2}{Exemplo de Vis\IeC {\~a}o Computacional}{38}{0}{3}

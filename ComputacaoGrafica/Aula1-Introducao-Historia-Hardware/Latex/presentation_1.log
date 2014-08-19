@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  18 AUG 2014 17:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  18 AUG 2014 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,19 +1165,19 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] (./presentation_1.toc)
 [2
 
-] <Figures/dk.jpg, id=104, 1606.0pt x 977.6525pt>
+] <Figures/dk.jpg, id=271, 1606.0pt x 977.6525pt>
 File: Figures/dk.jpg Graphic file (type jpg)
  <use Figures/dk.jpg>
 Package pdftex.def Info: Figures/dk.jpg used on input line 156.
 (pdftex.def)             Requested size: 92.1879pt x 56.10568pt.
 
-<Figures/bf4.jpg, id=105, 1927.2pt x 1084.05pt>
+<Figures/bf4.jpg, id=272, 1927.2pt x 1084.05pt>
 File: Figures/bf4.jpg Graphic file (type jpg)
  <use Figures/bf4.jpg>
 Package pdftex.def Info: Figures/bf4.jpg used on input line 156.
 (pdftex.def)             Requested size: 92.1879pt x 51.84027pt.
 
-<Figures/htd.jpeg, id=106, 1371.1225pt x 770.88pt>
+<Figures/htd.jpeg, id=273, 1371.1225pt x 770.88pt>
 File: Figures/htd.jpeg Graphic file (type jpg)
  <use Figures/htd.jpeg>
 Package pdftex.def Info: Figures/htd.jpeg used on input line 156.
@@ -1187,7 +1187,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 156--156
 []\OT1/cmss/m/n/9 (c) Como Trei-nar seu
  []
 
-<Figures/plane.jpg, id=107, 740.7675pt x 517.935pt>
+<Figures/plane.jpg, id=274, 740.7675pt x 517.935pt>
 File: Figures/plane.jpg Graphic file (type jpg)
  <use Figures/plane.jpg>
 Package pdftex.def Info: Figures/plane.jpg used on input line 156.
@@ -1204,7 +1204,7 @@ Overfull \vbox (10.5749pt too high) detected at line 156
 [3
 
  <./Figures/dk.jpg> <./Figures/bf4.jpg> <./Figures/htd.jpeg> <./Figures/plane.j
-pg>] <Figures/pc.jpg, id=138, 702.625pt x 526.96875pt>
+pg>] <Figures/pc.jpg, id=339, 702.625pt x 526.96875pt>
 File: Figures/pc.jpg Graphic file (type jpg)
  <use Figures/pc.jpg>
 Package pdftex.def Info: Figures/pc.jpg used on input line 177.
@@ -1219,7 +1219,7 @@ Underfull \hbox (badness 7851) in paragraph at lines 177--177
 \OT1/cmss/m/n/9 dos em Com-puta^^Xc~ao
  []
 
-<Figures/nasa.jpg, id=139, 225.84375pt x 224.84pt>
+<Figures/nasa.jpg, id=340, 225.84375pt x 224.84pt>
 File: Figures/nasa.jpg Graphic file (type jpg)
  <use Figures/nasa.jpg>
 Package pdftex.def Info: Figures/nasa.jpg used on input line 177.
@@ -1246,62 +1246,62 @@ Overfull \vbox (6.75009pt too high) detected at line 177
 ] [9
 
 ]
-<Figures/ivan.jpg, id=312, 481.8pt x 361.35pt>
+<Figures/ivan.jpg, id=717, 481.8pt x 361.35pt>
 File: Figures/ivan.jpg Graphic file (type jpg)
  <use Figures/ivan.jpg>
-Package pdftex.def Info: Figures/ivan.jpg used on input line 242.
+Package pdftex.def Info: Figures/ivan.jpg used on input line 243.
 (pdftex.def)             Requested size: 153.64493pt x 115.23186pt.
  [10
 
  <./Figures/ivan.jpg>] [11
 
-] <Figures/crt.png, id=367, 917.4275pt x 534.99875pt>
+] <Figures/crt.png, id=843, 917.4275pt x 534.99875pt>
 File: Figures/crt.png Graphic file (type png)
 
 <use Figures/crt.png>
-Package pdftex.def Info: Figures/crt.png used on input line 281.
+Package pdftex.def Info: Figures/crt.png used on input line 282.
 (pdftex.def)             Requested size: 276.559pt x 161.27638pt.
  [12
 
  <./Figures/crt.png (PNG copy)>] [13
 
 ]
-<Figures/matrixcrt.png, id=424, 1119.18124pt x 540.0175pt>
+<Figures/matrixcrt.png, id=969, 1119.18124pt x 540.0175pt>
 File: Figures/matrixcrt.png Graphic file (type png)
 
 <use Figures/matrixcrt.png>
-Package pdftex.def Info: Figures/matrixcrt.png used on input line 327.
+Package pdftex.def Info: Figures/matrixcrt.png used on input line 328.
 (pdftex.def)             Requested size: 276.559pt x 133.43843pt.
  [14
 
  <./Figures/matrixcrt.png (PNG copy)>]
-<Figures/ironman.jpg, id=453, 752.8125pt x 501.875pt>
+<Figures/ironman.jpg, id=1032, 752.8125pt x 501.875pt>
 File: Figures/ironman.jpg Graphic file (type jpg)
 
 <use Figures/ironman.jpg>
-Package pdftex.def Info: Figures/ironman.jpg used on input line 350.
+Package pdftex.def Info: Figures/ironman.jpg used on input line 351.
 (pdftex.def)             Requested size: 184.3758pt x 122.91832pt.
- <Figures/tumb.png, id=454, 8.03pt x 12.045pt>
+ <Figures/tumb.png, id=1033, 8.03pt x 12.045pt>
 File: Figures/tumb.png Graphic file (type png)
 
 <use Figures/tumb.png>
-Package pdftex.def Info: Figures/tumb.png used on input line 350.
+Package pdftex.def Info: Figures/tumb.png used on input line 351.
 (pdftex.def)             Requested size: 92.1879pt x 138.39436pt.
 
-Overfull \vbox (6.17343pt too high) detected at line 350
+Overfull \vbox (6.17343pt too high) detected at line 351
  []
 
 [15
 
  <./Figures/ironman.jpg> <./Figures/tumb.png>]
-<Figures/framebuffer.png, id=484, 1174.3875pt x 629.35126pt>
+<Figures/framebuffer.png, id=1097, 1174.3875pt x 629.35126pt>
 File: Figures/framebuffer.png Graphic file (type png)
 
 <use Figures/framebuffer.png>
-Package pdftex.def Info: Figures/framebuffer.png used on input line 371.
+Package pdftex.def Info: Figures/framebuffer.png used on input line 372.
 (pdftex.def)             Requested size: 245.83282pt x 131.73552pt.
 
-Overfull \vbox (4.66458pt too high) detected at line 371
+Overfull \vbox (4.66458pt too high) detected at line 372
  []
 
 [16
@@ -1309,14 +1309,14 @@ Overfull \vbox (4.66458pt too high) detected at line 371
  <./Figures/framebuffer.png (PNG copy)>] [17
 
 ]
-<Figures/ModelagemCG.pdf, id=539, 722.7pt x 542.025pt>
+<Figures/ModelagemCG.pdf, id=1221, 722.7pt x 542.025pt>
 File: Figures/ModelagemCG.pdf Graphic file (type pdf)
 
 <use Figures/ModelagemCG.pdf>
-Package pdftex.def Info: Figures/ModelagemCG.pdf used on input line 416.
+Package pdftex.def Info: Figures/ModelagemCG.pdf used on input line 417.
 (pdftex.def)             Requested size: 245.83282pt x 184.37703pt.
 
-Overfull \vbox (4.96777pt too high) detected at line 416
+Overfull \vbox (4.96777pt too high) detected at line 417
  []
 
 [18
@@ -1326,15 +1326,194 @@ Overfull \vbox (4.96777pt too high) detected at line 416
 ] [20
 
 ]
-<Figures/graphicPipeline.png, id=634, 1128.215pt x 765.86125pt>
+<Figures/graphicPipeline.png, id=1419, 1128.215pt x 765.86125pt>
 File: Figures/graphicPipeline.png Graphic file (type png)
 
 <use Figures/graphicPipeline.png>
-Package pdftex.def Info: Figures/graphicPipeline.png used on input line 490.
+Package pdftex.def Info: Figures/graphicPipeline.png used on input line 491.
 (pdftex.def)             Requested size: 245.83282pt x 166.8773pt.
  [21
 
- <./Figures/graphicPipeline.png (PNG copy)>]
+ <./Figures/graphicPipeline.png (PNG copy)>] [22
+
+] <Figures/cad.png, id=1542, 1473.505pt x 872.25874pt>
+File: Figures/cad.png Graphic file (type png)
+
+<use Figures/cad.png>
+Package pdftex.def Info: Figures/cad.png used on input line 533.
+(pdftex.def)             Requested size: 245.83282pt x 145.51363pt.
+ [23
+
+ <./Figures/cad.png (PNG copy)>]
+<Figures/arte.png, id=1605, 1097.09875pt x 794.97pt>
+File: Figures/arte.png Graphic file (type png)
+ <use Figures/arte.png>
+Package pdftex.def Info: Figures/arte.png used on input line 549.
+(pdftex.def)             Requested size: 245.83282pt x 178.13272pt.
+
+[24
+
+ <./Figures/arte.png (PNG copy)>]
+<Figures/pr1.jpg, id=1668, 963.6pt x 542.025pt>
+File: Figures/pr1.jpg Graphic file (type jpg)
+ <use Figures/pr1.jpg>
+Package pdftex.def Info: Figures/pr1.jpg used on input line 564.
+(pdftex.def)             Requested size: 276.559pt x 155.56218pt.
+ [25
+
+ <./Figures/pr1.jpg>] <Figures/pr2.jpg, id=1731, 642.4pt x 361.35pt>
+File: Figures/pr2.jpg Graphic file (type jpg)
+
+<use Figures/pr2.jpg>
+Package pdftex.def Info: Figures/pr2.jpg used on input line 583.
+(pdftex.def)             Requested size: 276.559pt x 155.56494pt.
+ [26
+
+ <./Figures/pr2.jpg>]
+<Figures/pr3.jpg, id=1794, 1927.2pt x 1084.05pt>
+File: Figures/pr3.jpg Graphic file (type jpg)
+ <use Figures/pr3.jpg>
+Package pdftex.def Info: Figures/pr3.jpg used on input line 601.
+(pdftex.def)             Requested size: 276.559pt x 155.55391pt.
+ [27
+
+ <./Figures/pr3.jpg>] [28
+
+] <Figures/pi.png, id=1918, 1204.5pt x 781.92125pt>
+File: Figures/pi.png Graphic file (type png)
+
+<use Figures/pi.png>
+Package pdftex.def Info: Figures/pi.png used on input line 644.
+(pdftex.def)             Requested size: 276.559pt x 179.5279pt.
+
+Overfull \vbox (0.11864pt too high) detected at line 644
+ []
+
+[29
+
+ <./Figures/pi.png (PNG copy)>]
+<Figures/cerebro.png, id=1981, 1134.2375pt x 689.57625pt>
+File: Figures/cerebro.png Graphic file (type png)
+
+<use Figures/cerebro.png>
+Package pdftex.def Info: Figures/cerebro.png used on input line 660.
+(pdftex.def)             Requested size: 276.559pt x 168.13219pt.
+ [30
+
+ <./Figures/cerebro.png (PNG copy)>] [31
+
+] [32
+
+]
+[33
+
+] [34
+
+] [35
+
+] [36
+
+] <Figures/bifdigitais.png, id=2419, 991.705pt x 566.115pt>
+File: Figures/bifdigitais.png Graphic file (type png)
+
+<use Figures/bifdigitais.png>
+Package pdftex.def Info: Figures/bifdigitais.png used on input line 697.
+(pdftex.def)             Requested size: 276.559pt x 157.87189pt.
+ [37
+
+ <./Figures/bifdigitais.png (PNG copy)>]
+File: Figures/bifdigitais.png Graphic file (type png)
+
+<use Figures/bifdigitais.png>
+Package pdftex.def Info: Figures/bifdigitais.png used on input line 714.
+(pdftex.def)             Requested size: 276.559pt x 157.87189pt.
+ [38
+
+]
+<Figures/ProcessosVC.pdf, id=2546, 710.655pt x 281.05pt>
+File: Figures/ProcessosVC.pdf Graphic file (type pdf)
+
+<use Figures/ProcessosVC.pdf>
+Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 729.
+(pdftex.def)             Requested size: 276.559pt x 109.37747pt.
+ [39
+
+ <./Figures/ProcessosVC.pdf>]
+File: Figures/ProcessosVC.pdf Graphic file (type pdf)
+
+<use Figures/ProcessosVC.pdf>
+Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 744.
+(pdftex.def)             Requested size: 276.559pt x 109.37747pt.
+ [40
+
+]
+<Figures/digital.png, id=2682, 472.76625pt x 648.4225pt>
+File: Figures/digital.png Graphic file (type png)
+
+<use Figures/digital.png>
+Package pdftex.def Info: Figures/digital.png used on input line 759.
+(pdftex.def)             Requested size: 153.64493pt x 210.73482pt.
+
+Overfull \vbox (5.32556pt too high) detected at line 759
+ []
+
+[41
+
+ <./Figures/digital.png (PNG copy)>]
+<Figures/prepros.png, id=2744, 975.645pt x 659.46375pt>
+File: Figures/prepros.png Graphic file (type png)
+
+<use Figures/prepros.png>
+Package pdftex.def Info: Figures/prepros.png used on input line 774.
+(pdftex.def)             Requested size: 276.559pt x 186.93279pt.
+ [42
+
+ <./Figures/prepros.png (PNG copy)>]
+<Figures/process.png, id=2807, 1223.57124pt x 804.00375pt>
+File: Figures/process.png Graphic file (type png)
+
+<use Figures/process.png>
+Package pdftex.def Info: Figures/process.png used on input line 789.
+(pdftex.def)             Requested size: 276.559pt x 181.715pt.
+ [43
+
+ <./Figures/process.png (PNG copy)>]
+<Figures/features.png, id=2870, 495.8525pt x 439.6425pt>
+File: Figures/features.png Graphic file (type png)
+
+<use Figures/features.png>
+Package pdftex.def Info: Figures/features.png used on input line 808.
+(pdftex.def)             Requested size: 153.64493pt x 136.22739pt.
+ [44
+
+ <./Figures/features.png (PNG copy)>]
+<Figures/orientacoes.png, id=2933, 495.8525pt x 493.845pt>
+File: Figures/orientacoes.png Graphic file (type png)
+
+<use Figures/orientacoes.png>
+Package pdftex.def Info: Figures/orientacoes.png used on input line 827.
+(pdftex.def)             Requested size: 153.64493pt x 153.02254pt.
+ [45
+
+ <./Figures/orientacoes.png (PNG copy)>]
+<Figures/semelhancas.png, id=2996, 472.76625pt x 469.755pt>
+File: Figures/semelhancas.png Graphic file (type png)
+
+<use Figures/semelhancas.png>
+Package pdftex.def Info: Figures/semelhancas.png used on input line 846.
+(pdftex.def)             Requested size: 153.64493pt x 152.66856pt.
+ [46
+
+ <./Figures/semelhancas.png (PNG copy)>]
+<Figures/reconhecimento.png, id=3058, 668.4975pt x 423.5825pt>
+File: Figures/reconhecimento.png Graphic file (type png)
+
+<use Figures/reconhecimento.png>
+Package pdftex.def Info: Figures/reconhecimento.png used on input line 859.
+(pdftex.def)             Requested size: 245.83282pt x 155.7665pt.
+ [47
+
+ <./Figures/reconhecimento.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `presentation_1.nav'.
 
@@ -1344,13 +1523,13 @@ Package pdftex.def Info: Figures/graphicPipeline.png used on input line 490.
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 493.
- (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 493.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 493.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 863.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 863.
+(./presentation_1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 863.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 863.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 7C1B893FD156DFC533B69B24EF861E5A;131.
+(rerunfilecheck)             Checksum: A9B7771FFC2F5113CC777BA9E7BFAEE2;528.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1359,34 +1538,28 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 493.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 863.
  ) 
 Here is how much of TeX's memory you used:
- 17708 strings out of 493304
- 325401 string characters out of 6139871
- 410980 words of memory out of 5000000
- 20685 multiletter control sequences out of 15000+600000
+ 17948 strings out of 493304
+ 329561 string characters out of 6139871
+ 434762 words of memory out of 5000000
+ 20852 multiletter control sequences out of 15000+600000
  8365 words of font info for 29 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,60p,403b,938s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation22} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Navigation24} has been referenced but does not exis
-t, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmssi9.pfb>
-Output written on presentation_1.pdf (21 pages, 3418541 bytes).
+ 49i,20n,72p,403b,938s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi9.pfb>
+Output written on presentation_1.pdf (47 pages, 8681906 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 631 compressed objects within 7 object streams
- 51 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3177 PDF objects out of 3580 (max. 8388607)
+ 3002 compressed objects within 31 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
