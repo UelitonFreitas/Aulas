@@ -12,4 +12,3 @@
 \beamer@subsectionintoc {4}{1}{Computa\IeC {\c c}\IeC {\~a}o Gr\IeC {\'a}fica}{45}{0}{4}
 \beamer@subsectionintoc {4}{2}{Processamento de Imagens}{50}{0}{4}
 \beamer@subsectionintoc {4}{3}{Vis\IeC {\~a}o Computacional}{53}{0}{4}
-\beamer@subsubsectionintoc {4}{3}{1}{Exemplo de Vis\IeC {\~a}o Computacional}{59}{0}{4}
