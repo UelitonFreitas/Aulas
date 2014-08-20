@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Evolu\IeC {\c c}\IeC {\~a}o da Computa\IeC {\c c}\IeC {\~a}o Gr\IeC {\'a}fica}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hist\IeC {\'o}ria}{9}{0}{2}
+\beamer@sectionintoc {3}{Hardware}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Dispositivos de Exibi\IeC {\c c}\IeC {\~a}o}{22}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{1}{Dispositivo de Exibi\IeC {\c c}\IeC {\~a}o Vetorial}{23}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{2}{Dispositivo de Exibi\IeC {\c c}\IeC {\~a}o Matricial}{28}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{3}{Outros Tipos de Tecnologia de Exibi\IeC {\c c}\IeC {\~a}o}{43}{0}{3}
+\beamer@sectionintoc {4}{\IeC {\'A}reas Relacionadas}{44}{0}{4}
+\beamer@subsectionintoc {4}{1}{Computa\IeC {\c c}\IeC {\~a}o Gr\IeC {\'a}fica}{45}{0}{4}
+\beamer@subsectionintoc {4}{2}{Processamento de Imagens}{50}{0}{4}
+\beamer@subsectionintoc {4}{3}{Vis\IeC {\~a}o Computacional}{53}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{1}{Exemplo de Vis\IeC {\~a}o Computacional}{59}{0}{4}
