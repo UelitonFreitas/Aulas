@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Forma\IeC {\c c}\IeC {\~a}o de Imagens}{3}{0}{1}
+\beamer@sectionintoc {2}{Vis\IeC {\~a}o Computacional}{10}{0}{2}
