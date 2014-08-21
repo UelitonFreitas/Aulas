@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  21 AUG 2014 16:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  21 AUG 2014 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,102 +1174,118 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] (./presentation_1.toc)
 [2
 
-] <Figures/pinHoleCam.pdf, id=103, 489.83pt x 410.53375pt>
-File: Figures/pinHoleCam.pdf Graphic file (type pdf)
+] <Figures/raytracing.png, id=101, 460.72125pt x 456.70625pt>
+File: Figures/raytracing.png Graphic file (type png)
 
-<use Figures/pinHoleCam.pdf>
-Package pdftex.def Info: Figures/pinHoleCam.pdf used on input line 150.
-(pdftex.def)             Requested size: 184.3758pt x 154.52608pt.
+<use Figures/raytracing.png>
+Package pdftex.def Info: Figures/raytracing.png used on input line 150.
+(pdftex.def)             Requested size: 184.3758pt x 182.76288pt.
 
-Overfull \vbox (16.61346pt too high) detected at line 150
+Overfull \vbox (3.35362pt too high) detected at line 150
  []
 
 [3
+
+ <./Figures/raytracing.png>]
+<Figures/pinHoleCam.pdf, id=135, 489.83pt x 410.53375pt>
+File: Figures/pinHoleCam.pdf Graphic file (type pdf)
+
+<use Figures/pinHoleCam.pdf>
+Package pdftex.def Info: Figures/pinHoleCam.pdf used on input line 169.
+(pdftex.def)             Requested size: 184.3758pt x 154.52608pt.
+pdfTeX warning (ext4): destination with the same identifier (name{iep}) has bee
+n already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 \end{frame}
+                 
+Overfull \vbox (16.61346pt too high) detected at line 169
+ []
+
+[4
 
  <./Figures/pinHoleCam.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/pinHoleCam.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <Figures/pinHole.png, id=139, 538.01pt x 541.02126pt>
+>] <Figures/pinHole.png, id=170, 538.01pt x 541.02126pt>
 File: Figures/pinHole.png Graphic file (type png)
 
 <use Figures/pinHole.png>
-Package pdftex.def Info: Figures/pinHole.png used on input line 170.
+Package pdftex.def Info: Figures/pinHole.png used on input line 192.
 (pdftex.def)             Requested size: 153.64493pt x 154.50635pt.
 pdfTeX warning (ext4): destination with the same identifier (name{iep}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \end{frame}
+l.192 \end{frame}
                  
-Overfull \vbox (33.19374pt too high) detected at line 170
+Overfull \vbox (33.19374pt too high) detected at line 192
  []
 
-[4
+[5
 
  <./Figures/pinHole.png (PNG copy)>]
-<Figures/lente.png, id=168, 508.90125pt x 241.90375pt>
+<Figures/lente.png, id=198, 508.90125pt x 241.90375pt>
 File: Figures/lente.png Graphic file (type png)
  <use Figures/lente.png>
-Package pdftex.def Info: Figures/lente.png used on input line 192.
+Package pdftex.def Info: Figures/lente.png used on input line 214.
 (pdftex.def)             Requested size: 153.64493pt x 73.03307pt.
 pdfTeX warning (ext4): destination with the same identifier (name{iep}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.192 \end{frame}
-                  [5
+l.214 \end{frame}
+                  [6
 
  <./Figures/lente.png (PNG copy)>]
-<Figures/olho_humano.png, id=196, 351.3125pt x 241.90375pt>
+<Figures/olho_humano.png, id=226, 351.3125pt x 241.90375pt>
 File: Figures/olho_humano.png Graphic file (type png)
 
 <use Figures/olho_humano.png>
-Package pdftex.def Info: Figures/olho_humano.png used on input line 213.
+Package pdftex.def Info: Figures/olho_humano.png used on input line 235.
 (pdftex.def)             Requested size: 153.64493pt x 105.79941pt.
 pdfTeX warning (ext4): destination with the same identifier (name{iep}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.213 \end{frame}
-                  [6
+l.235 \end{frame}
+                  [7
 
  <./Figures/olho_humano.png>]
-<Figures/cameraDigital.png, id=225, 351.3125pt x 252.945pt>
+<Figures/cameraDigital.png, id=257, 351.3125pt x 252.945pt>
 File: Figures/cameraDigital.png Graphic file (type png)
 
 <use Figures/cameraDigital.png>
-Package pdftex.def Info: Figures/cameraDigital.png used on input line 232.
+Package pdftex.def Info: Figures/cameraDigital.png used on input line 254.
 (pdftex.def)             Requested size: 153.64493pt x 110.62842pt.
 pdfTeX warning (ext4): destination with the same identifier (name{iep}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.232 \end{frame}
-                  [7
+l.254 \end{frame}
+                  [8
 
  <./Figures/cameraDigital.png (PNG copy)>]
 
-Package hyperref Warning: Ignoring empty anchor on input line 273.
+Package hyperref Warning: Ignoring empty anchor on input line 295.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 273.
+LaTeX Font Info:    Try loading font information for U+msa on input line 295.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 273.
+LaTeX Font Info:    Try loading font information for U+msb on input line 295.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [8
-
-] [9
+) [9
 
 ] [10
 
-]
-[11
+] [11
 
-] [12
+]
+[12
 
 ] [13
 
@@ -1277,98 +1293,100 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [15
 
+] [16
+
 ]
-<Figures/bifdigitais.png, id=473, 991.705pt x 566.115pt>
+<Figures/bifdigitais.png, id=503, 991.705pt x 566.115pt>
 File: Figures/bifdigitais.png Graphic file (type png)
 
 <use Figures/bifdigitais.png>
-Package pdftex.def Info: Figures/bifdigitais.png used on input line 340.
+Package pdftex.def Info: Figures/bifdigitais.png used on input line 362.
 (pdftex.def)             Requested size: 276.559pt x 157.87189pt.
- [16
+ [17
 
  <./Figures/bifdigitais.png (PNG copy)>]
-<Figures/ProcessosVC.pdf, id=501, 710.655pt x 281.05pt>
+<Figures/ProcessosVC.pdf, id=531, 710.655pt x 281.05pt>
 File: Figures/ProcessosVC.pdf Graphic file (type pdf)
 
 <use Figures/ProcessosVC.pdf>
-Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 355.
+Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 377.
 (pdftex.def)             Requested size: 276.559pt x 109.37747pt.
- [17
+ [18
 
  <./Figures/ProcessosVC.pdf>]
 File: Figures/ProcessosVC.pdf Graphic file (type pdf)
 
 <use Figures/ProcessosVC.pdf>
-Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 370.
+Package pdftex.def Info: Figures/ProcessosVC.pdf used on input line 392.
 (pdftex.def)             Requested size: 276.559pt x 109.37747pt.
- [18
+ [19
 
 ]
-<Figures/digital.png, id=567, 472.76625pt x 648.4225pt>
+<Figures/digital.png, id=599, 472.76625pt x 648.4225pt>
 File: Figures/digital.png Graphic file (type png)
 
 <use Figures/digital.png>
-Package pdftex.def Info: Figures/digital.png used on input line 385.
+Package pdftex.def Info: Figures/digital.png used on input line 407.
 (pdftex.def)             Requested size: 153.64493pt x 210.73482pt.
 
-Overfull \vbox (5.32556pt too high) detected at line 385
+Overfull \vbox (5.32556pt too high) detected at line 407
  []
 
-[19
+[20
 
  <./Figures/digital.png (PNG copy)>]
-<Figures/prepros.png, id=597, 975.645pt x 659.46375pt>
+<Figures/prepros.png, id=627, 975.645pt x 659.46375pt>
 File: Figures/prepros.png Graphic file (type png)
 
 <use Figures/prepros.png>
-Package pdftex.def Info: Figures/prepros.png used on input line 400.
+Package pdftex.def Info: Figures/prepros.png used on input line 422.
 (pdftex.def)             Requested size: 276.559pt x 186.93279pt.
- [20
+ [21
 
  <./Figures/prepros.png (PNG copy)>]
-<Figures/process.png, id=625, 1223.57124pt x 804.00375pt>
+<Figures/process.png, id=655, 1223.57124pt x 804.00375pt>
 File: Figures/process.png Graphic file (type png)
 
 <use Figures/process.png>
-Package pdftex.def Info: Figures/process.png used on input line 415.
+Package pdftex.def Info: Figures/process.png used on input line 437.
 (pdftex.def)             Requested size: 276.559pt x 181.715pt.
- [21
+ [22
 
  <./Figures/process.png (PNG copy)>]
-<Figures/features.png, id=654, 495.8525pt x 439.6425pt>
+<Figures/features.png, id=685, 495.8525pt x 439.6425pt>
 File: Figures/features.png Graphic file (type png)
 
 <use Figures/features.png>
-Package pdftex.def Info: Figures/features.png used on input line 434.
+Package pdftex.def Info: Figures/features.png used on input line 456.
 (pdftex.def)             Requested size: 153.64493pt x 136.22739pt.
- [22
+ [23
 
  <./Figures/features.png (PNG copy)>]
-<Figures/orientacoes.png, id=684, 495.8525pt x 493.845pt>
+<Figures/orientacoes.png, id=714, 495.8525pt x 493.845pt>
 File: Figures/orientacoes.png Graphic file (type png)
 
 <use Figures/orientacoes.png>
-Package pdftex.def Info: Figures/orientacoes.png used on input line 453.
+Package pdftex.def Info: Figures/orientacoes.png used on input line 475.
 (pdftex.def)             Requested size: 153.64493pt x 153.02254pt.
- [23
+ [24
 
  <./Figures/orientacoes.png (PNG copy)>]
-<Figures/semelhancas.png, id=712, 472.76625pt x 469.755pt>
+<Figures/semelhancas.png, id=741, 472.76625pt x 469.755pt>
 File: Figures/semelhancas.png Graphic file (type png)
 
 <use Figures/semelhancas.png>
-Package pdftex.def Info: Figures/semelhancas.png used on input line 472.
+Package pdftex.def Info: Figures/semelhancas.png used on input line 494.
 (pdftex.def)             Requested size: 153.64493pt x 152.66856pt.
- [24
+ [25
 
  <./Figures/semelhancas.png (PNG copy)>]
-<Figures/reconhecimento.png, id=739, 668.4975pt x 423.5825pt>
+<Figures/reconhecimento.png, id=769, 668.4975pt x 423.5825pt>
 File: Figures/reconhecimento.png Graphic file (type png)
 
 <use Figures/reconhecimento.png>
-Package pdftex.def Info: Figures/reconhecimento.png used on input line 485.
+Package pdftex.def Info: Figures/reconhecimento.png used on input line 507.
 (pdftex.def)             Requested size: 245.83282pt x 155.7665pt.
- [25
+ [26
 
  <./Figures/reconhecimento.png (PNG copy)>]
 \tf@nav=\write6
@@ -1380,11 +1398,11 @@ Package pdftex.def Info: Figures/reconhecimento.png used on input line 485.
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 510.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 510.
 (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 510.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 510.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 (rerunfilecheck)             Checksum: 41CB92547464BCD6532141993E4983B5;117.
 
@@ -1395,13 +1413,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
  ) 
 Here is how much of TeX's memory you used:
- 17678 strings out of 493304
- 324105 string characters out of 6139871
+ 17685 strings out of 493304
+ 324245 string characters out of 6139871
  417871 words of memory out of 5000000
- 20639 multiletter control sequences out of 15000+600000
+ 20643 multiletter control sequences out of 15000+600000
  11559 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,60p,403b,837s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1410,10 +1428,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on presentation_1.pdf (25 pages, 2115540 bytes).
+Output written on presentation_1.pdf (26 pages, 2170498 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 724 compressed objects within 8 object streams
- 54 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
