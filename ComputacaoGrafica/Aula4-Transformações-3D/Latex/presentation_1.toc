@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Transla\IeC {\c c}\IeC {\~a}o}{4}{0}{2}
+\beamer@sectionintoc {3}{Rota\IeC {\c c}\IeC {\~a}o}{7}{0}{3}
