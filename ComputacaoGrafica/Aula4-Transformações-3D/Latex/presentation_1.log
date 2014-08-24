@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  23 AUG 2014 01:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  24 AUG 2014 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -106,10 +106,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
-File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
-\mathindent=\dimen127
-)
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
@@ -139,8 +135,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count105
 ))
-\Gin@req@height=\dimen128
-\Gin@req@width=\dimen129
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
 )
 (/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
@@ -166,14 +162,14 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks19
 ))
-\pgf@x=\dimen130
-\pgf@y=\dimen131
-\pgf@xa=\dimen132
-\pgf@ya=\dimen133
-\pgf@xb=\dimen134
-\pgf@yb=\dimen135
-\pgf@xc=\dimen136
-\pgf@yc=\dimen137
+\pgf@x=\dimen129
+\pgf@y=\dimen130
+\pgf@xa=\dimen131
+\pgf@ya=\dimen132
+\pgf@xb=\dimen133
+\pgf@yb=\dimen134
+\pgf@xc=\dimen135
+\pgf@yc=\dimen136
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count106
@@ -224,7 +220,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen138
+\pgfmath@dimen=\dimen137
 \pgfmath@count=\count112
 \pgfmath@box=\box35
 \pgfmath@toks=\toks20
@@ -244,30 +240,30 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen139
-\pgf@picmaxx=\dimen140
-\pgf@picminy=\dimen141
-\pgf@picmaxy=\dimen142
-\pgf@pathminx=\dimen143
-\pgf@pathmaxx=\dimen144
-\pgf@pathminy=\dimen145
-\pgf@pathmaxy=\dimen146
-\pgf@xx=\dimen147
-\pgf@xy=\dimen148
-\pgf@yx=\dimen149
-\pgf@yy=\dimen150
-\pgf@zx=\dimen151
-\pgf@zy=\dimen152
+\pgf@picminx=\dimen138
+\pgf@picmaxx=\dimen139
+\pgf@picminy=\dimen140
+\pgf@picmaxy=\dimen141
+\pgf@pathminx=\dimen142
+\pgf@pathmaxx=\dimen143
+\pgf@pathminy=\dimen144
+\pgf@pathmaxy=\dimen145
+\pgf@xx=\dimen146
+\pgf@xy=\dimen147
+\pgf@yx=\dimen148
+\pgf@yy=\dimen149
+\pgf@zx=\dimen150
+\pgf@zy=\dimen151
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen153
-\pgf@path@lasty=\dimen154
+\pgf@path@lastx=\dimen152
+\pgf@path@lasty=\dimen153
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen155
-\pgf@shorten@start@additional=\dimen156
+\pgf@shorten@end@additional=\dimen154
+\pgf@shorten@start@additional=\dimen155
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
@@ -278,13 +274,13 @@ File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen157
+\pgflinewidth=\dimen156
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen158
-\pgf@pt@y=\dimen159
-\pgf@pt@temp=\dimen160
+\pgf@pt@x=\dimen157
+\pgf@pt@y=\dimen158
+\pgf@pt@temp=\dimen159
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -300,7 +296,7 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen161
+\pgf@max=\dimen160
 \pgf@sys@shading@range@num=\count115
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -376,7 +372,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen162
+\@linkdim=\dimen161
 \Hy@linkcounter=\count118
 \Hy@pagecounter=\count119
 
@@ -405,10 +401,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen163
+\XeTeXLinkMargin=\dimen162
 \Fld@menulength=\count122
-\Field@Width=\dimen164
-\Fld@charsize=\dimen165
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -494,14 +490,14 @@ Package: beamerbaseframe 2012/09/13  (rcs-revision dcd846607320)
 \beamer@zoombox=\box42
 \beamer@zoomcount=\count133
 \beamer@zoomframecount=\count134
-\beamer@frametextheight=\dimen166
+\beamer@frametextheight=\dimen165
 \c@subsectionslide=\count135
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
 \beamer@envbody=\toks24
-\framewidth=\dimen167
+\framewidth=\dimen166
 \c@framenumber=\count136
 )
 (/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty
@@ -512,7 +508,7 @@ Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
 Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count137
-\beamer@autobreaklastheight=\dimen168
+\beamer@autobreaklastheight=\dimen167
 \beamer@frametitletoks=\toks25
 \beamer@framesubtitletoks=\toks26
 )
@@ -544,12 +540,12 @@ Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen169
-\bmb@dima=\dimen170
-\bmb@dimb=\dimen171
-\bmb@prevheight=\dimen172
+\bmb@temp=\dimen168
+\bmb@dima=\dimen169
+\bmb@dimb=\dimen170
+\bmb@prevheight=\dimen171
 )
-\beamer@blockheadheight=\dimen173
+\beamer@blockheadheight=\dimen172
 ))
 (/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
 Package: beamerbaselocalstructure 2012/11/13  (rcs-revision ddfba79dac19)
@@ -565,7 +561,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 )
 (/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty
 Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
-\beamer@section@min@dim=\dimen174
+\beamer@section@min@dim=\dimen173
 )
 (/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
 Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
@@ -581,11 +577,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks29
-\ex@=\dimen175
+\ex@=\dimen174
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen176
+\pmbraise@=\dimen175
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -602,7 +598,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen177
+\big@size=\dimen176
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count145
@@ -615,12 +611,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count150
 \maxfields@=\count151
 \andhelp@=\toks31
-\eqnshift@=\dimen178
-\alignsep@=\dimen179
-\tagshift@=\dimen180
-\tagwidth@=\dimen181
-\totwidth@=\dimen182
-\lineht@=\dimen183
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
 \@envbody=\toks32
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -658,8 +654,8 @@ Package: beamercolorthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.st
 y
 Package: beamerinnerthemedefault 2012/05/01  (rcs-revision 67c48b3b652d)
-\beamer@dima=\dimen184
-\beamer@dimb=\dimen185
+\beamer@dima=\dimen183
+\beamer@dimb=\dimen184
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
 y
@@ -683,23 +679,23 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen186
-\lightrulewidth=\dimen187
-\cmidrulewidth=\dimen188
-\belowrulesep=\dimen189
-\belowbottomsep=\dimen190
-\aboverulesep=\dimen191
-\abovetopsep=\dimen192
-\cmidrulesep=\dimen193
-\cmidrulekern=\dimen194
-\defaultaddspace=\dimen195
+\heavyrulewidth=\dimen185
+\lightrulewidth=\dimen186
+\cmidrulewidth=\dimen187
+\belowrulesep=\dimen188
+\belowbottomsep=\dimen189
+\aboverulesep=\dimen190
+\abovetopsep=\dimen191
+\cmidrulesep=\dimen192
+\cmidrulekern=\dimen193
+\defaultaddspace=\dimen194
 \@cmidla=\count153
 \@cmidlb=\count154
-\@aboverulesep=\dimen196
-\@belowrulesep=\dimen197
+\@aboverulesep=\dimen195
+\@belowrulesep=\dimen196
 \@thisruleclass=\count155
 \@lastruleclass=\count156
-\@thisrulewidth=\dimen198
+\@thisrulewidth=\dimen197
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
@@ -710,13 +706,13 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen199
-\captionmargin@=\dimen200
-\captionwidth=\dimen201
-\caption@tempdima=\dimen202
-\caption@indent=\dimen203
-\caption@parindent=\dimen204
-\caption@hangindent=\dimen205
+\captionmargin=\dimen198
+\captionmargin@=\dimen199
+\captionwidth=\dimen200
+\caption@tempdima=\dimen201
+\caption@indent=\dimen202
+\caption@parindent=\dimen203
+\caption@hangindent=\dimen204
 )
 \c@ContinuedFloat=\count157
 Package caption Info: beamer document class.
@@ -728,9 +724,9 @@ Package caption Info: Hyperref support is turned off
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip57
 \subfigcapskip=\skip58
-\subfigcaptopadj=\dimen206
+\subfigcaptopadj=\dimen205
 \subfigbottomskip=\skip59
-\subfigcapmargin=\dimen207
+\subfigcapmargin=\dimen206
 \subfiglabelskip=\skip60
 \c@subfigure=\count158
 \c@lofdepth=\count159
@@ -754,7 +750,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 File: babel.def 2013/12/03 3.9h Babel common definitions
 LaTeX Info: Redefining \textlatin on input line 137.
 \babel@savecnt=\count162
-\U@D=\dimen208
+\U@D=\dimen207
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1039,13 +1035,13 @@ LaTeX Font Info:    ... okay on input line 107.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count163
-\scratchdimen=\dimen209
+\scratchdimen=\dimen208
 \scratchbox=\box53
 \nofMPsegments=\count164
 \nofMParguments=\count165
 \everyMPshowfont=\toks42
 \MPscratchCnt=\count166
-\MPscratchDim=\dimen210
+\MPscratchDim=\dimen209
 \MPnumerator=\count167
 \makeMPintoPDFobject=\count168
 \everyMPtoPDFconversion=\toks43
@@ -1156,100 +1152,416 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./presentation_1.nav)
+Overfull \hbox (91.66037pt too wide) detected at line 107
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 111.
 
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./presentation_1.toc)
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
 [2
 
-] [3
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 170.
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[4
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 190.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 170.
+LaTeX Font Info:    Try loading font information for U+msb on input line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4
-
-]
-<Figures/Translacao.pdf, id=175, 722.7pt x 542.025pt>
-File: Figures/Translacao.pdf Graphic file (type pdf)
-
-<use Figures/Translacao.pdf>
-Package pdftex.def Info: Figures/Translacao.pdf used on input line 182.
-(pdftex.def)             Requested size: 276.559pt x 207.41899pt.
-
-Overfull \vbox (2.00974pt too high) detected at line 182
+)
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
  []
 
 [5
 
- <./Figures/Translacao.pdf>] [6
+] <Figures/Translacao.pdf, id=424, 722.7pt x 542.025pt>
+File: Figures/Translacao.pdf Graphic file (type pdf)
 
-]
-<Figures/EixoRotacao2D.pdf, id=245, 211.79124pt x 297.11pt>
-File: Figures/EixoRotacao2D.pdf Graphic file (type pdf)
+<use Figures/Translacao.pdf>
+Package pdftex.def Info: Figures/Translacao.pdf used on input line 202.
+(pdftex.def)             Requested size: 276.559pt x 207.41899pt.
 
-<use Figures/EixoRotacao2D.pdf>
-Package pdftex.def Info: Figures/EixoRotacao2D.pdf used on input line 243.
-(pdftex.def)             Requested size: 92.1879pt x 129.3234pt.
+Overfull \vbox (2.00974pt too high) detected at line 202
+ []
 
-Overfull \vbox (9.2108pt too high) detected at line 243
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[6
+
+ <./Figures/Translacao.pdf>]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
  []
 
 [7
 
- <./Figures/EixoRotacao2D.pdf>]
-<Figures/ExemploRotacao.pdf, id=287, 436.63126pt x 339.2675pt>
-File: Figures/ExemploRotacao.pdf Graphic file (type pdf)
+] <Figures/EixoRotacao2D.pdf, id=548, 211.79124pt x 297.11pt>
+File: Figures/EixoRotacao2D.pdf Graphic file (type pdf)
 
-<use Figures/ExemploRotacao.pdf>
-Package pdftex.def Info: Figures/ExemploRotacao.pdf used on input line 267.
-(pdftex.def)             Requested size: 153.64493pt x 119.38214pt.
+<use Figures/EixoRotacao2D.pdf>
+Package pdftex.def Info: Figures/EixoRotacao2D.pdf used on input line 263.
+(pdftex.def)             Requested size: 92.1879pt x 129.3234pt.
 
-Overfull \vbox (5.04173pt too high) detected at line 267
+Overfull \vbox (9.2108pt too high) detected at line 263
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
  []
 
 [8
 
- <./Figures/ExemploRotacao.pdf>]
-<Figures/ExemploRotacao2.pdf, id=334, 214.8025pt x 168.63pt>
-File: Figures/ExemploRotacao2.pdf Graphic file (type pdf)
+ <./Figures/EixoRotacao2D.pdf>]
+<Figures/ExemploRotacao.pdf, id=613, 436.63126pt x 339.2675pt>
+File: Figures/ExemploRotacao.pdf Graphic file (type pdf)
 
-<use Figures/ExemploRotacao2.pdf>
-Package pdftex.def Info: Figures/ExemploRotacao2.pdf used on input line 293.
-(pdftex.def)             Requested size: 153.64493pt x 120.62099pt.
+<use Figures/ExemploRotacao.pdf>
+Package pdftex.def Info: Figures/ExemploRotacao.pdf used on input line 287.
+(pdftex.def)             Requested size: 153.64493pt x 119.38214pt.
 
-Overfull \vbox (6.52365pt too high) detected at line 293
+Overfull \vbox (5.04173pt too high) detected at line 287
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
  []
 
 [9
 
- <./Figures/ExemploRotacao2.pdf>] [10
+ <./Figures/ExemploRotacao.pdf>]
+<Figures/ExemploRotacao2.pdf, id=686, 214.8025pt x 168.63pt>
+File: Figures/ExemploRotacao2.pdf Graphic file (type pdf)
 
-] [11
+<use Figures/ExemploRotacao2.pdf>
+Package pdftex.def Info: Figures/ExemploRotacao2.pdf used on input line 313.
+(pdftex.def)             Requested size: 153.64493pt x 120.62099pt.
 
-] [12
+Overfull \vbox (6.52365pt too high) detected at line 313
+ []
 
-] [13
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[10
+
+ <./Figures/ExemploRotacao2.pdf>]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[11
 
 ]
-<Figures/ExemploRotacao3.pdf, id=498, 241.90375pt x 178.6675pt>
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[12
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[13
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[14
+
+] <Figures/ExemploRotacao3.pdf, id=977, 241.90375pt x 178.6675pt>
 File: Figures/ExemploRotacao3.pdf Graphic file (type pdf)
 
 <use Figures/ExemploRotacao3.pdf>
-Package pdftex.def Info: Figures/ExemploRotacao3.pdf used on input line 401.
+Package pdftex.def Info: Figures/ExemploRotacao3.pdf used on input line 421.
 (pdftex.def)             Requested size: 153.64493pt x 113.4853pt.
- [14
 
- <./Figures/ExemploRotacao3.pdf>] [15
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[15
+
+ <./Figures/ExemploRotacao3.pdf>]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[16
+
+]
+Overfull \hbox (15.64912pt too wide) in alignment at lines 480--480
+ [][][] []
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[17
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[18
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[19
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[20
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[21
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[22
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[23
+
+] <Figures/Escala.pdf, id=1483, 147.55125pt x 136.51pt>
+File: Figures/Escala.pdf Graphic file (type pdf)
+
+<use Figures/Escala.pdf>
+Package pdftex.def Info: Figures/Escala.pdf used on input line 552.
+(pdftex.def)             Requested size: 153.64493pt x 142.15034pt.
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[24
+
+ <./Figures/Escala.pdf>]
+File: Figures/Escala.pdf Graphic file (type pdf)
+ <use Figures/Escala.pdf>
+Package pdftex.def Info: Figures/Escala.pdf used on input line 552.
+(pdftex.def)             Requested size: 153.64493pt x 142.15034pt.
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[25
+
+]
+Overfull \vbox (31.15826pt too high) detected at line 581
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[26
+
+]
+Overfull \vbox (31.15826pt too high) detected at line 581
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[27
+
+]
+Overfull \vbox (31.15826pt too high) detected at line 581
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[28
+
+]
+Overfull \vbox (31.15826pt too high) detected at line 581
+ []
+
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[29
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[30
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[31
+
+] <Figures/coohomo.png, id=1930, 793.96625pt x 775.89874pt>
+File: Figures/coohomo.png Graphic file (type png)
+
+<use Figures/coohomo.png>
+Package pdftex.def Info: Figures/coohomo.png used on input line 641.
+(pdftex.def)             Requested size: 153.64493pt x 150.14531pt.
+
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[32
+
+ <./Figures/coohomo.png (PNG copy)>]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[33
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[34
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[35
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[36
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[37
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[38
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[39
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[40
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[41
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[42
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[43
+
+]
+Overfull \hbox (91.66037pt too wide) has occurred while \output is active
+  [] [] [][][][][][][][][][][][][] [][][][][][] [][][][][][] [] []  
+ []
+
+[44
 
 ]
 \tf@nav=\write6
@@ -1261,29 +1573,28 @@ Package pdftex.def Info: Figures/ExemploRotacao3.pdf used on input line 401.
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
-
-(./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 936.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 936.
+ (./presentation_1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 936.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 936.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 60B047EF1B691D3167F3485A55ECADD1;150.
+(rerunfilecheck)             Checksum: 3DB37900E4FC65366EDEB00BA0BA9343;830.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 936.
  ) 
 Here is how much of TeX's memory you used:
- 17653 strings out of 493304
- 324385 string characters out of 6139871
- 418691 words of memory out of 5000000
- 20639 multiletter control sequences out of 15000+600000
+ 17836 strings out of 493304
+ 326898 string characters out of 6139871
+ 426645 words of memory out of 5000000
+ 20756 multiletter control sequences out of 15000+600000
  14502 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,60p,403b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,20n,62p,403b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
@@ -1296,10 +1607,10 @@ ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb>
-Output written on presentation_1.pdf (15 pages, 262624 bytes).
+Output written on presentation_1.pdf (44 pages, 485544 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 34 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2689 PDF objects out of 2984 (max. 8388607)
+ 2535 compressed objects within 26 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

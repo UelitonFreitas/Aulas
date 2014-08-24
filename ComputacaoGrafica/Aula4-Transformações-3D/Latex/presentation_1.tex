@@ -15,7 +15,7 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
-\documentclass[fleqn]{beamer}
+\documentclass{beamer}
 
 \mode<presentation> {
 
@@ -151,7 +151,27 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Translação}
+\section{Transformações de Corpos Rígidos}
+\begin{frame}
+\frametitle{Transformações de Corpos Rígidos}
+
+
+	\begin{block}{Transformações de Corpo Rígido}
+		\begin{itemize}
+			\item São transformações que não alteram as dimensões dos objetos:
+				\begin{itemize}
+					\item Posicionamento (translação).
+					\item Orientação (rotação).
+				\end{itemize}
+			\item Mantém as distâncias e ângulos do objeto.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Translação}
 \begin{frame}
 \frametitle{Translação}
 
@@ -222,7 +242,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Rotação}
+\subsection{Rotação}
 \begin{frame}
 \frametitle{Rotação}
 
@@ -405,7 +425,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Rotação}
 
-	\begin{block}{Para encontrar $x'$}
+	\begin{block}{Para encontrar $x'$:}
 		\begin{itemize}
 			\item $cos (\phi + \theta) = \frac{x' - x_r}{r}$
 			\item $x' = r \cdot cos (\phi + \theta) + x_r $	
@@ -428,6 +448,488 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 	
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Rotação}
+		\begin{itemize}
+			\item Escrevendo a operação em notação de matriz temos:
+		\end{itemize}
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{R} \cdot \textbf{P} + \textbf{T} \\
+			\begin{bmatrix} 
+								x' \\
+								y' \\
+							\end{bmatrix}
+			=
+			 \begin{bmatrix}
+								cos(\theta) & -sen(\theta) \\
+								sen(\theta) & cos(\theta)\\
+							\end{bmatrix}
+			\cdot \begin{bmatrix}
+								x \\
+								y \\
+							\end{bmatrix}
+		 	+ \begin{bmatrix}
+		 		x_r-x_r \cdot cos(\theta)+y_r \cdot sen(\theta) \\
+				y_r-x_r \cdot sen(\theta)-y_r \cdot cos(\theta) \\		 	
+		 	\end{bmatrix}
+		\end{eqnarray*}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outros Tipos de Transformações}
+\subsection{Escala}
+\begin{frame}
+\frametitle{Escala}
+
+
+	\begin{block}{Escala de um Objeto}
+		\begin{itemize}
+			\item Utiliza-se a \textbf{escala} para aumentar o tamanho de um objeto.
+			\item Multiplica-se os valores das coordenadas $x,y$ por um fator $s$:\\
+				\begin{itemize}
+					\item $x' = x \cdot s_x$
+					\item $y' = x \cdot y_x$
+				\end{itemize}
+			\item Em notação matricial:\\
+					\begin{eqnarray*}
+							\textbf{P'} = \textbf{S} \cdot \textbf{P}  \\
+							\begin{bmatrix} 
+								x' \\
+								y' \\
+							\end{bmatrix}
+							=	\begin{bmatrix}
+								s_x & 0 \\
+								0 & s_y\\
+							\end{bmatrix}
+							\cdot \begin{bmatrix}
+								x \\
+								y \\
+							\end{bmatrix}
+						\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Escala}
+
+
+	\begin{block}{Propriedades da Escala}
+		\begin{itemize}
+			\item<1-> $s_x$ e $s_y$ devem ser maiores que zero.
+			\item<2-> Se $s_x > 1$ e $s_y > 1$ há um aumento do objeto.
+			\item<3-> Se $s_x < 1$ e $s_y < 1$ há uma diminuição do objeto.
+			\item<4-> Se $s_x  = s_y$ a escala é uniforme.
+			\item<5-> Se $s_x  \neq s_y$ a escala é diferencial.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Escala}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/Escala}
+		\end{center}
+		\caption{Operação de escala com $s_x = 0.5$ e $s_y = 0.5$}
+	\end{figure}
+	
+	\begin{itemize}
+		\item<2-> Pela formula atual o objeto é escalado e movido.
+	\end{itemize}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Escala}
+	
+	\begin{block}{Correção da Escala de um Objeto}
+		\begin{itemize}
+			\item<1-> Pela formula atual o objeto é escalado e movido.
+			\item<2-> Para resolver o problema do deslocamento:
+				\begin{itemize}
+					\item Escolha uma posição fixa $(x_f,y_f)$.
+					\item Escala-se a distância entre o ponto fixo e as coordenadas do objeto.\\
+				\end{itemize}
+		\end{itemize}
+		
+		\begin{itemize}
+			\item<3-> Obtemos $x'$ e $y'$ da seguinte forma:
+				\begin{eqnarray*}
+						x'-x_f = s_x \cdot (x - x_f) \\
+						y'-y_f = s_y \cdot (y - y_f) 
+				\end{eqnarray*}
+			\item<4-> Assim:
+				 \begin{eqnarray*}
+						x'= x \cdot s_x + x_f(1 - s_x) \\
+						y'= y \cdot s_y + y_f(1 - s_y)
+				\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Escala}
+	
+	\begin{block}{Em Notação Matricial}
+		\begin{itemize}
+			\item $x_f(1-s_x)$ e $y_f(1-s_y)$ são constantes para todas as coordenadas do objeto.
+		\end{itemize}			
+	\begin{eqnarray*}
+			\textbf{P}' = \textbf{S} \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					s_x & 0 \\
+					0 & s_y\\
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+				\end{bmatrix}
+			+ \begin{bmatrix}
+					x_f(1-s_x) \\
+					y_f(1-s_y) \\
+				\end{bmatrix}
+	\end{eqnarray*}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coordenadas Homogêneas}
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	
+	\begin{block}{Coordenadas Homogêneas}
+		\begin{itemize}
+			\item Podem descrever objetos 2D usando matrizes $3x3$.
+			\item Um ponto 2D é representado da seguinte forma utilizando coordenadas homogêneas:\\
+				$P(x_h,y_h,h) = P(\frac{x}{w},\frac{y}{w},1), h \neq 0 $
+			\item 	$h$ é denominado fator homogêneo, e por conveniência $ h=1$.
+			\item Pode ser visto como a projeção do espaço 2D no plano $h$.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/coohomo}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{Coordenadas Homogêneas}
+		\begin{itemize}
+			\item Mas por que transformar as coordenadas 2D dos objetos em coordenadas 3D?
+				\begin{itemize}
+					\item<2-> Escrever as transformações como multiplicação de matrizes. 
+				\end{itemize}	
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Translação no Sistema Homogêneo}
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{A Translação no Sistema Homogêneo é dada por:}
+		\begin{eqnarray*}
+			x_h' = 1 \cdot x_h + 0 \cdot y_h + \Delta x \cdot h \\
+			y_h' = 0 \cdot x_h + 1 \cdot y_h + \Delta y \cdot h \\
+			h = 0 \cdot x_h + 0 \cdot y_h + 1 \cdot h \\
+		\end{eqnarray*}
+	\end{block}
+	
+	\begin{block}{A Translação no Sistema Homogêneo em Notação de Matriz}
+		\begin{eqnarray*}
+			\begin{bmatrix} 
+					x_h' \\
+					y_h' \\
+					h
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					1	& 0 	& \Delta x \\
+					0 	& 1	& \Delta y \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x_h \\
+					y_h \\
+					h
+				\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{Transformando de Volta ao Plano 2D}
+		\begin{eqnarray*}
+			\frac{x_h'}{h} = \frac{1 \cdot x_h + 0 \cdot y_h + \Delta x \cdot h}{h} \Rightarrow x' = x + \Delta x  \\
+			\frac{y_h'}{h} = \frac{0 \cdot x_h + 1 \cdot y_h + \Delta y \cdot h}{h} \Rightarrow y' = y + \Delta y  \\
+			\frac{h}{h} = \frac{0 \cdot x_h + 0 \cdot y_h + 1 \cdot h}{h} \Rightarrow h = 1  \\\\
+		\end{eqnarray*}
+	\end{block}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{Matriz de Translação no Espaço 2D}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{T}(\Delta x, \Delta y) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					1	& 0 	& \Delta x \\
+					0 	& 1	& \Delta y \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rotação no Sistema Homogênio}
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{Matriz de Rotação no Espaço 2D}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{R}(\theta) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					cos(\theta)	& -sen (\theta) 	& 0 \\
+					sen(\theta)	& cos (\theta) 	& 0 \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Escala no Sistema Homogênio}
+\begin{frame}
+\frametitle{Coordenadas Homogêneas}
+	\begin{block}{Matriz de Escala no Espaço 2D}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{S}(s_x,s_y) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					s_x	& 0 	& 0 \\
+					0	& s_y 	& 0 \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformações Inversas}
+\begin{frame}
+\frametitle{Transformações Inversas}
+	\begin{block}{Inversa da Translação}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{T}^{-1}(\Delta x, \Delta y) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					1	& 0 	& -\Delta x \\
+					0 	& 1	& -\Delta y \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+		\begin{itemize}
+			\item Basta inverter os sinais de $\Delta x$ e $\Delta y$.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Transformações Inversas}
+	\begin{block}{Inversa da Rotação}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{R}^{-1}(\theta) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					cos(\theta)	& sen (\theta) 	& 0 \\
+					-sen(\theta)	& cos (\theta) 	& 0 \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+		\begin{itemize}
+			\item Utilizado para rotacionado no sentido horário.
+			\item Nete caso, $\textbf{R}^{-1} = \textbf{R}^t$.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Transformações Inversas}
+	\begin{block}{Inversa da Escala}
+		\begin{eqnarray*}
+			\textbf{P'} = \textbf{S}^{-1}(s_x,s_y) \cdot \textbf{P} \\
+			\begin{bmatrix} 
+					x' \\
+					y' \\
+					1
+			\end{bmatrix}
+			=	\begin{bmatrix}
+					\frac{1}{s_x}	& 0 	& 0 \\
+					0	& \frac{1}{s_y} 	& 0 \\
+					0	& 0	& 1
+					\end{bmatrix}
+			\cdot \begin{bmatrix}
+					x \\
+					y \\
+					1
+				\end{bmatrix}
+		\end{eqnarray*}
+		\begin{itemize}
+			\item Basta fazer a escala com o inverso dos valores.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformações Compostas}
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Transformações Compostas}
+		\begin{itemize}
+			\item Utilizando coordenadas homogêneos é possível fazer várias transformações em um objeto utilizando apenas uma matriz de transformação.
+			\item A matriz obtida das várias transformações é obtida pela multiplicação das mesmas:zz
+			
+			\begin{eqnarray*}
+				\textbf{P}' = \textbf{M}_1 \cdot \textbf{M}_2 \cdot \textbf{P} \\
+				\textbf{P}' = ( \textbf{M}_1 \cdot \textbf{M}_2 ) \cdot \textbf{P} \\
+				\textbf{P}' = \textbf{M} \cdot \textbf{P} 
+			\end{eqnarray*}
+				
+		\item A transformação é dada por \textbf{M} ao invés de $\textbf{M}_1$ e $\textbf{M}_2$.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Composição de Duas Translações}
+		
+			
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{T}(t_{2_x},t_{2_y}) \cdot \textbf{T}(t_{1_x},t_{1_y}) \cdot \textbf{P} \\
+			\textbf{P}' = \textbf{T}(t_{2_x},t_{2_y}) \cdot \{\textbf{T}(t_{1_x},t_{1_y}) \cdot \textbf{P} \} \\
+			\textbf{P}' = \{\textbf{T}(t_{2_x},t_{2_y}) \cdot \textbf{T}(t_{1_x},t_{1_y}) \} \cdot \textbf{P}  \\
+			\begin{bmatrix}
+					1	& 0 	& t_{1_x} \\
+					0 	& 1	& t_{1_y} \\
+					0	& 0	& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					1	& 0 	& t_{2_x} \\
+					0 	& 1	& t_{2_y} \\
+					0	& 0	& 1
+			\end{bmatrix}
+			= \begin{bmatrix}
+					1	& 0 	& t_{1_x} + t_{2_x} \\
+					0 	& 1	& t_{1_y} + t_{2_y}\\
+					0	& 0	& 1
+			\end{bmatrix}
+		\end{eqnarray*}
+				
+
+	\end{block}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 
