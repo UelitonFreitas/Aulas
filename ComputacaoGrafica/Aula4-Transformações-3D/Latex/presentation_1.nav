@@ -8,7 +8,7 @@
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\sectionentry {2}{Transforma\IeC {\c c}\IeC {\~o}es de Corpos R\IeC {\'\i }gidos}{4}{Transforma\IeC {\c c}\IeC {\~o}es de Corpos R\IeC {\'\i }gidos}{0}}
+\headcommand {\sectionentry {2}{Opera\IeC {\c c}\IeC {\~o}es B\IeC {\'a}sicas}{4}{Opera\IeC {\c c}\IeC {\~o}es B\IeC {\'a}sicas}{0}}
 \headcommand {\beamer@sectionpages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\slideentry {2}{0}{4}{4/4}{}{0}}
@@ -39,60 +39,93 @@
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {2}{2}{9}{17/17}{Rota\IeC {\c c}\IeC {\~a}o}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\sectionentry {3}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{18}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{0}}
-\headcommand {\beamer@sectionpages {4}{17}}
-\headcommand {\beamer@subsectionpages {8}{17}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{18}{Escala}}\headcommand {\beamer@subsectionpages {18}{17}}
-\headcommand {\slideentry {3}{1}{1}{18/18}{Escala}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{18}{Escala}}\headcommand {\beamer@subsectionpages {8}{17}}
+\headcommand {\slideentry {2}{3}{1}{18/18}{Escala}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{1}{2}{19/23}{Escala}{0}}
+\headcommand {\slideentry {2}{3}{2}{19/23}{Escala}{0}}
 \headcommand {\beamer@framepages {19}{23}}
-\headcommand {\slideentry {3}{1}{3}{24/25}{Escala}{0}}
+\headcommand {\slideentry {2}{3}{3}{24/25}{Escala}{0}}
 \headcommand {\beamer@framepages {24}{25}}
-\headcommand {\slideentry {3}{1}{4}{26/29}{Escala}{0}}
+\headcommand {\slideentry {2}{3}{4}{26/29}{Escala}{0}}
 \headcommand {\beamer@framepages {26}{29}}
-\headcommand {\slideentry {3}{1}{5}{30/30}{Escala}{0}}
+\headcommand {\slideentry {2}{3}{5}{30/30}{Escala}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\sectionentry {4}{Coordenadas Homog\IeC {\^e}neas}{31}{Coordenadas Homog\IeC {\^e}neas}{0}}
-\headcommand {\beamer@sectionpages {18}{30}}
+\headcommand {\sectionentry {3}{Coordenadas Homog\IeC {\^e}neas}{31}{Coordenadas Homog\IeC {\^e}neas}{0}}
+\headcommand {\beamer@sectionpages {4}{30}}
 \headcommand {\beamer@subsectionpages {18}{30}}
-\headcommand {\slideentry {4}{0}{6}{31/31}{}{0}}
+\headcommand {\slideentry {3}{0}{6}{31/31}{}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {4}{0}{7}{32/32}{}{0}}
+\headcommand {\slideentry {3}{0}{7}{32/32}{}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {4}{0}{8}{33/34}{}{0}}
+\headcommand {\slideentry {3}{0}{8}{33/34}{}{0}}
 \headcommand {\beamer@framepages {33}{34}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{35}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}}\headcommand {\beamer@subsectionpages {31}{34}}
-\headcommand {\slideentry {4}{1}{1}{35/35}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{35}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}}\headcommand {\beamer@subsectionpages {31}{34}}
+\headcommand {\slideentry {3}{1}{1}{35/35}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {4}{1}{2}{36/36}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
+\headcommand {\slideentry {3}{1}{2}{36/36}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {4}{1}{3}{37/37}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
+\headcommand {\slideentry {3}{1}{3}{37/37}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{38}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}}\headcommand {\beamer@subsectionpages {35}{37}}
-\headcommand {\slideentry {4}{2}{1}{38/38}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{38}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}}\headcommand {\beamer@subsectionpages {35}{37}}
+\headcommand {\slideentry {3}{2}{1}{38/38}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{39}{Escala no Sistema Homog\IeC {\^e}nio}}\headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\slideentry {4}{3}{1}{39/39}{Escala no Sistema Homog\IeC {\^e}nio}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{39}{Escala no Sistema Homog\IeC {\^e}nio}}\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\slideentry {3}{3}{1}{39/39}{Escala no Sistema Homog\IeC {\^e}nio}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\sectionentry {5}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{40}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{0}}
+\headcommand {\sectionentry {4}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{40}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{0}}
 \headcommand {\beamer@sectionpages {31}{39}}
 \headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\slideentry {5}{0}{2}{40/40}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {5}{0}{3}{41/41}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {5}{0}{4}{42/42}{}{0}}
+\headcommand {\slideentry {4}{0}{4}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\sectionentry {6}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{43}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{0}}
+\headcommand {\sectionentry {5}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{43}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{0}}
 \headcommand {\beamer@sectionpages {40}{42}}
 \headcommand {\beamer@subsectionpages {40}{42}}
-\headcommand {\slideentry {6}{0}{5}{43/43}{}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {6}{0}{6}{44/44}{}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@partpages {1}{44}}
-\headcommand {\beamer@subsectionpages {43}{44}}
-\headcommand {\beamer@sectionpages {43}{44}}
-\headcommand {\beamer@documentpages {44}}
-\headcommand {\def \inserttotalframenumber {34}}
+\headcommand {\slideentry {5}{0}{5}{43/44}{}{0}}
+\headcommand {\beamer@framepages {43}{44}}
+\headcommand {\slideentry {5}{0}{6}{45/47}{}{0}}
+\headcommand {\beamer@framepages {45}{47}}
+\headcommand {\slideentry {5}{0}{7}{48/48}{}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {5}{0}{8}{49/49}{}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {5}{0}{9}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {5}{0}{10}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {5}{0}{11}{52/52}{}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {5}{0}{12}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {5}{0}{13}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {5}{0}{14}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {5}{0}{15}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {5}{0}{16}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {5}{0}{17}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {5}{0}{18}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {5}{0}{19}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\sectionentry {6}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{61}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@sectionpages {43}{60}}
+\headcommand {\beamer@subsectionpages {43}{60}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{61}{Reflex\IeC {\~a}o}}\headcommand {\beamer@subsectionpages {61}{60}}
+\headcommand {\slideentry {6}{1}{1}{61/61}{Reflex\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {6}{1}{2}{62/62}{Reflex\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {6}{1}{3}{63/63}{Reflex\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\beamer@partpages {1}{63}}
+\headcommand {\beamer@subsectionpages {61}{63}}
+\headcommand {\beamer@sectionpages {61}{63}}
+\headcommand {\beamer@documentpages {63}}
+\headcommand {\def \inserttotalframenumber {50}}

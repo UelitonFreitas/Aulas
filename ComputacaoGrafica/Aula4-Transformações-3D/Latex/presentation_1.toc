@@ -1,14 +1,15 @@
 \beamer@endinputifotherversion {3.24pt}
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
-\beamer@sectionintoc {2}{Transforma\IeC {\c c}\IeC {\~o}es de Corpos R\IeC {\'\i }gidos}{4}{0}{2}
+\beamer@sectionintoc {2}{Opera\IeC {\c c}\IeC {\~o}es B\IeC {\'a}sicas}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Transla\IeC {\c c}\IeC {\~a}o}{5}{0}{2}
 \beamer@subsectionintoc {2}{2}{Rota\IeC {\c c}\IeC {\~a}o}{8}{0}{2}
-\beamer@sectionintoc {3}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{18}{0}{3}
-\beamer@subsectionintoc {3}{1}{Escala}{18}{0}{3}
-\beamer@sectionintoc {4}{Coordenadas Homog\IeC {\^e}neas}{31}{0}{4}
-\beamer@subsectionintoc {4}{1}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{35}{0}{4}
-\beamer@subsectionintoc {4}{2}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}{38}{0}{4}
-\beamer@subsectionintoc {4}{3}{Escala no Sistema Homog\IeC {\^e}nio}{39}{0}{4}
-\beamer@sectionintoc {5}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{40}{0}{5}
-\beamer@sectionintoc {6}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{43}{0}{6}
+\beamer@subsectionintoc {2}{3}{Escala}{18}{0}{2}
+\beamer@sectionintoc {3}{Coordenadas Homog\IeC {\^e}neas}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Transla\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}neo}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Rota\IeC {\c c}\IeC {\~a}o no Sistema Homog\IeC {\^e}nio}{38}{0}{3}
+\beamer@subsectionintoc {3}{3}{Escala no Sistema Homog\IeC {\^e}nio}{39}{0}{3}
+\beamer@sectionintoc {4}{Transforma\IeC {\c c}\IeC {\~o}es Inversas}{40}{0}{4}
+\beamer@sectionintoc {5}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{43}{0}{5}
+\beamer@sectionintoc {6}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{61}{0}{6}
+\beamer@subsectionintoc {6}{1}{Reflex\IeC {\~a}o}{61}{0}{6}

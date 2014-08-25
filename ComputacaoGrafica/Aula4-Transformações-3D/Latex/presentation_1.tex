@@ -151,7 +151,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Transformações de Corpos Rígidos}
+\section{Operações Básicas}
 \begin{frame}
 \frametitle{Transformações de Corpos Rígidos}
 
@@ -480,7 +480,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Outros Tipos de Transformações}
+
 \subsection{Escala}
 \begin{frame}
 \frametitle{Escala}
@@ -886,8 +886,8 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \frametitle{Transformações Compostas}
 	\begin{block}{Transformações Compostas}
 		\begin{itemize}
-			\item Utilizando coordenadas homogêneos é possível fazer várias transformações em um objeto utilizando apenas uma matriz de transformação.
-			\item A matriz obtida das várias transformações é obtida pela multiplicação das mesmas:zz
+			\item<1-> Utilizando coordenadas homogêneos é possível fazer várias transformações em um objeto utilizando apenas uma matriz de transformação.
+			\item<2-> A matriz obtida das várias transformações é obtida pela multiplicação das mesmas:zz
 			
 			\begin{eqnarray*}
 				\textbf{P}' = \textbf{M}_1 \cdot \textbf{M}_2 \cdot \textbf{P} \\
@@ -895,10 +895,55 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 				\textbf{P}' = \textbf{M} \cdot \textbf{P} 
 			\end{eqnarray*}
 				
-		\item A transformação é dada por \textbf{M} ao invés de $\textbf{M}_1$ e $\textbf{M}_2$.
+		\item<2-> A transformação é dada por \textbf{M} ao invés de $\textbf{M}_1$ e $\textbf{M}_2$.
 		\end{itemize}
 	\end{block}
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Propriedades de Matrizes}
+		\begin{itemize}
+			\item<1-> A Multiplicação de matrizes é associativa:\\
+				$M_1 \cdot M_2 \cdot M_3 = (M_1 \cdot M_2) \cdot M_3 = M_1 \cdot( M_2 \cdot M_3)  $
+			\item<2-> É possível multiplicar as matrizes da \textbf{esquerda para a direita} e da \textbf{direita para a esquerda}:
+				\begin{itemize}
+					\item \textbf{Pré-Multiplicação}:da \textbf{esquerda para a direita} - As transformações são \textbf{especificadas} na ordem que são aplicadas: \\ $M_1 \to M_2 \to M_3$ \\
+					\item<3-> \textbf{Pós-Multiplicação}:da \textbf{direita para a esquerda} - As transformações são \textbf{especificadas} na ordem inversa que são aplicadas: \\
+					$M_3 \to M_2 \to M_1$ \\
+					\begin{itemize}
+						\item Utilizada pelo \textbf{OpenGl}
+					\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Propriedades de Matrizes}
+		\begin{itemize}
+			\item<1-> A Multiplicação de matrizes não é \textbf{comutativa}:\\
+			$\textbf{M}_1 \cdot \textbf{M}_2 \neq \textbf{M}_2 \cdot \textbf{M}_1$ 
+			
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/comutatividade}
+			\caption{(a) Há uma translação depois uma rotação - (b) Há uma rotação depois uma translação.}
+		\end{center}
+	\end{figure}
+	
+	
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -930,6 +975,321 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 
 	\end{block}
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Composição de Duas Rotações}
+		
+			
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{R}(\theta_1) \cdot \textbf{R}(\theta_2) \cdot \textbf{P} \\
+			\textbf{P}' = \textbf{R}(\theta_1) \cdot \{\textbf{R}(\theta_2) \cdot \textbf{P} \} \\
+			\textbf{P}' = \{\textbf{R}(\theta_1) \cdot \textbf{R}(\theta_2) \} \cdot \textbf{P}  \\
+			\begin{bmatrix}
+					cos(\theta_1)	& -sen (\theta_1) 	& 0 \\
+					sen(\theta_1) 	& cos(\theta_1)	& 0 \\
+					0	& 0	& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					cos(\theta_2)	& -sen (\theta_2) 	& 0 \\
+					sen(\theta_2) 	& cos(\theta_2)		& 0 \\
+					0	& 0	& 1
+			\end{bmatrix} \\
+			= \begin{bmatrix}
+					cos(\theta_1 +\theta_2)	& -sen (\theta_1 +\theta_2) 	& 0 \\
+					sen(\theta_1 +\theta_2) 	& cos(\theta_1 +\theta_2)	& 0 \\
+					0	& 0	& 1
+			\end{bmatrix}
+		\end{eqnarray*}
+				
+
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Composição de Duas Escalas}
+		
+			
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{S}(s_{x_2},s_{y_2}) \cdot \textbf{S}(s_{x_1},s_{y_1}) \cdot \textbf{P} \\
+			\textbf{P}' = \textbf{S}(s_{x_2},s_{y_2}) \cdot \{ \textbf{S}(s_{x_1},s_{y_1}) \cdot \textbf{P} \} \\
+			\textbf{P}' = \{ \textbf{S}(s_{x_2},s_{y_2}) \cdot \textbf{S}(s_{x_1},s_{y_1}) \} \cdot \textbf{P} \\
+			\begin{bmatrix}
+					s_{x_2}	& 0 			& 0 \\
+					0 		& s_{y_2}	& 0 \\
+					0		& 0			& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					s_{x_1}	& 0 			& 0 \\
+					0 		& s_{y_1}	& 0 \\
+					0		& 0			& 1
+			\end{bmatrix}
+			= \begin{bmatrix}
+					s_{x_1}\cdot s_{x_2} 	& 0 						& 0 \\
+					0 					& s_{y_1}\cdot s_{y_2}	& 0 \\
+					0					& 0						& 1
+			\end{bmatrix}
+		\end{eqnarray*}
+				
+
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Rotação 2D Com Ponto de Rotação}
+		\begin{itemize}
+			\item Este tipo de transformação é feita utilizando várias transformações:
+				\begin{itemize}
+					\item Translada-se o ponto de referência do objeto à origem.
+					\item Aplica-se a transformação de rotação.
+					\item Translada-se o ponto de referência do objeto para a origem.
+				\end{itemize}
+		\end{itemize}						
+
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	
+	\begin{block}{Em Notação Matricial }
+		
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{R}(x_r,x_r,\theta) \cdot \textbf{P} \\
+			\textbf{R}(x_r,x_r,\theta) = \textbf{T}(\Delta x,\Delta y) \cdot \textbf{R}(\theta) \cdot \textbf{T}^{-1}( \Delta x,\Delta y)
+			\end{eqnarray*}
+	\end{block}	
+	
+	\begin{block}{$\textbf{R}(x_r,x_r,\theta)$ Em Notação Matricial }
+		
+		\begin{eqnarray*}
+			\begin{bmatrix}
+					1	& 0 	& \Delta x \\
+					0 	& 1	& \Delta y \\
+					0	& 0	& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					cos(\theta)	& -sen (\theta) 	& 0 \\
+					sen(\theta) 	& cos(\theta)		& 0 \\
+					0	& 0	& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					1	& 0 	& -\Delta x \\
+					0 	& 1	& -\Delta y \\
+					0	& 0	& 1
+			\end{bmatrix}\\
+			=  \begin{bmatrix}
+					cos(\theta)	& -sen(\theta) & x_r-x_r \cdot cos(\theta)+y_r \cdot sen(\theta) \\
+					sen(\theta) & cos(\theta)	& y_r-y_r \cdot cos(\theta)-x_r \cdot sen(\theta) \\
+					0	& 0	& 1
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/RotacaoPontoFixo}
+			\caption{Passos para efetuar rotação em torno de um ponto referencial.}
+		\end{center}
+	\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Escala 2D com Ponto de Referência}
+		\begin{itemize}
+			\item Utiliza-se várias transformações para efetuar a escala:
+				\begin{itemize}
+					\item Translada-se o ponto de referência do objeto à origem.
+					\item Aplica-se a transformação de escala.
+					\item Translada-se o ponto de referência do objeto para a origem.
+				\end{itemize}
+		\end{itemize}						
+
+	\end{block}
+	
+	
+
+\end{frame}		
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+		
+		\begin{block}{Em Notação Matricial }
+		\begin{eqnarray*}
+			\textbf{P}' = \textbf{S}(x_f,y_f,s_x,s_y) \cdot \textbf{P} \\
+			\textbf{S}(x_f,y_f,s_x,s_y) = \textbf{T}(x_f,y_f) \cdot \textbf{S}(s_x,s_y) \cdot \textbf{T}^{-1}(x_f,y_f)
+		\end{eqnarray*}
+		\end{block}		
+		
+		\begin{block}{$\textbf{S}(x_f,y_f,s_x,s_y)$ Em Notação Matricial }
+		
+		\begin{eqnarray*}
+			\begin{bmatrix}
+					1	& 0 	& x_f \\
+					0 	& 1	& y_f \\
+					0	& 0	& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					s_x	& 0 		& 0 \\
+					0 	& s_y	& 0 \\
+					0	& 0		& 1
+			\end{bmatrix}
+			\cdot \begin{bmatrix}
+					1	& 0 	& -x_f \\
+					0 	& 1	& -y_f \\
+					0	& 0	& 1
+			\end{bmatrix}
+			=  \begin{bmatrix}
+					s_x	& 0 		& x_f(1-s_x) \\
+					0 	& s_y	& y_f(1-s_y) \\
+					0	& 0		& 1
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}
+		
+\end{frame}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+		
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/EscalaPontoFixo}
+			\caption{Passos para efetuar escala em torno de um ponto referencial.}
+		\end{center}
+	\end{figure}
+		
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+	\begin{block}{Escala em Direções Gerais}
+		
+		\begin{itemize}
+			\item Os tipos de escalas apresentadas até agora apenas escalam em x e y.
+			\item Para efetuar escalas em direções gerais é necessário:
+			\item Rotacionar o objeto.
+			\item Escalar o objeto.
+			\item Rotacionar novamente.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Em Notação Matricial}
+		$\textbf{S}(s_1,s_2,\theta) = \textbf{R}^{-1}(\theta) \cdot \textbf{S}(s_1,s_2) \cdot \textbf{R}(\theta)$ 
+	\end{block}
+		
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/escalaGeral}
+		\end{center}
+	\end{figure}
+		
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Compostas}
+
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/EscalaGeralEx}
+			\caption{Transformação com $s_1=1,s_2=2$ e $\theta = 45^{\circ}$}
+		\end{center}
+	\end{figure}
+		
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outros Tipos de Transformações}
+\subsection{Reflexão}
+\begin{frame}
+\frametitle{Outros Tipos de Transformações}
+	\begin{block}{Reflexão - Espelhamento}
+		\begin{itemize}
+			\item Espelha-se as coordenadas do objeto de acordo com o eixo a ser espelhado, rotacionando $180^{\circ}$.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Reflexão em y = 0}
+		\begin{eqnarray*}
+			\begin{bmatrix}
+				1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1 
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}	
+	
+\end{frame}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Outros Tipos de Transformações}
+
+	\begin{block}{Reflexão em x = 0}
+		\begin{eqnarray*}
+			\begin{bmatrix}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}	
+	
+	\begin{block}{Reflexão em x = 0 e y = 0}
+		\begin{eqnarray*}
+			\begin{bmatrix}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1 
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}	
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Outros Tipos de Transformações}
+
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/reflexo}
+		\end{center}
+	\end{figure}
+		
+\end{frame}	
 
 %----------------------------------------------------------------------------------------
 
