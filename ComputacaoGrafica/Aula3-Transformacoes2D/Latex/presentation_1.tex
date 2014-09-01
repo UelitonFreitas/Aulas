@@ -1291,6 +1291,302 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 		
 \end{frame}	
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Sisalhamento}
+\begin{frame}
+\frametitle{Outros Tipos de Transformações}
+	\begin{block}{Sisalhamento}
+		\begin{itemize}
+			\item Distorce o objeto no eixo $x$ ou $y$.
+			
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Sizalhamento no eixo $x$}
+		\begin{eqnarray*}
+			x' = x + sh_x \cdot y \\
+			y' = y \\
+			\begin{bmatrix}
+				1 & sh_x & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 
+			\end{bmatrix}
+		\end{eqnarray*}
+	\end{block}	
+	
+\end{frame}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Outros Tipos de Transformações}
+
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/sisalhamento}
+			\caption{Sisalhamento no eixo $x$ com $sh_x = 2$.}
+		\end{center}
+	\end{figure}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformações Entre Sistemas de Coordenadas}
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item Em computação gráfica, em várias vezes é necessário a transformação de um sistema de coordenadas em outro.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/novaCoord}
+			
+		\end{center}
+	\end{figure}
+	
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Como efetuar a transformação?}
+		\begin{itemize}
+			\item Para efetuar a transformação:
+				\begin{itemize}
+					\item Translada-se o objeto para a origem.
+					\item Efetua-se a rotação em $ -\theta$.					
+				\end{itemize}
+			\item $M_{xy,x'y'} = R(- \theta) \cdot T(-x,-y)$.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Nova orientação da cena.}
+		\begin{itemize}
+			\item Esta transformação nos dá uma nova orientação da cena.
+			\item A cena é a mesma, mas com uma nova referência $x',y'$.
+		\end{itemize}
+	\end{block}
+		
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item A sub matriz de rotação (2x2) é ortogonal:
+				\begin{eqnarray*}
+					\begin{bmatrix}
+						r_{xx} & r_{xy} & tr_{x} \\
+						r_{yx} & r_{yy} & tr_{y} \\
+						0 & 0 & 1 
+					\end{bmatrix}
+				\end{eqnarray*}
+			\item Cada linha e coluna da submatriz formam um vetores ortogonais e unitários.\\
+			\begin{eqnarray*}
+				r_{xx}^2 + r_{xy}^2 = r_{yx}^2 + r_{yy}^2 = 1 \\
+				r_{xx} \cdot r_{xy} + r_{yx} \cdot r_{yy} = 0
+			\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item A sub matriz de rotação (2x2) é ortogonal:
+				\begin{eqnarray*}
+					\begin{bmatrix}
+						cos(\theta)	& -sen (\theta) 	& 0 \\
+						sen(\theta) 	& cos(\theta)		& 0 \\
+						0	& 0	& 1
+					\end{bmatrix} \cdot 
+					\begin{bmatrix}
+						cos(\theta) \\
+						-sen (\theta)\\
+						1
+					\end{bmatrix}
+					= \begin{bmatrix}
+						1 \\
+						0\\
+						1
+					\end{bmatrix} \\
+					\begin{bmatrix}
+						cos(\theta)	& -sen (\theta) 	& 0 \\
+						sen(\theta) 	& cos(\theta)		& 0 \\
+						0	& 0	& 1
+					\end{bmatrix} \cdot 
+					\begin{bmatrix}
+						sen(\theta) \\
+						cos (\theta)\\
+						1
+					\end{bmatrix}
+					= \begin{bmatrix}
+						0 \\
+						1\\
+						1
+					\end{bmatrix}
+				\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item $r_{xx}$ e $r_{xy}$ é um vetor unitário no eixo $x$.
+			\item $r_{yx}$ e $r_{yy}$ é um vetor unitário no eixo $y$.	
+			\begin{eqnarray*}
+					\begin{bmatrix}
+						r_{xx}	& r_{xy}  	& 0 \\
+						r_{yx} 	& r_{yy}		& 0 \\
+						0	& 0	& 1
+					\end{bmatrix} \cdot 
+					\begin{bmatrix}
+						r_{xx} \\
+						r_{xy}\\
+						1
+					\end{bmatrix}
+					= \begin{bmatrix}
+						1 \\
+						0\\
+						1
+					\end{bmatrix} \\
+					\begin{bmatrix}
+						r_{xx}	& r_{xy}  	& 0 \\
+						r_{yx} 	& r_{yy}		& 0 \\
+						0	& 0	& 1
+					\end{bmatrix} \cdot 
+					\begin{bmatrix}
+						r_{yx} \\
+						r_{yy}\\
+						1
+					\end{bmatrix}
+					= \begin{bmatrix}
+						0 \\
+						1\\
+						1
+					\end{bmatrix}
+				\end{eqnarray*}			
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item Utilizando as propriedades citadas, é possível criar um novo método para transformar $x$ e $y$ em $x'$ e $y'$.
+			\begin{itemize}
+				\item Para tal fim é encontrado um vetor \textbf{V}, que indica a orientação positiva do eixo $y'$ do novo sistema de coordenadas $x'y'$.
+			\end{itemize}						
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/novoCoord}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item Utilizando as propriedades citadas, é possível criar um novo método para transformar $x$ e $y$ em $x'$ e $y'$.
+			\begin{itemize}
+				\item Para tal fim é encontrado um vetor \textbf{V}, que indica a orientação positiva do eixo $y'$ do novo sistema de coordenadas $x'y'$.
+			\end{itemize}						
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/novoCoord}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item Podemos especificar \textbf{V} como um vetor unitário e um ponto no espaço $xy$:\\
+			$ \textit{v} = \frac{\textbf{V}}{|\textbf{V}|} = (v_x,v_y)$
+			\item O vetor \textit{u} ortogonal a \textit{v} e que representa a direção do eixo $x'$ pode ser obtido da seguinte forma:\\
+			$ \textit{u} = (v_x, -v_y) = (u_x,u_y) $
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item Como qualquer matriz de rotação pode ser expressa como um conjunto de vetores ortogonais, temos que:
+			\begin{eqnarray*}			
+				\begin{bmatrix}
+						u_x	& u_y	& 0 \\
+						v_x 	& v_y	& 0 \\
+						0	& 0	& 1
+				\end{bmatrix}
+			\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações Entre Sistemas de Coordenadas}
+
+	\begin{block}{Transformações Entre Sistemas de Coordenadas}
+		\begin{itemize}
+			\item É possível especificar \textbf{V} no sistema $x'y'$ por meio de um ponto $P_0$.\\
+			$v=\frac{P_1 - P_0}{|P_1 - P_0|}$
+		\end{itemize}
+	\end{block}
+	
+	
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/P0V}
+		\end{center}
+	\end{figure}
+
+\end{frame}
+
 %----------------------------------------------------------------------------------------
 
 \end{document} 

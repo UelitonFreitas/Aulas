@@ -13,3 +13,5 @@
 \beamer@sectionintoc {5}{Transforma\IeC {\c c}\IeC {\~o}es Compostas}{43}{0}{5}
 \beamer@sectionintoc {6}{Outros Tipos de Transforma\IeC {\c c}\IeC {\~o}es}{61}{0}{6}
 \beamer@subsectionintoc {6}{1}{Reflex\IeC {\~a}o}{61}{0}{6}
+\beamer@subsectionintoc {6}{2}{Sisalhamento}{64}{0}{6}
+\beamer@sectionintoc {7}{Transforma\IeC {\c c}\IeC {\~o}es Entre Sistemas de Coordenadas}{66}{0}{7}
