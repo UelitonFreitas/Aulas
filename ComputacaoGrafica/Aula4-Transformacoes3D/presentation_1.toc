@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Transforma\IeC {\c c}\IeC {\~o}es B\IeC {\'a}sicas}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Transla\IeC {\c c}\IeC {\~a}o}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Escala 3D}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Rota\IeC {\c c}\IeC {\~a}o 3D}{16}{0}{2}
