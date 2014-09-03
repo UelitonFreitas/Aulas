@@ -588,10 +588,294 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 
 	\begin{block}{Rotação Geral 3D}
 		\begin{itemize}
-			\item .
+			\item Pode-se rotacionar um objeto em torno de qualquer eixo utilizando algumas rotações e translações.
 		\end{itemize}
 	\end{block}
 	
+	\begin{block}{Rotação Geral 3D - Caso Particular}
+		\begin{itemize}
+			\item Há um caso especial que ocorre quando o eixo de rotação é paralelo a algum eixo de coordenada.
+			\item Para obter a rotação desejada é necessário:
+				\begin{itemize}
+					\item Translade o objeto de forma que o eixo de rotação coincida com o eixo de coordenada.
+					\item Executa a rotação.
+					\item Translada-se o objeto para posição original.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/RotGer}
+			\caption{Rotação em torno de um eixo coincidente com eixo x das coordenadas.}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item A sequencia de transformações pode ser dada por:
+				$\textbf{P}' = \textbf{T}^{-1} \cdot \textbf{R}_{x}(\theta) \cdot \textbf{T} \cdot \textbf{P}$
+				
+			\item Ou seja, é a mesma matriz de rotação 2D quando o ponto não coincide com a origem.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Quando o eixo de rotação não é paralelo a algum eixo de coordenada, algumas transformações adicionais são necessárias.
+				\begin{itemize}
+					\item São necessárias algumas rotações para alinhar o eixo de rotação com o eixo de coordenada escolhido e para trazer o eixo de rotação a posição original.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Dado o eixo de rotação e o ângulo de rotação:
+				\begin{enumerate}
+					\item Translada-se o objeto de modo que o eixo de rotação passe pela origem do sistema.
+					\item Rotaciona-se o objeto de modo que o eixo de rotação coincida com um dos eixos de coordenadas.
+					\item Realiza-se a rotação em cima do eixo de coordenada escolhido.
+					\item Aplica-se a rotação inversa para trazer o eixo de rotação a sua orientação original.
+					\item Aplica-se a translação inversa para trazer o eixo de rotação para sua posição inicial.
+				\end{enumerate}
+		\end{itemize}
+	\end{block}
+	\begin{block}{Eixo de Coordenada Escolhido para Orientação}
+		\begin{itemize}
+			\item Por conveniência o eixo de coordenada escolhido para o alinhamento é o eixo $z$.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/RoteEixGeral}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Rotação 3D}
+%	\begin{block}{Rotação Geral 3D}
+%		\begin{itemize}
+%			\item Assumindo que o eixo de rotação é formado por dois pontos $\textbf{P}_1$ e $\textbf{P}_2$ e a rotação é no sentido anti-horário, podemos calcular suas componente da seguinte forma:\\
+%			$\textbf{V} = \textbf{P}_2 - \textbf{P}_1 = (x_2 - x_1,y_2 - y_1,z_2 - z_1)$
+%			\item E o vetor de tamanho unitário:\\
+%				$\textit{u} = \frac{\textbf{V}}{|\textbf{V}|} = (a,b,c)$
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{figure}[!h]
+%			\begin{center}
+%			\includegraphics[width=0.3\textwidth]{Figures/PonRot}
+%			\end{center}
+%	\end{figure}
+%	
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Rotação 3D}
+%	\begin{block}{Rotação Geral 3D}
+%		\begin{itemize}
+%			\item O primeiro passo para a efetuar a rotação é em definir uma matriz de translação que translade o eixo de rotação de modo que o mesmo passe pela origem.
+%			\begin{itemize}
+%				\item Como a rotação é dada no sentido anti-horário, movemos o ponto $\textbf{P}_1$ para a origem.
+%				
+%				\begin{eqnarray*}
+%					\begin{bmatrix}
+%						1 & 0 & 0 & -x_1 \\
+%						0 & 1 & 0 & -y_1 \\
+%						0 & 0 & 1 & -z_1 \\
+%						0 & 0 & 0 & 1 \\
+%					\end{bmatrix}
+%				\end{eqnarray*}
+%			\end{itemize}
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{figure}[!h]
+%			\begin{center}
+%			\includegraphics[width=0.2\textwidth]{Figures/RotMovOri}
+%			\end{center}
+%	\end{figure}
+%	
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Rotação 3D}
+%	\begin{block}{Rotação Geral 3D}
+%		\begin{itemize}
+%			\item Após posicionar o eixo de rotação na origem, temos que encontrar a matriz de transformação que coloca o eixo sobre o eixo $z$.
+%			\begin{itemize}
+%				\item Existem várias maneiras de efetuar este posicionamento. Um deles é rotacionar o eixo de rotação sobre o eixo $x$, e logo após sobre o eixo $y$.
+%				\item A rotação sobre o eixo $x$ define um vetor \textit{u} no plano $xz$.
+%				\item A rotação em $y$ rotaciona \textit{u} até sobrepor o eixo $z$.
+%			\end{itemize}
+%		\end{itemize}
+%	\end{block}
+%	
+%		\begin{figure}[!h]
+%			\begin{center}
+%			\includegraphics[width=0.6\textwidth]{Figures/RotXZ}
+%			\end{center}
+%		\end{figure}
+%	
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Rotação 3D}
+%	\begin{block}{Rotação Geral 3D}
+%		\begin{itemize}
+%			\item A rotação em torno do eixo $x$ pode ser obtida utilizando senos e cossenos do vetor \textit{u} no plano $xz$.
+%			\item O ângulo $\theta$ utilizado na rotação é o ângulo obtido da projeção de \textit{u} no plano $yz$ com o eixo $z$ positivo.
+%		\end{itemize}
+%	\end{block}
+%	
+%	\begin{figure}[!h]
+%			\begin{center}
+%			\includegraphics[width=0.4\textwidth]{Figures/Projyz}
+%			\end{center}
+%	\end{figure}
+%	
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{Rotação 3D}
+%	\begin{block}{Rotação Geral 3D}
+%		\begin{itemize}
+%			\item Se a projeção de \textit{u} no plano $yz$ for $u' = (0,b,c)$, então o cosseno do ângulo de rotação $\theta$ pode ser obtido a partir do produto escalar de $u'$ com o vetor unitário $u$ no eixo $z$:
+%		
+%			\begin{equation*}
+%				cos \theta = \frac{'u \cdot u_z}{|u'| \cdot |u_z|}= \frac{c}{d}
+%			\end{equation*}
+%			\item Onde $d$ é a magnitude de $u'$, ou seja:
+%				\begin{equation}
+%					d = \sqrt{b^2+c^2}
+%				\end{equation}
+%		\end{itemize}
+%	\end{block}
+%			
+%	
+%\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\section{Composição de Transformações 3D}
+\frametitle{Composição de Transformações 3D}
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item A Composição de transformações 3D é semelhante a 2D, isto é, são compostas por multiplicações de matrizes.
+			\item A transformação mais a direita será a primeira a ser aplicada.
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\section{Outras Transformações 3D}
+\subsection{Reflexão 3D}
+\frametitle{Reflexão 3D}
+	\begin{block}{Reflexão 3D}
+		\begin{itemize}
+			\item A reflexão é semelhante a reflexão 2D, ou seja, é feito a rotação de $180^{\circ}$ graus sobre um eixo (em 3D é um plano) de rotação.
+			\item Quando um plano de rotação é um plano coordenado ($xy,xz,yz$), a transformação pode ser vista invertendo a orientação do vetor ortogonal ao plano.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/Ref3D}
+			\end{center}
+	\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Reflexão 3D}
+	\begin{block}{Reflexão 3D}
+		\begin{itemize}
+			\item Se o plano da reflexão for o plano $xy$, então esta transformação é obtida pela inversão do sinal de $z$ e mantendo as coordenadas $x$ e $y$.
+			\begin{equation*}
+				\textbf{M}_{z-Reflect}\begin{bmatrix}
+					1	&	0	&	0	&	0 \\
+					0	&	1	&	0	&	0 \\
+					0	&	0	&	-1	&	0 \\
+					1	&	0	&	0	&	1 \\
+				\end{bmatrix}
+			\end{equation*}
+			\item As reflexões nos planos $yz$ e $xz$ são obtidas de forma semelhante. 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cisalhamento 3D}
+\begin{frame}
+\frametitle{Cisalhamento 3D}
+	\begin{block}{Cisalhamento 3D}
+		\begin{itemize}
+			\item O cisalhamento relativo a $x$ e $y$ em 3D são os mesmos utilizados em 2D, mas agora também é possível faze-lo no eixo $z$. 
+			\item Cisalhamento no eixo $x$\\
+			\begin{equation*}
+				\textbf{S}(sh_{zx},sh_{zy})\begin{bmatrix}
+					1	&	0	&	sh_{zx}	&	0 \\
+					0	&	1	&	sh_{zy}	&	0 \\
+					0	&	0	&	1	&	0 \\
+					1	&	0	&	0	&	1 \\
+				\end{bmatrix}
+			\end{equation*}
+			
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
