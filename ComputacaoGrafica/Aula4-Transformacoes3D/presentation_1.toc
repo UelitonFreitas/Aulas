@@ -5,7 +5,7 @@
 \beamer@subsectionintoc {2}{1}{Transla\IeC {\c c}\IeC {\~a}o}{7}{0}{2}
 \beamer@subsectionintoc {2}{2}{Escala 3D}{11}{0}{2}
 \beamer@subsectionintoc {2}{3}{Rota\IeC {\c c}\IeC {\~a}o 3D}{16}{0}{2}
-\beamer@sectionintoc {3}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{32}{0}{3}
-\beamer@sectionintoc {4}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{33}{0}{4}
-\beamer@subsectionintoc {4}{1}{Reflex\IeC {\~a}o 3D}{33}{0}{4}
-\beamer@subsectionintoc {4}{2}{Cisalhamento 3D}{35}{0}{4}
+\beamer@sectionintoc {3}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{37}{0}{3}
+\beamer@sectionintoc {4}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{38}{0}{4}
+\beamer@subsectionintoc {4}{1}{Reflex\IeC {\~a}o 3D}{38}{0}{4}
+\beamer@subsectionintoc {4}{2}{Cisalhamento 3D}{40}{0}{4}

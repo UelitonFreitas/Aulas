@@ -64,24 +64,34 @@
 \headcommand {\beamer@framepages {30}{30}}
 \headcommand {\slideentry {2}{3}{16}{31/31}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\sectionentry {3}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{32}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{0}}
-\headcommand {\beamer@sectionpages {7}{31}}
-\headcommand {\beamer@subsectionpages {16}{31}}
-\headcommand {\slideentry {3}{0}{17}{32/32}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\slideentry {2}{3}{17}{32/32}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\sectionentry {4}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{33}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{0}}
-\headcommand {\beamer@sectionpages {7}{32}}
-\headcommand {\beamer@subsectionpages {16}{32}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{33}{Reflex\IeC {\~a}o 3D}}\headcommand {\beamer@subsectionpages {33}{32}}
-\headcommand {\slideentry {4}{1}{0}{33/33}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\slideentry {2}{3}{18}{33/33}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {4}{1}{1}{34/34}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\slideentry {2}{3}{19}{34/34}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{35}{Cisalhamento 3D}}\headcommand {\beamer@subsectionpages {16}{34}}
-\headcommand {\slideentry {4}{2}{1}{35/35}{Cisalhamento 3D}{0}}
+\headcommand {\slideentry {2}{3}{20}{35/35}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@partpages {1}{35}}
-\headcommand {\beamer@subsectionpages {35}{35}}
-\headcommand {\beamer@sectionpages {7}{35}}
-\headcommand {\beamer@documentpages {35}}
-\headcommand {\def \inserttotalframenumber {32}}
+\headcommand {\slideentry {2}{3}{21}{36/36}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\sectionentry {3}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{37}{Composi\IeC {\c c}\IeC {\~a}o de Transforma\IeC {\c c}\IeC {\~o}es 3D}{0}}
+\headcommand {\beamer@sectionpages {7}{36}}
+\headcommand {\beamer@subsectionpages {16}{36}}
+\headcommand {\slideentry {3}{0}{22}{37/37}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\sectionentry {4}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{38}{Outras Transforma\IeC {\c c}\IeC {\~o}es 3D}{0}}
+\headcommand {\beamer@sectionpages {7}{37}}
+\headcommand {\beamer@subsectionpages {16}{37}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{38}{Reflex\IeC {\~a}o 3D}}\headcommand {\beamer@subsectionpages {38}{37}}
+\headcommand {\slideentry {4}{1}{0}{38/38}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {4}{1}{1}{39/39}{Rota\IeC {\c c}\IeC {\~a}o 3D}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{40}{Cisalhamento 3D}}\headcommand {\beamer@subsectionpages {16}{39}}
+\headcommand {\slideentry {4}{2}{1}{40/40}{Cisalhamento 3D}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\beamer@partpages {1}{40}}
+\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\beamer@sectionpages {7}{40}}
+\headcommand {\beamer@documentpages {40}}
+\headcommand {\def \inserttotalframenumber {37}}

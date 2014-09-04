@@ -690,6 +690,117 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Mas o eixo de rotação pode não estar alinhado com algum eixo.
+		\end{itemize}
+	\end{block}
+	
+		
+		\begin{figure}[!h]
+			\begin{center}
+    				\subfigure[]{
+      				\includegraphics[width=0.2\textwidth]{Figures/PonRot}}\qquad
+      			\subfigure[]{
+      				\includegraphics[width=0.2\textwidth]{Figures/RotMovOri}}\qquad
+      			\subfigure[]{
+      				\includegraphics[width=0.2\textwidth]{Figures/Projyz}}\qquad
+      			\subfigure[]{
+      				\includegraphics[width=0.4\textwidth]{Figures/RotXZ}}\qquad
+			\end{center}
+		\end{figure}
+
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Uma forma menos intuitiva de fazer as rotações em $\alpha$ e $\beta$ é lembrando que a matriz de rotação ($3x3$) é ortogonal entre si. \\
+			
+			\begin{equation*}
+				\textbf{R} = \begin{bmatrix}
+					r_{11}	& r_{12}		& r_{12} & 0 \\
+					r_{21}	& r_{22}		& r_{23} & 0 \\
+					r_{31}	& r_{32}		& r_{33} & 0 \\
+					0			& 0				& 0	& 1
+				\end{bmatrix}
+			\end{equation*}
+			
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Sendo assim, vamos utilizar um sistema de coordenadas locais com um dos eixos alinhados com o eixo de rotação, e os três vetores unitários para formarem os três eixos de coordenadas na matriz rotação.
+			\item Assumindo que nenhum dos eixos sejam paralelos aos eixos originais, podemos calcular os vetores da seguinte forma:
+			
+			\begin{eqnarray*}
+				\textbf{u}'_z = \textbf{u} = (u'_{z_x},u'_{z_y},u'_{z_z}) \\
+				\textbf{u}'_y = \frac{\textbf{u} \times \textbf{u}'_x}{|\textbf{u} \times \textbf{u}'_x|} = (u'_{y_x},u'_{y_y},u'_{y_z}) \\
+				\textbf{u}'_x = \textbf{u}'_y \times \textbf{u}'_z = (u'_{x_x},u'_{x_y},u'_{x_z}) \\
+			\end{eqnarray*}
+			
+			 
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+		\begin{figure}[!h]
+			\begin{center}
+      				\includegraphics[width=0.4\textwidth]{Figures/vec}
+			\end{center}
+		\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Rotação 3D}
+
+
+	\begin{block}{Rotação Geral 3D}
+		\begin{itemize}
+			\item Então as rotações de alinhamento feitas em $\alpha$ podem ser representadas na forma:
+			
+			\begin{equation*}
+				\textbf{R} = \begin{bmatrix}
+					u'_{x_x}	& u'_{x_y}		& u'_{x_z} & 0 \\
+					u'_{y_x}	& u'_{y_y}		& u'_{y_z} & 0 \\
+					u'_{z_x}	& u'_{z_y}		& u'_{z_z} & 0 \\
+					0			& 0				& 0	& 1
+				\end{bmatrix}
+			\end{equation*}
+			
+			\item Onde cada vetor $\textbf{u}'_x,\textbf{u}'_y$ e $\textbf{u}'_z$ correspondem aos eixos $x,y$ e $z$ com o alinhamento de rotação no eixo $z$ pois $\textbf{u}'_z = u$.
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{frame}
@@ -808,7 +919,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \begin{frame}
 \section{Composição de Transformações 3D}
 \frametitle{Composição de Transformações 3D}
-	\begin{block}{Rotação Geral 3D}
+	\begin{block}{Composição de Transformações 3D}
 		\begin{itemize}
 			\item A Composição de transformações 3D é semelhante a 2D, isto é, são compostas por multiplicações de matrizes.
 			\item A transformação mais a direita será a primeira a ser aplicada.
