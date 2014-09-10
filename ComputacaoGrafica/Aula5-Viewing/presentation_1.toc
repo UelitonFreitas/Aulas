@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Janela De Recorte}{8}{0}{2}
+\beamer@sectionintoc {3}{Algoritmos de Recorte de Primitivas 2D}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{Recorte de Pontos 2D}{29}{0}{3}
+\beamer@subsectionintoc {3}{2}{Recorte de Linhas 2D}{30}{0}{3}
+\beamer@subsectionintoc {3}{3}{Recorte de Pol\IeC {\'\i }gonos 2D}{45}{0}{3}
+\beamer@subsectionintoc {3}{4}{Recorte de Outras Primitivas}{56}{0}{3}
