@@ -3,3 +3,5 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Viewing Pipeline 3D}{11}{0}{2}
 \beamer@sectionintoc {3}{Par\IeC {\^a}metros de Coordenadas de Vis\IeC {\~a}o 3D}{15}{0}{3}
+\beamer@sectionintoc {4}{Transforma\IeC {\c c}\IeC {\~a}o de Proje\IeC {\c c}\IeC {\~o}es}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Proje\IeC {\c c}\IeC {\~o}es Ortogonais}{26}{0}{4}

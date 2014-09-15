@@ -573,6 +573,128 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 			\end{center}
 	\end{figure}
 \end{frame}
-%----------------------------------------------------------------------------------------
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformação de Projeções}
+\subsection{Projeções Ortogonais}
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Projeções Ortogonais}
+		\begin{itemize}
+			\item Transformam as descrições dos objetos utilizando um plano de projeção ao longo das linhas paralelas ao ao vetor \textbf{N}.
+			\item É utilizada para visão frontal, lateral e superior dos objetos.
+			\item Preserva o tamanho e ângulos dos objetos. Devido a isso este tipo de projeção é principalmente utilizada em programas arquitetônicos.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/ProjOrt}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Projeções Axonométricas}
+		\begin{itemize}
+			\item É a projeção ortogonal que mostras mais de uma face do objeto.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Projeções Axonométricas Isométrica}
+		\begin{itemize}
+			\item A projeção \textbf{Isométrica} é a projeção Axonométrica mais comum.
+				\begin{itemize}
+					\item Ela consiste em alinhar o plano de projeção de forma a intersectar cada eixo coordenado no qual o objeto é definido a mesma distância da origem.
+				\end{itemize}
+		\end{itemize}
+	\end{block}	
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/ProIso}
+			\caption{Esta projeção é obtida alinhando o vetor \textbf{N} com a diagonal do cubo.}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Coordenadas de Projeções Ortogonais}
+		\begin{itemize}
+			\item Com a direção do da projeção sendo paralela ao eixo $z_{view}$, as equações para as transformações de projeção ortogonal em uma posição $(x,y,z)$ são:
+			\begin{eqnarray*}
+				x_p = x \\
+				y_p = y
+			\end{eqnarray*}
+			\item O valor de $z$ é armazenado para futuras procedimentos para determinar a visibilidade.
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/PlaProOrt}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Janela de Recorte e Volume de Projeção Ortogonal}
+		\begin{itemize}
+			\item Para determinar o quando da cena aparecerá, uma janela de recorte é então utilizada.
+			\begin{itemize}
+				\item É necessário determinar os limites da janela de projeção sobre o plano formado pelos eixos $x_{view} \times y_{view}$, ou seja, com as arestas paralelas aos mesmos.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/PlaProXY}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Janela de Recorte e Volume de Projeção Ortogonal}
+		\begin{itemize}
+			\item As arestas da \textbf{Janela de Recorte} especificam os valores de $x$ e $y$ que serão mostrados na cena, formando assim, o \textbf{Volume de Visão de Projeção Ortogonal}.
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/VolOrt}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Janela de Recorte e Volume de Projeção Ortogonal}
+		\begin{itemize}
+			\item Para limitar a extensão do volume de projeção dois planos de fronteira, denominados \textbf{Planos de Recorte Near/Far} são utilizados paralelamente aos planos de visão.
+			\begin{itemize}
+				\item Permite eliminar objetos que estão na frente ou atrás de uma parte da cena.
+				\item Com a direção de visão ao longo do eixo negativo de $z_{view}$, temos $z_{far} < z_{near}$.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/FarNea}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
 \end{document} 

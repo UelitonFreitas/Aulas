@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  15 SEP 2014 01:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  15 SEP 2014 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,7 +1165,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [4
 
-] <Figures/ViePla.png, id=174, 358.33875pt x 295.1025pt>
+] <Figures/ViePla.png, id=226, 358.33875pt x 295.1025pt>
 File: Figures/ViePla.png Graphic file (type png)
 
 <use Figures/ViePla.png>
@@ -1178,14 +1178,14 @@ Overfull \vbox (18.36787pt too high) detected at line 178
 [5
 
  <./Figures/ViePla.png (PNG copy)>]
-<Figures/Pro.png, id=204, 686.565pt x 289.08pt>
+<Figures/Pro.png, id=263, 686.565pt x 289.08pt>
 File: Figures/Pro.png Graphic file (type png)
  <use Figures/Pro.png>
 Package pdftex.def Info: Figures/Pro.png used on input line 201.
 (pdftex.def)             Requested size: 153.64493pt x 64.69171pt.
  [6
 
- <./Figures/Pro.png (PNG copy)>] <Figures/ProObj.png, id=233, 594.22pt x 251.94
+ <./Figures/Pro.png (PNG copy)>] <Figures/ProObj.png, id=300, 594.22pt x 251.94
 125pt>
 File: Figures/ProObj.png Graphic file (type png)
 
@@ -1195,7 +1195,7 @@ Package pdftex.def Info: Figures/ProObj.png used on input line 221.
  [7
 
  <./Figures/ProObj.png (PNG copy)>]
-<Figures/WirFra.png, id=264, 327.2225pt x 314.17375pt>
+<Figures/WirFra.png, id=337, 327.2225pt x 314.17375pt>
 File: Figures/WirFra.png Graphic file (type png)
 
 <use Figures/WirFra.png>
@@ -1206,7 +1206,7 @@ Package pdftex.def Info: Figures/WirFra.png used on input line 243.
  <./Figures/WirFra.png (PNG copy)>] [9
 
 ]
-<Figures/Cen.png, id=320, 396.48125pt x 311.1625pt>
+<Figures/Cen.png, id=408, 396.48125pt x 311.1625pt>
 File: Figures/Cen.png Graphic file (type png)
  <use Figures/Cen.png>
 Package pdftex.def Info: Figures/Cen.png used on input line 301.
@@ -1218,7 +1218,7 @@ Overfull \vbox (6.54286pt too high) detected at line 301
 [10
 
  <./Figures/Cen.png (PNG copy)>]
-<Figures/CamPos.png, id=348, 422.57875pt x 287.0725pt>
+<Figures/CamPos.png, id=443, 422.57875pt x 287.0725pt>
 File: Figures/CamPos.png Graphic file (type png)
 
 <use Figures/CamPos.png>
@@ -1235,7 +1235,7 @@ Overfull \vbox (1.088pt too high) detected at line 328
 ] [13
 
 ]
-<Figures/3DPip.png, id=437, 1205.50375pt x 357.335pt>
+<Figures/3DPip.png, id=553, 1205.50375pt x 357.335pt>
 File: Figures/3DPip.png Graphic file (type png)
  <use Figures/3DPip.png>
 Package pdftex.def Info: Figures/3DPip.png used on input line 367.
@@ -1254,7 +1254,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 389.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/3DSisCoo.png, id=466, 549.05125pt x 347.2975pt>
+<Figures/3DSisCoo.png, id=589, 549.05125pt x 347.2975pt>
 File: Figures/3DSisCoo.png Graphic file (type png)
 
 <use Figures/3DSisCoo.png>
@@ -1267,7 +1267,7 @@ Overfull \vbox (12.62369pt too high) detected at line 389
 [15
 
  <./Figures/3DSisCoo.png (PNG copy)>]
-<Figures/PlaVie.png, id=496, 584.1825pt x 300.12125pt>
+<Figures/PlaVie.png, id=627, 584.1825pt x 300.12125pt>
 File: Figures/PlaVie.png Graphic file (type png)
 
 <use Figures/PlaVie.png>
@@ -1280,7 +1280,7 @@ Overfull \vbox (7.78082pt too high) detected at line 408
 [16
 
  <./Figures/PlaVie.png (PNG copy)>]
-<Figures/MovPla.png, id=525, 626.34pt x 436.63126pt>
+<Figures/MovPla.png, id=663, 626.34pt x 436.63126pt>
 File: Figures/MovPla.png Graphic file (type png)
  <use Figures/MovPla.png>
 Package pdftex.def Info: Figures/MovPla.png used on input line 425.
@@ -1289,7 +1289,7 @@ Package pdftex.def Info: Figures/MovPla.png used on input line 425.
 [17
 
  <./Figures/MovPla.png (PNG copy)>]
-<Figures/VecN.png, id=554, 677.53125pt x 331.2375pt>
+<Figures/VecN.png, id=700, 677.53125pt x 331.2375pt>
 File: Figures/VecN.png Graphic file (type png)
  <use Figures/VecN.png>
 Package pdftex.def Info: Figures/VecN.png used on input line 447.
@@ -1307,7 +1307,7 @@ Package pdftex.def Info: Figures/VecN.png used on input line 463.
 ] [20
 
 ]
-<Figures/VecPro.png, id=643, 419.5675pt x 323.2075pt>
+<Figures/VecPro.png, id=810, 419.5675pt x 323.2075pt>
 File: Figures/VecPro.png Graphic file (type png)
  <use Figures/VecPro.png>
 Package pdftex.def Info: Figures/VecPro.png used on input line 499.
@@ -1318,7 +1318,7 @@ Package pdftex.def Info: Figures/VecPro.png used on input line 499.
  <./Figures/VecPro.png (PNG copy)>] [22
 
 ]
-<Figures/uvn.png, id=702, 426.59375pt x 336.25626pt>
+<Figures/uvn.png, id=882, 426.59375pt x 336.25626pt>
 File: Figures/uvn.png Graphic file (type png)
  <use Figures/uvn.png>
 Package pdftex.def Info: Figures/uvn.png used on input line 534.
@@ -1330,7 +1330,7 @@ Overfull \vbox (7.30301pt too high) detected at line 534
 [23
 
  <./Figures/uvn.png (PNG copy)>]
-<Figures/MulN.png, id=731, 520.94624pt x 355.3275pt>
+<Figures/MulN.png, id=919, 520.94624pt x 355.3275pt>
 File: Figures/MulN.png Graphic file (type png)
  <use Figures/MulN.png>
 Package pdftex.def Info: Figures/MulN.png used on input line 558.
@@ -1339,7 +1339,7 @@ Package pdftex.def Info: Figures/MulN.png used on input line 558.
 [24
 
  <./Figures/MulN.png (PNG copy)>]
-<Figures/camEfe.png, id=759, 966.61125pt x 469.755pt>
+<Figures/camEfe.png, id=954, 966.61125pt x 469.755pt>
 File: Figures/camEfe.png Graphic file (type png)
  <use Figures/camEfe.png>
 Package pdftex.def Info: Figures/camEfe.png used on input line 575.
@@ -1348,6 +1348,80 @@ Package pdftex.def Info: Figures/camEfe.png used on input line 575.
 [25
 
  <./Figures/camEfe.png (PNG copy)>]
+<Figures/ProjOrt.png, id=990, 430.60875pt x 318.18875pt>
+File: Figures/ProjOrt.png Graphic file (type png)
+
+<use Figures/ProjOrt.png>
+Package pdftex.def Info: Figures/ProjOrt.png used on input line 595.
+(pdftex.def)             Requested size: 122.91406pt x 90.82553pt.
+
+Overfull \vbox (0.91295pt too high) detected at line 595
+ []
+
+[26
+
+ <./Figures/ProjOrt.png (PNG copy)>]
+<Figures/ProIso.png, id=1027, 625.33624pt x 306.14375pt>
+File: Figures/ProIso.png Graphic file (type png)
+
+<use Figures/ProIso.png>
+Package pdftex.def Info: Figures/ProIso.png used on input line 621.
+(pdftex.def)             Requested size: 122.91406pt x 60.17192pt.
+
+Overfull \vbox (41.90874pt too high) detected at line 621
+ []
+
+[27
+
+ <./Figures/ProIso.png (PNG copy)>]
+<Figures/PlaProOrt.png, id=1063, 629.35126pt x 313.17pt>
+File: Figures/PlaProOrt.png Graphic file (type png)
+
+<use Figures/PlaProOrt.png>
+Package pdftex.def Info: Figures/PlaProOrt.png used on input line 642.
+(pdftex.def)             Requested size: 122.91406pt x 61.16107pt.
+
+Overfull \vbox (1.71933pt too high) detected at line 642
+ []
+
+[28
+
+ <./Figures/PlaProOrt.png (PNG copy)>]
+<Figures/PlaProXY.png, id=1099, 674.52pt x 403.5075pt>
+File: Figures/PlaProXY.png Graphic file (type png)
+
+<use Figures/PlaProXY.png>
+Package pdftex.def Info: Figures/PlaProXY.png used on input line 660.
+(pdftex.def)             Requested size: 215.10196pt x 128.67557pt.
+
+Overfull \vbox (14.57823pt too high) detected at line 660
+ []
+
+[29
+
+ <./Figures/PlaProXY.png (PNG copy)>]
+<Figures/VolOrt.png, id=1136, 656.4525pt x 361.35pt>
+File: Figures/VolOrt.png Graphic file (type png)
+ <use Figures/VolOrt.png>
+Package pdftex.def Info: Figures/VolOrt.png used on input line 676.
+(pdftex.def)             Requested size: 215.10196pt x 118.40227pt.
+
+[30
+
+ <./Figures/VolOrt.png (PNG copy)>]
+<Figures/FarNea.png, id=1172, 611.28375pt x 407.5225pt>
+File: Figures/FarNea.png Graphic file (type png)
+
+<use Figures/FarNea.png>
+Package pdftex.def Info: Figures/FarNea.png used on input line 696.
+(pdftex.def)             Requested size: 153.64493pt x 102.42758pt.
+
+Overfull \vbox (11.88579pt too high) detected at line 696
+ []
+
+[31
+
+ <./Figures/FarNea.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `presentation_1.nav'.
 
@@ -1357,28 +1431,28 @@ Package pdftex.def Info: Figures/camEfe.png used on input line 575.
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 700.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 700.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 700.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 700.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: FEF480CAB4C98DC598FF7F4D93DA7B75;183.
+(rerunfilecheck)             Checksum: 2C3CED81FBBD47F2968129DE3C17B5D4;332.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 578.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 700.
  ) 
 Here is how much of TeX's memory you used:
- 17796 strings out of 493304
- 326911 string characters out of 6139871
- 411629 words of memory out of 5000000
- 20752 multiletter control sequences out of 15000+600000
+ 17887 strings out of 493304
+ 328696 string characters out of 6139871
+ 415633 words of memory out of 5000000
+ 20823 multiletter control sequences out of 15000+600000
  17002 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,60p,403b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,20n,62p,403b,851s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texli
@@ -1390,10 +1464,10 @@ type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
 lic/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on presentation_1.pdf (25 pages, 1522556 bytes).
+Output written on presentation_1.pdf (31 pages, 2093762 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
- 759 compressed objects within 8 object streams
- 54 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1263 PDF objects out of 1440 (max. 8388607)
+ 1159 compressed objects within 12 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
