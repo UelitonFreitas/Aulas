@@ -348,6 +348,231 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	\end{block}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Introdução}
+
+
+	\begin{block}{Vieing Pipeline 3D}
+		\begin{itemize}
+			\item O \textbf{Plano de Visão}, \textbf{Janela de Recorte}, a \textbf{Posição da Visão} e os \textbf{Planos de Recorte} são definidos nas \textbf{coordenadas do mundo}. 
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/3DPip}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Parâmetros de Coordenadas de Visão 3D}
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+	\begin{block}{Parâmetros de Coordenadas de Visão 3D}
+		\begin{itemize}
+			\item Para estabelecer um parâmetro de coordenadas 3D é necessário:
+				\begin{itemize}
+					\item A origem do sistema $ \textbf{P}_0 =(x_0,y_0,z_0)$ chamado de \textbf{Ponto de Visão}(Onde o observador ou câmera se encontra).
+					\item O vetor \textbf{View up} \textbf{V}, que define a direção do $y_{view}$.
+					\item Uma segunda direção para um dos eixos de orientação. Normalmente o $z_{view}$ que representa a orientação do eixo de visão.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.48\textwidth]{Figures/3DSisCoo}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+	\begin{block}{Vetor Paralelo ao Plano}
+		\begin{itemize}
+			\item Geralmente o plano de visão é dado pelo eixo $z_{view}$ e o plano de projeção é formado a partir de um plano perpendicular ao eixo $z$.
+			\begin{itemize}
+				\item Assim a orientação do plano de projeção e a direção projetiva do eixo $z_{view}$ são dados por um vetor normal \textbf{N} ao \textbf{Plano de Projeção}. 
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/PlaVie}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+	\begin{block}{Vetor Paralelo ao Plano}
+		\begin{itemize}
+			\item Um escalar é utilizado para definir a movimentação do plano em um ponto $z_{vp}$ ao longo do eixo $z_{view}$.
+			\item O plano de visão é sempre paralelo ao plano $x_{view} \: y_{view}$.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/MovPla}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+	\begin{block}{Vetor Paralelo ao Plano}
+		\begin{itemize}
+			\item O vetor normal \textbf{N} pode ser obtido de várias formas:
+				\begin{itemize}
+					\item A direção de \textbf{N} pode ser obtida a partir de um ponto $\textbf{P}_{ref}$ até o ponto de origem $\textbf{P}_0$ (O inverso também é válido).
+					\begin{itemize}
+						\item Neste caso o vetor \textbf{N} é denominado \textbf{look-at point}, com a direção oposta a visão de \textbf{N}.
+					\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/VecN}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Vetor View Up}
+	\begin{block}{Vetor Paralelo ao Plano}
+		\begin{itemize}
+			\item Uma vez definida a posição e orientação do vetor \textbf{N}, é necessário encontrar o vetor \textbf{view up} V que mostra a direção do eixo $y_{view}$.
+			\item Normalmente \textbf{V} é definido selecionado uma posição relativa a origem do sistema de coordenadas do mundo.
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/VecN}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+	\begin{block}{Vetor View Up}
+		\begin{itemize}
+			\item O vetor \textbf{V} pode ser definido em qualquer direção exceto paralela ao vetor \textbf{N}.
+			\begin{itemize}
+				\item Uma forma conveniente é definir o \textbf{V} como sendo paralelo ao eixo $y$. $\textbf{V}=(0,1,0)$.
+				\item Se \textbf{V} não for perpendicular a \textbf{N}, rotinas de visão podem ser aplicadas para ajustar(projetar) o vetor de modo que seja.
+				\item A projeção do vetor \textbf{V} em \textbf{N} pode ser dada por:
+				\begin{equation*}
+					proj_{V_{imp},N} = V_{proj} = \frac{V \cdot N}{(||N||)^2} \cdot V
+				\end{equation*}
+				\item E o vetor $\textbf{V}_{ajust}$ pode ser encontrado utilizando soma de vetore:
+					\begin{equation*}
+						V_{ajust} = V_{imp} - V_{proj} 
+					\end{equation*}
+			\end{itemize}
+			
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Parâmetros de Coordenadas de Visão 3D}
+
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/VecPro}
+			\caption{Ajuste do vetor \textbf{view up} para torna-lo perpendicular a \textbf{N}}
+			\end{center}
+	\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sistema de Coordenadas de Visão $u \times n$}
+	\begin{block}{Sistema de Coordenadas de Visão $u \times n$}
+		\begin{itemize}
+			\item Com o vetor normal \textbf{N} definido, assim como o vetor view up \textbf{V}, basta apenas encontrar a direção positiva do eixo $x_{view}$.
+			\begin{itemize}
+				\item A direção de $x_{view}$ é representada por um vetor \textbf{U} obtido a partir do produto vetorial de \textbf{N} e \textbf{V}
+				\item O produto vetorial entre \textbf{N} e \textbf{U} também pode ser utilizado para ajustar \textbf{V} no eixo $y_{view}$.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Sistema de Coordenadas de Visão $u \times n$}
+	\begin{block}{Sistema de Coordenadas de Visão $u \times n$}
+		\begin{itemize}
+			\item Para se obter o sistema de coordenadas \textbf{uvn} é necessário:
+				\begin{eqnarray*}
+					n = \frac{N}{|N|} = (n_x,n_y,n_z) \\
+					u = \frac{V \times n}{|V \times n|} = (u_x,u_y,u_z) \\
+					v = n \times u = (v_x,v_y,v_z)
+				\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.38\textwidth]{Figures/uvn}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Gerando Efeitos de Visão 3D}
+	\begin{block}{Gerando Efeitos de Visão 3D}
+		\begin{itemize}
+			\item Variando alguns parâmetros de visão é possível obter vários efeitos 3D.
+				\begin{itemize}
+					\item De uma posição fixa é possível variar \textbf{N} de forma que seja possível observar objetos ao redor da posição.
+					\item Variar \textbf{N} para obter uma cena composta de múltiplas visões de uma posição fixa da câmera.
+					\begin{itemize}
+						\item Lembrando que para cada posição de \textbf{N} é necessário ajustar os vetores dos eixos restantes mantendo a regra da mão direita.
+					\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.38\textwidth]{Figures/MulN}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Gerando Efeitos de Visão 3D}
+	\begin{block}{Gerando Efeitos de Visão 3D}
+		\begin{itemize}
+			\item Efeitos de movimento da câmera (pam) podem ser obtidos fixando \textbf{N} e modificando a posição da câmera.
+			\item Para mostrar diferentes visões de um objeto podemos mover o ponto de visão ao redor do objeto.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/camEfe}
+			\end{center}
+	\end{figure}
+\end{frame}
 %----------------------------------------------------------------------------------------
 
 \end{document} 

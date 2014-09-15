@@ -2,3 +2,4 @@
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Viewing Pipeline 3D}{11}{0}{2}
+\beamer@sectionintoc {3}{Par\IeC {\^a}metros de Coordenadas de Vis\IeC {\~a}o 3D}{15}{0}{3}
