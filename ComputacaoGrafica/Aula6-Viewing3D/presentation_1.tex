@@ -473,7 +473,7 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 				\item Se \textbf{V} não for perpendicular a \textbf{N}, rotinas de visão podem ser aplicadas para ajustar(projetar) o vetor de modo que seja.
 				\item A projeção do vetor \textbf{V} em \textbf{N} pode ser dada por:
 				\begin{equation*}
-					proj_{V_{imp},N} = V_{proj} = \frac{V \cdot N}{(||N||)^2} \cdot V
+					proj_{V_{imp},N} = V_{proj} = \frac{V \cdot N}{(||N||)^2} \cdot N
 				\end{equation*}
 				\item E o vetor $\textbf{V}_{ajust}$ pode ser encontrado utilizando soma de vetore:
 					\begin{equation*}
@@ -574,8 +574,120 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	\end{figure}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Transformação das Coordenadas do Mundo para as de Visão}
+\begin{frame}
+\frametitle{Transformação das Coordenadas do Mundo para as de Visão}
+	\begin{block}{Transformação das Coordenadas do Mundo para as de Visão}
+		\begin{itemize}
+			\item No \textbf{Viewing Pipeline 3D} o próximo passo a ser executado após a cena ser montada é transferir as coordenadas dos objetos para para o sistema de coordenadas de visão.
+			\begin{itemize}
+				\item Há uma sobreposição do sistema de coordenadas de visão sobre o sistema de coordenadas do mundo.
+			\end{itemize}
+			\item Esta conversão é dada por:
+				\begin{enumerate}
+					\item Translada-se a origem do sistema de visão para a origem do sistema de coordenadas do mundo.
+					\item Rotaciona os eixos $x_{view},y_{view}$ e $z_{view}$ para deixa-los alinhados com os eixos $x_{wc},y_{wc}$ e $z_{wc}$.
+				\end{enumerate}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformação das Coordenadas do Mundo para as de Visão}
+	\begin{block}{Transformação das Coordenadas do Mundo para as de Visão}
+		\begin{itemize}
+			\item Se a origem do sistema de visão for em $P_0(x_0,y_0,z_0)$ a matriz de translação \textbf{T} será:
+			\begin{equation*}
+				\textbf{T} = \begin{bmatrix}
+					1	&	0	&	0	&	-x_0	\\
+					0	&	1	&	0	&	-y_0\\
+					0	&	0	&	1	&	-z_0\\
+					0	&	0	&	0	&	1
+				\end{bmatrix}
+			\end{equation*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformação das Coordenadas do Mundo para as de Visão}
+	\begin{block}{Transformação das Coordenadas do Mundo para as de Visão}
+		\begin{itemize}
+			\item A Matriz de Rotação poder ser obtida por meio dos vetores $\textbf{u}=(u_x,u_y,u_z),\textbf{v}=(v_x,v_y,v_z)$ e $\textbf{n}=(n_x,n_y,n_z)$:
+			\begin{equation*}
+				\textbf{R} = \begin{bmatrix}
+					u_x	&	u_y	&	u_z	&	0	\\
+					v_x	&	v_y	&	v_z	&	0	\\
+					n_x	&	n_y	&	n_z	&	0	\\
+					0	&	0	&	0	&	1
+				\end{bmatrix}
+			\end{equation*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformação das Coordenadas do Mundo para as de Visão}
+	\begin{block}{Transformação das Coordenadas do Mundo para as de Visão}
+		\begin{itemize}
+			\item Portanto a matriz de transformação é:
+			\begin{equation*}
+				\textbf{M}_{WC,VC} = R \cdot T  = \begin{bmatrix}
+					u_x	&	u_y	&	u_z	&	-u \cdot P_0	\\
+					v_x	&	v_y	&	v_z	&	-v \cdot P_0	\\
+					n_x	&	n_y	&	n_z	&	-z \cdot P_0	\\
+					0	&	0	&	0	&	1
+				\end{bmatrix}
+			\end{equation*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Transformação de Projeções}
+
+\begin{frame}
+\frametitle{Transformações de Projeção}
+	\begin{block}{Transformações de Projeção}
+		\begin{itemize}
+			\item Após a transformação para as coordenadas de visão, o próximo passo do Viewing Pipeline 3D é a projeção no plano de projeção.
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{Pacotes Gráficos}
+		\begin{itemize}
+			\item Em geral os pacotes gráficos suportam:
+				\begin{itemize}
+					\item \textbf{Projeção Paralela}: as coordenadas são transferidas para o plano de projeção ao longo de linhas paralelas.
+					\item \textbf{Projeção Perspectiva}: as coordenadas são transferidas para um ponto convergindo para um ponto.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Projeção}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/TipProj}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Projeções Ortogonais}
 \begin{frame}
 \frametitle{Projeções Ortogonais ou Ortográficas}
@@ -695,6 +807,112 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	\end{figure}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Transformações de Normalização para Projeção Ortogonal}
+		\begin{itemize}
+			\item Qualquer posição $(x,y,z)$ em uma projeção ortogonal pode ser mapeada para $(x,y)$, as coordenadas dentro do volume de visão são as coordenadas de projeção, assim elas podem ser mapeadas para o \textbf{volume de visão normalizado} sem precisar ser reprojetadas.
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/ProNor}
+			\caption{Transformações de normalização de um sistema de referência baseado na regra da mão esquerda.}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Transformações de Normalização para Projeção Ortogonal}
+		\begin{itemize}
+			\item A transformação de normalização é semelhante a obtida em 2D, com a adição da coordenada $z$ normalizada no intervalo $z_{near}$ a $z_{far}$ para -1 e 1:
+			\begin{eqnarray*}
+				\textbf{M}_{ortho,norm} = R \cdot T  \\
+					= \begin{bmatrix}
+					\frac{2}{xw_{max} - xw_{min}}	&	0								&	0								&	- \frac{xw_{max}+xw_{min}}{xw_{max}-xw_{min}}	\\
+					0								&	\frac{2}{yw_{max} - yw_{min}}	&	0								&	- \frac{yw_{max}+yw_{min}}{yw_{max}-yw_{min}}	\\
+					0								&	0								&	\frac{-2}{z_{near} - z_{far}}	&	- \frac{z_{far}+z_{near}}{z_{far}-z_{near}}\\
+					0								&	0	&	0	&	1
+				\end{bmatrix}
+			\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Projeções Ortogonais ou Ortográficas}
+	\begin{block}{Transformações de Normalização para Projeção Ortogonal}
+		\begin{itemize}
+			\item A multiplicação desta matriz com a matriz que transforma as coordenadas do mundo em coordenadas de visão produz a transformação correta para se obter as coordenadas corretas para se obter as coordenadas normalizadas da projeção ortogonal.
+			\begin{equation*}
+				\textbf{M}_{ortho,norm} \cdot \textbf{M}_{WC,VC}
+			\end{equation*}
+			
+			\item Com a normalização operações como a de recorte e identificação se superfícies visíveis podem ser feitas de modo mais eficiente.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Projeções Perspectivas}
+\begin{frame}
+\frametitle{Projeções Perspectivas}
+	\begin{block}{Projeções Perspectivas}
+		\begin{itemize}
+			\item Para um maior realismo nas cenas, quando comparado a perspectiva, temos que levar em consideração que os raios de luz refletidos na cena possuem caminhos convergentes.
+			\item Uma aproximação desta característica pode ser feita projetando os objetos ao plano de visão ao longo de caminhos convergentes a uma posição chamada \textbf{ponto de referência de projeção (centro da projeção)}.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/PonPro}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Transformações de Coordenadas de Projeção Perspectiva}
+		\begin{itemize}
+			\item Algumas bibliotecas gráficas permitem escolher o ponto de projeção $(x_{prp},y_{prp},z_{prp})$
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/PonPro2}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Transformações de Coordenadas de Projeção Perspectiva}
+		\begin{itemize}
+			\item Considerando que a projeção do ponto $(x,y,z)$ intersecta o plano de projeção na posição $(x_p,y_p,z_p)$, podemos descrever qualquer ponto ao longo desta linha de projeção como sendo:
+			\begin{eqnarray*}
+				x' = x +t(x_{prp}-x) \\
+				y' = y +t(y_{prp}-y) \\
+				z' = z +t(z_{prp}-z) \\
+				0 \leq t \leq 1
+			\end{eqnarray*}
+		
+		\item No plano de visão $z' = z_{vp}$, então podemos encontrar $t$:
+		\begin{equation*}
+			t = \frac{z_{vp} - z}{z_{prp}-z}
+		\end{equation*}
+		\end{itemize}	
+	\end{block}
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 \end{document} 
