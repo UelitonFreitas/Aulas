@@ -914,5 +914,216 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	\end{block}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Transformações de Coordenadas de Projeção Perspectiva}
+		\begin{itemize}
+			\item Substituindo o valor de $t$ nas equações de $x'$ e $y'$ obtemos as equações de projeção perspectiva.
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Posição do Ponto de Projeção}
+		\begin{itemize}
+			\item Geralmente o ponto de projeção está entre o plano de projeção e a cena, mas existem outras posições possíveis (menos sobre o plano de projeção).
+		\end{itemize}	
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/PonProFre}
+			\caption{Os objetos da cena será invertidos caso o ponto de referência esteja a frente do plano.}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Posição do Ponto de Projeção}
+		\begin{itemize}
+			\item Os efeitos de perspectiva dependem da posição em que o centro de projeção está em relação ao plano de visão.
+		\end{itemize}	
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/PonProPos2}
+			\caption{Quanto mais perto o centro de projeção está do plano, maiores serão os objetos próximos ao plano.}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Pontos de Fuga na Projeção Perspectiva}
+		\begin{itemize}
+			\item Linhas paralelas entre si e ao plano de projeção são projetadas como linhas paralelas.
+			\item Linhas paralelas que não são paralelas ao plano de projeção são projetadas em linhas convergentes.
+			\item O ponto em que as Linhas convergem é denominado \textbf{Ponto de Fuga}.
+		\end{itemize}	
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.55\textwidth]{Figures/Pla}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Pontos de Fuga na Projeção Perspectiva}
+		\begin{itemize}
+			\item Os conjuntos de linhas que são paralelas ao algum dos eixos principais dos objetos levam a composição de \textbf{pontos de fuga principais}.
+			\begin{itemize}
+				\item É possível controlar os número de pontos de fuga, que podem ser 1,2 ou 3. Para tal controle basta mudar a orientação do plano de projeção.
+				\item O número de pontos de fufa principais é igual a quantidade de eixo principais do objeto que intersectam o plano de projeção.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/PonFug}
+			\caption{Em (b) o plano xy é paralelo ao plano(apenas z é intersectado), e em (c) os eixos x e y são intersectados.}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Volume de Projeção Perspectiva}
+		\begin{itemize}
+			\item Na projeção em perspectiva, o volume de visão é definido por uma pirâmide infinita com o ápice no ponto que corresponde ao centro de projeção. Esta pirâmide é normalmente chamada de \textbf{Pirâmide de Visão}.
+			\begin{itemize}
+				\item Objetos estão fora dos limites da pirâmide são excluídos das rotinas de recortes.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.5\textwidth]{Figures/VolPir}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Volume de Projeção Perspectiva}
+		\begin{itemize}
+			\item Adicionando os planos de recorte near/far perpendiculares ao eixo $z_{view}$ a pirâmide de visão é truncada resultando em um tronco de pirâmide denominado \textbf{Frustrum}.
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/Fru}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Frustrum Simétrico}
+		\begin{itemize}
+			\item Se a linha que parte do centro de projeção  e cruza o centro da janela de recorte intersectando a linha central do Frustrum de projeção e perspectiva.
+			\begin{itemize}
+				\item Se essa linha for perpendicular ao plano de visão então o Frustrum é simétrico.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/FruCim}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Frustrum Simétrico}
+		\begin{itemize}
+			\item É possível definir um ângulo de visão que influenciará no tamanho da janela de recorte.
+			\begin{itemize}
+				\item Diminuir o ângulo do campo de visão diminui a janela de recorte.
+				\begin{itemize}
+					\item Mover o ponto para longe do plano de visão.
+					\item Zoom-in de uma pequena região da cena.
+				\end{itemize}
+				\item Aumentar o ângulo do campo de visão aumenta a janela de recorte.
+				\begin{itemize}
+					\item Mover o ponto para perto do plano de visão.
+					\item Zoom-out da cena.
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=1\textwidth]{Figures/Zoo}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Frustrum Oblíquo}
+		\begin{itemize}
+			\item Se a linha que parte do centro de projeção  e cruza o centro da janela de recorte  não intersecta a linha central do Frustrum de projeção e perspectiva, então temos um \textbf{Frustrum oblíquo}.
+			\begin{itemize}
+				\item Então é necessário transformar este Frustrum é um Frustum simétrico.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/FruObl}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Frustrum Oblíquo}
+		\begin{itemize}
+			\item Esta transformação pode ser obtida fazendo o cisalhamento em z.
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/TraFru}
+			\end{center}
+	\end{figure}
+\end{frame}
+
 %----------------------------------------------------------------------------------------
 \end{document} 
