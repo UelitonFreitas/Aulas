@@ -97,7 +97,7 @@
 \author{Uéliton Freitas} % Your name
 \institute[UFMS] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
+Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \medskip
 \textit{freitas.ueliton@gmail.com} % Your email address
 }
@@ -1123,6 +1123,207 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 			\includegraphics[width=0.9\textwidth]{Figures/TraFru}
 			\end{center}
 	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Transformações de Coordenadas de Projeção Perspectiva}
+	\begin{block}{Normalização}
+		\begin{itemize}
+			\item O ultimo passo da projeção perspectiva é mapear o paralelepípedo para um \textbf{volume normalizado}.
+		\end{itemize}	
+	\end{block}
+	
+		\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.9\textwidth]{Figures/VolVisNor}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Algoritmos de Recorte 3D}
+
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Algoritmos de Recorte 3D}
+		\begin{itemize}
+			\item Com o cubo normalizado os algoritmos de recorte podem ser aplicados com maior eficiência.
+			\item Os algoritmos de recorte eliminam os objetos fora do volume de visão e processão o resto.
+			\item São extensões dos algoritmos de recorte 2D, mas com planos como fronteiras ao invés de linhas.
+			\item O recorte é aplicado após todas as transformações serem aplicadas.
+		\end{itemize}	
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Algoritmos de Recorte 3D}
+		\begin{itemize}
+			\item No pipeline 3D temos que os pontos processados utilizando as matrizes de transformações geométricas estão em uma representação homogênea.
+			\begin{equation*}
+				\begin{bmatrix}
+					x_h \\
+					y_h \\
+					z_h \\
+					h
+				\end{bmatrix}
+				= \textbf{M} \cdot \begin{bmatrix}
+					x \\
+					y \\
+					z \\
+					1
+				\end{bmatrix}
+			\end{equation*}
+			\item Onde \textbf{M} é a concatenação de todas as matrizes.
+			\item Um método de recorte efetivo é aplicar as rotinas de recorte na representação homogênea.
+			\begin{itemize}
+				\item Os procedimentos de recorte podem ser iguais em qualquer tipo de projeção aplicada.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Código de Região 3D}
+		\begin{itemize}
+			\item O conceito de código de região 2D (Algoritmo de Cohen-Sutherland) pode ser estendido  para representações 3D adicionando mais alguns bits.
+			\begin{itemize}
+				\item Código de 6 bits.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/CodReg}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Código de Região 3D}
+		\begin{itemize}
+			\item Os valores dos bits são calculados de forma semelhante ao 2D.
+			\begin{itemize}
+				\item 0 está dentro de uma fronteira, 0 está fora.
+			\end{itemize}
+		\end{itemize}	
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/CodReg}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Código de Região 3D}
+		\begin{itemize}
+			\item Considerando que estamos trabalhando com coordenadas homogêneas $P=(x_h,y_h,z_h,h)$, um ponto dentro do volume de visão deve satisfazer:
+			\begin{eqnarray*}
+				-1 \leq \frac{x_h}{h} \leq 1 \\
+				-1 \leq \frac{y_h}{h} \leq 1 \\
+				-1 \leq \frac{z_h}{h} \leq 1 \\
+			\end{eqnarray*}
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Código de Região 3D}
+		\begin{itemize}
+			\item Com $P=(x_h,y_h,z_h,h)$ e assumindo $h \neq 0$ podemos calcular:
+			\begin{itemize}
+				\item se $h > 0$
+					\begin{eqnarray*}
+					-h \leq x_h \leq h \\
+					-h \leq y_h \leq h \\
+					-h \leq z_h \leq h \\
+					\end{eqnarray*}
+				\item se $h < 0$
+					\begin{eqnarray*}
+						h \leq x_h \leq -h \\
+						h \leq y_h \leq -h \\
+						h \leq z_h \leq -h \\
+					\end{eqnarray*}
+			\end{itemize}
+			
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Código de Região 3D}
+		\begin{itemize}
+			\item Com $h>0$ podemos definir os valores dos bits como:
+			\begin{eqnarray*}
+				bit_1 = 1 \: se \: h + x_h < 0 \:(esquerda)
+			\end{eqnarray*}
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/CodCoo}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Recorte de Linhas}
+		\begin{itemize}
+			\item O recorte de linha é essencialmente o mesmo que o recorte de linha 2D.
+			\begin{itemize}
+				\item Se ambos os pontos finais da linhas são 000000, a linha está dentro.
+				\item Uma linha está dentro se a operação ``\textbf{ou}'' sobre seus pontos finais for igual a 000000.
+				\item Uma linha está fora se a operação ``e'' sobre seus pontos finais for diferente de 000000. 
+			\end{itemize}			 
+		\end{itemize}	
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.8\textwidth]{Figures/RecLin}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmos de Recorte 3D}
+	\begin{block}{Recorte de Polígonos 3D}
+		\begin{itemize}
+			\item Pacotes gráficos geralmente lidam com os objetos descritos com equações lineares, sendo assim, as intersecções das arestas dos objetos com o plano de recorte são utilizadas para delimitar o objeto.
+			\item Além disso, algumas rotinas simples como o \textbf{bounding box} podem ser utilizadas para definir se um polígono está dentro ou fora das fronteiras.			 
+		\end{itemize}	
+	\end{block}
 \end{frame}
 
 %----------------------------------------------------------------------------------------

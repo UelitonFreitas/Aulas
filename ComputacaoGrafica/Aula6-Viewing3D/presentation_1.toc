@@ -7,3 +7,4 @@
 \beamer@sectionintoc {5}{Transforma\IeC {\c c}\IeC {\~a}o de Proje\IeC {\c c}\IeC {\~o}es}{30}{0}{5}
 \beamer@subsectionintoc {5}{1}{Proje\IeC {\c c}\IeC {\~o}es Ortogonais}{32}{0}{5}
 \beamer@subsectionintoc {5}{2}{Proje\IeC {\c c}\IeC {\~o}es Perspectivas}{41}{0}{5}
+\beamer@sectionintoc {6}{Algoritmos de Recorte 3D}{58}{0}{6}
