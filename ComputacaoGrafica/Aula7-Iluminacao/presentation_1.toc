@@ -2,3 +2,4 @@
 \select@language {brazil}
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Fontes de Luz}{4}{0}{2}
+\beamer@sectionintoc {3}{Fontes de Luz Direcional e Efeito de Holofote}{10}{0}{3}
