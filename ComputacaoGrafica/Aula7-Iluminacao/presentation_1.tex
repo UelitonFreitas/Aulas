@@ -250,13 +250,11 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 			\item Este cálculo não pode ser aplicado para fontes de luz no ``infinito'' porque a distância $d_l$ é indeterminada.
 			\item Um outro problema que é que quase todos os pontos estarão a mesma distância da fonte de luz. (baixo realismo).
 			\item Para resolver o problema:
-			\begin{equation*}
-				f(d_l) = \Big{(
-  \begin{array}{l l}
-    1 & \quad \text{se a fonte de luz está no infinito}\\
-    \frac{1}{a_0 + a_1d_l + a_2d^{2}_{l}} & \quad \text{se a fonte de luz é local}
-  \end{array} }
-			\end{equation*}			 
+			$ f(d_l) = \left\{ 
+  					\begin{array}{l l}
+   						 1 & \quad \text{se a fonte de luz está no infinito}\\
+    						\frac{1}{a_0 + a_1d_l + a_2d^{2}_{l}} & \quad \text{se a fonte de luz é local}
+  					\end{array} \right.$ 
 		\end{itemize}
 	\end{block}
 \end{frame}
@@ -267,7 +265,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Fontes de Luz}
 
-	\begin{block}{Atenuação Radial da Intensidade}
+	\begin{block}{Efeito de Holofote}
 		\begin{itemize}
 			\item Uma fonte e luz pontual pode ser direcionada para produzir um efeito de \textbf{luz direcional} ou holofote.
 			\begin{itemize}
@@ -284,6 +282,278 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 	\end{figure}	
 	
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Fontes de Luz}
+
+	\begin{block}{Efeito de Holofote}
+		\begin{itemize}
+			\item Podemos utilizar dois vetores para direcionar a luz.
+			\begin{itemize}
+				\item Um vetor $\textbf{V}_{light}$ para direcionar a luz.
+				\item Um vetor $\textbf{V}_{obj}$ para direcionar a luz a um objeto.
+			\end{itemize}
+			\item Considerando que $cos \alpha = \textbf{V}_{light} \cdot \textbf{V}_{obj}$ e limitando $0^\circ \leq \theta_l \leq 90^\circ$, então o objeto está dentro da região de luz se $cos \alpha \geq cos \theta_l$				 
+		\end{itemize}
+	\end{block}
+
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/OloVec}
+			\end{center}
+	\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fontes de Luz}
+
+	\begin{block}{Atenuação Angular de Intensidade}
+		\begin{itemize}
+			\item Para uma fonte de luz direcional a atenuação ocorre \textbf{angularmente} e \textbf{radialmente} a partir da posição da fonte.
+			\begin{itemize}
+				\item Assim é possível simular cones de luz que são mais intensos ao longo do cone.
+			\end{itemize}								 
+		\end{itemize}
+	\end{block}
+
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/OloVec}
+			\end{center}
+	\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fontes de Luz}
+
+	\begin{block}{Atenuação Angular de Intensidade}
+		\begin{itemize}
+			\item Para uma fonte de luz direcional a atenuação ocorre \textbf{angularmente} e \textbf{radialmente} a partir da posição da fonte.
+			\begin{itemize}
+				\item Assim é possível simular cones de luz que são mais intensos ao longo do cone.
+			\end{itemize}	
+			\item Uma função de atenuação é:
+				\begin{equation*}
+					f_{angatten}(\phi) = cos^{a_t} \phi, 0^\circ \leq \phi \leq \theta
+				\end{equation*}	
+			\item Onde $a_t$ é o expoente de atenuação e $\phi$ é o ângulo medido a partir do eixo do cone.
+			\begin{itemize}
+				\item Ao longo do eixo temos $\phi = 0^\circ$ e $f_{angatten}(\phi) = 1$.
+				\item Quanto maior o valor de $a_t$ menor o valor de $f_{angatten}$ com $\phi > 0^\circ$
+\end{itemize}													 
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fontes de Luz}
+
+	\begin{block}{Atenuação Angular de Intensidade}
+		\begin{itemize}
+			\item Considerando os vetores $\textbf{V}_{light}$ e $\textbf{V}_{obj}$ e assumindo $0^\circ \leq \theta_l \leq 90^\circ$ a equação geral da atenuação pode ser definida como:							$fa = \left\{
+					\begin{array}{l l}
+   						 1 & \quad \text{se a fonte de luz não é direcional}\\
+   						 0 & \quad \text{Se } \textbf{V}_{light} \cdot \textbf{V}_{obj} = cos \alpha < cos \theta_l\\
+   						  & \quad \text{Objeto está fora}\\
+    						(\textbf{V}_{light} \cdot \textbf{V}_{obj})^{al} & \quad \text{caso contrário}
+  					\end{array} \right.$
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Fontes de Luz}
+
+	\begin{block}{Fontes de Luz Estendidas e o Modelo de Warn}
+		\begin{itemize}
+			\item Para se incluir uma fonte de luz grande em uma posição próxima aos objetos da cenas, podemos aproximar esse efeito como uma superfície que emite luz.
+			\item Este efeito pode ser modelado utilizando uma grade de fontes direcionais.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/FonLuzGra}
+			\end{center}
+	\end{figure}	
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fontes de Luz em Superfícies}
+\begin{frame}
+\frametitle{Efeito de Luz em Superfícies}
+
+	\begin{block}{Efeito de Luz em Superfícies}
+		\begin{itemize}
+			\item Um modelo de iluminação computa os \textbf{efeitos de luz} levando em consideração 	várias \textbf{propriedades óticas}.
+			\item Quando uma superfícies é \textbf{Opaca}, parte da luz é refletida e parte é absorvida.
+			\begin{itemize}
+				\item A quantidade de luz refletida depende do tipo de material da superfície.
+			\end{itemize}
+			\item Em superfícies transparentes, alguma luz é transmitida através da mesma.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Efeito de Luz em Superfícies}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Superfícies irregulares tendem a refletir luz em todas as direções, tendo a impressão de ser igualmente brilhante quando vista de qualquer ponto.
+			\item A cor do objeto é a cor da reflexão difusa com uma iluminação branca.
+					\begin{itemize}
+						\item Objetos azuis refletem a componente azul na cor branca.
+						\item Um objeto azul sobre a luz vermelha ficará preto pois o vermelho reflete  absorve todo o azul.
+					\end{itemize}							
+		
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/RefDif}
+			\end{center}
+		\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Efeito de Luz em Superfícies}
+
+	\begin{block}{Reflexão Especular}
+		\begin{itemize}
+			\item Alguma parte da luz é concentrada em uma região mais brilhante.
+			\item O realce é maior em superfícies brilhantes.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/LuzEsp}
+			\end{center}
+		\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Efeito de Luz em Superfícies}
+
+	\begin{block}{Luz de Fundo ou Ambiente}
+		\begin{itemize}
+			\item Efeito da luz produzida pela luz refletida no ambiente de várias superfícies.
+			\begin{itemize}
+				\item A luz total refletida de uma superfície é a soma das contribuições da luz refletida pelas outras superfícies.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.35\textwidth]{Figures/LuzAmb}
+			\end{center}
+		\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modelos Básicos de Iluminação}
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Modelos Básicos de Iluminação}
+		\begin{itemize}
+			\item \textbf{Modelos Precisos} de iluminação computam toda a iteração entre a radiação de luz e o material do objeto.
+			\item Contudo esta iteração é computacionalmente muito \textbf{cara}.
+			\item Assim algumas aproximações para a iluminação ambiente são definidas.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Luz Ambiente}
+		\begin{itemize}
+			\item A luz de fundo pode ser incorporada definindo um \textbf{brilho geral} para a cena.
+			\begin{itemize}
+				\item Produz uma luz ambiente que uniforme para todos os objetos, gerando uma aproximação da reflexão difusa de todas as superfícies da cena.
+			\end{itemize}
+			\item A quantidade de luz refletida depende do material (propriedades óticas) das superfícies.
+			\item O nível de luz ambiente em uma cena é definido por um parâmetro de intensidade $I_a$.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item A reflexão difusa pode ser modelada assumindo que a luz incidente é \textbf{espalhada com igual intensidade} em todas as direções independente da direção de visão.
+			\begin{itemize}
+				\item Estas superfícies são denominadas \textbf{refletores difusos ideais} (refletores Lambertinianos).
+			\end{itemize}
+			\item Assumindo que toda superfície é um refletor difuso ideal, um parâmetro $k_d$(\textbf{coeficiente de reflexão difusa}) pode ser utilizado para determinar a fração de luz incidente que irá se espalhar com reflexão.
+								 
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Para fontes de luz monocromáticas, $0 \leq k_d \leq 1.0$
+			\begin{itemize}
+				\item Superfícies brilhantes possuem $k_d$ altos.
+				\item Superfícies que absorvem luz possuem $k_d$ próximos de 0.
+			\end{itemize}						 
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Para efeitos de luz de fundo, as superfícies são completamente iluminadas pelas luz ambiente $I_a$. A contribuição da reflexão difusa é:
+				\begin{equation*}
+					I_{reflecdiff} = k_d \cdot I_a
+				\end{equation*}						 
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
 
 %----------------------------------------------------------------------------------------
 \end{document} 
