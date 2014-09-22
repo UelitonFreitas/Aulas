@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  22 SEP 2014 01:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  22 SEP 2014 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1402,14 +1402,101 @@ Overfull \hbox (21.7785pt too wide) has occurred while \output is active
 
 [23
 
-]
+] <Figures/LuzFun.png, id=784, 391.4625pt x 325.215pt>
+File: Figures/LuzFun.png Graphic file (type png)
+
+<use Figures/LuzFun.png>
+Package pdftex.def Info: Figures/LuzFun.png used on input line 561.
+(pdftex.def)             Requested size: 107.55333pt x 89.34755pt.
+
 Overfull \hbox (21.7785pt too wide) has occurred while \output is active
   [] [] [] [] [] []  
  []
 
 [24
 
+ <./Figures/LuzFun.png (PNG copy)>]
+<Figures/RefLuz.png, id=816, 228.855pt x 410.53375pt>
+File: Figures/RefLuz.png Graphic file (type png)
+ <use Figures/RefLuz.png>
+Package pdftex.def Info: Figures/RefLuz.png used on input line 580.
+(pdftex.def)             Requested size: 61.45703pt x 110.24422pt.
+
+Overfull \vbox (3.10246pt too high) detected at line 580
+ []
+
+
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[25
+
+ <./Figures/RefLuz.png (PNG copy)>]
+<Figures/RefRai.png, id=848, 604.2575pt x 295.1025pt>
+File: Figures/RefRai.png Graphic file (type png)
+ <use Figures/RefRai.png>
+Package pdftex.def Info: Figures/RefRai.png used on input line 600.
+(pdftex.def)             Requested size: 184.3758pt x 90.04439pt.
+
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[26
+
+ <./Figures/RefRai.png (PNG copy)>]
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[27
+
 ]
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[28
+
+] <Figures/RefDifInt.png, id=941, 528.97626pt x 263.98625pt>
+File: Figures/RefDifInt.png Graphic file (type png)
+
+<use Figures/RefDifInt.png>
+Package pdftex.def Info: Figures/RefDifInt.png used on input line 657.
+(pdftex.def)             Requested size: 184.3758pt x 92.01389pt.
+
+Overfull \vbox (10.94295pt too high) detected at line 657
+ []
+
+
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[29
+
+ <./Figures/RefDifInt.png (PNG copy)>]
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[30
+
+] <Figures/ExeIlu.png, id=1002, 784.9325pt x 254.9525pt>
+File: Figures/ExeIlu.png Graphic file (type png)
+
+<use Figures/ExeIlu.png>
+Package pdftex.def Info: Figures/ExeIlu.png used on input line 697.
+(pdftex.def)             Requested size: 276.559pt x 89.82991pt.
+
+Overfull \hbox (21.7785pt too wide) has occurred while \output is active
+  [] [] [] [] [] []  
+ []
+
+[31
+
+ <./Figures/ExeIlu.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `presentation_1.nav'.
 
@@ -1419,11 +1506,11 @@ Overfull \hbox (21.7785pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 701.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 559.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 701.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 701.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 (rerunfilecheck)             Checksum: 5BBA2E10EFB7806CF4FC9151092AF404;318.
 
@@ -1431,31 +1518,32 @@ Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 559.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 701.
  ) 
 Here is how much of TeX's memory you used:
- 17705 strings out of 493304
- 324636 string characters out of 6139871
- 411638 words of memory out of 5000000
- 20671 multiletter control sequences out of 15000+600000
+ 17761 strings out of 493304
+ 325425 string characters out of 6139871
+ 411639 words of memory out of 5000000
+ 20708 multiletter control sequences out of 15000+600000
  15384 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,60p,403b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb>
-Output written on presentation_1.pdf (24 pages, 778314 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb>
+Output written on presentation_1.pdf (31 pages, 1468554 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 789 compressed objects within 8 object streams
- 54 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1089 PDF objects out of 1200 (max. 8388607)
+ 1000 compressed objects within 10 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 

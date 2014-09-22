@@ -547,12 +547,154 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 			\item Para efeitos de luz de fundo, as superfícies são completamente iluminadas pelas luz ambiente $I_a$. A contribuição da reflexão difusa é:
 				\begin{equation*}
 					I_{reflecdiff} = k_d \cdot I_a
-				\end{equation*}						 
+				\end{equation*}
+			\item Se somente a luz ambiente for considerada, o efeito de iluminação obtido na cena é pouco interessante.					 
 		\end{itemize}
 	\end{block}
 	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.35\textwidth]{Figures/LuzFun}
+		\end{center}
+	\end{figure}	
+	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Quando uma superfície é iluminada com uma intensidade $I_l$, a quantidade de \textbf{luz} incidente varia de acordo com a \textbf{orientação da superfície} em relação a luz.
+			\item O número de raios intersectados é proporcional a área de projeção perpendicular da área incidente.					 
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.2\textwidth]{Figures/RefLuz}
+		\end{center}
+	\end{figure}	
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Considerando uma \textbf{ângulo de incidência} $\theta$ entre a direção da luz incidente e a normal da superfície.
+			\item A área projetada é proporcional a $cos \theta$.				 
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.6\textwidth]{Figures/RefRai}
+		\end{center}
+	\end{figure}	
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Podemos então modelar a quantidade de luz incidente em uma superfície da seguinte forma:
+			\begin{equation*}
+				I_{l,incident} = I_l \cdot cos \theta
+			\end{equation*}
+			\item Com isso a reflexão difusa pode ser modelada com uma fonte de luz e intensidade $I_l$:
+			\begin{eqnarray*}
+				I_{l,diff} = k_d \cdot I_{l,incident} \\
+				 = k_d \cdot I_l \cdot cos \theta
+			\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Conforme o \textbf{ângulo de incidência aumenta}, a \textbf{iluminação} a partir da fonte de luz \textbf{diminui}.
+			\item A superfícies será iluminada apenas se $0^\circ \leq cos \theta \leq 90^\circ$, quando $cos \theta < 0^\circ$ a luz está atrás do objeto.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Considerando \textbf{N} como sendo um vetor unitário normal a superfície e \textbf{L} o vetor unitário da direção da luz, então $cos \theta = \textbf{N} \cdot \textbf{L}$
+			\item A equação de reflexão para uma única fonte de luz puntual é definida como:
+				
+				$I_{l,diff} = \left\{
+					\begin{array}{l l}
+   						 k_d \cdot I_l(\textbf{N} \cdot \textbf{L}) & \quad \text{se } \textbf{N} \cdot \textbf{L} > 0\\
+    						0 & \quad \textbf{N} \cdot \textbf{L} \leq 0 
+  					\end{array} \right.$
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.6\textwidth]{Figures/RefDifInt}
+		\end{center}
+	\end{figure}	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item O vetor unitário \textbf{L} é calculado usando a posição da superfície e a posição da fonte de luz.
+			\begin{equation*}
+				\textbf{L} = \frac{P_{source} - P_{surf}}{| P_{source} - P_{surf}|}
+			\end{equation*}
+			\item Uma fonte de luz do ``infinito'' não tem posição, somente a direção de propagação
+				\begin{itemize}
+					\item Emprega-se o negativo da direção da emissão para a direção do vetor \textbf{L}.
+				\end{itemize}				 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Exemplo de iluminação difusa variando $k_d$ entre 0 e 1.
+				\begin{itemize}
+					\item Uma única fonte de luz puntual
+					\item Sem luz ambiente.	
+				\end{itemize}								 
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.9\textwidth]{Figures/ExeIlu}
+		\end{center}
+	\end{figure}	
+\end{frame}
 
 
 %----------------------------------------------------------------------------------------
