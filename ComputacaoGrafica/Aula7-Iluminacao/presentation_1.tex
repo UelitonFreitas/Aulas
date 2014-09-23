@@ -696,6 +696,293 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 	\end{figure}	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa}
+		\begin{itemize}
+			\item Podemos combinar cálculos de fontes de luz ambiente com a fontes de luz puntual para se obter a reflexão difusa em uma posição da superfície.
+			\item Introduz-se o \textbf{coeficiente de reflexão ambiente} $k_a$ para cada superfície para modificar a intensidade $I_a$ da luz ambiente.
+			\item Podemos escrever a equação de reflexão difusa total de uma única fonte puntual como:
+				\begin{equation*}
+					I_{diff} = \left\{
+					\begin{array}{l l}
+   						 k_a \cdot I_a + k_d \cdot I_l(\textbf{N} \cdot \textbf{L}) & \quad \text{se } \textbf{N} \cdot \textbf{L} > 0\\
+    						k_a \cdot I_a & \quad \text{se } \textbf{N} \cdot \textbf{L} \leq 0 
+  					\end{array} \right.
+				\end{equation*}		
+			\item Onde $k_a$ e $k_d$ dependem das propriedades do material da superfície.		
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.6\textwidth]{Figures/RefKaKd}
+		\caption{Exemplo de iluminação difusa variando $k_a$  e $k_d$.}
+		\end{center}
+	\end{figure}	
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item A \textbf{reflexão especular}	vista em uma superfície brilhante é o resultado da reflexão total (ou quase) da luz incidente em uma \textbf{área concentrada} ao redor de \textbf{ângulo de reflexão especular}.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/RefEsp}
+		\end{center}
+	\end{figure}	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/RefEsp}
+		\end{center}
+	\end{figure}	
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item O ângulo da reflexão especular $\theta$ é o mesmo ângulo da incidência da luz, mas oposto a normal \textbf{N}.
+			\item O vetor unitário \textbf{R} representa a direção da reflexão especular.
+			\item O vetor unitário \textbf{L} aponta para a luz puntual.
+			\item O vetor unitário \textbf{V} aponta para o ``visualizador''. 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Em um refletor ideal (espelho perfeito), a luz incidente é refletida somente na direção de reflexão especular, e será visível somente se 	\textbf{V} e \textbf{R} coincidirem ($\phi = 0^\circ$).
+			\item Objetos que não são refletores ideais possuem reflexão especular em uma área finita ao redor de \textbf{R}.
+			\begin{itemize}
+				\item Superfícies brilhantes possuem menor campo de reflexão especular.
+				\item Superfícies foscas possuem um campo maior de reflexão especular.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/RefEspSup}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item O \textbf{Modelo de Phong} define a intensidade da reflexão especular proporcional a $cos^{n_s} \phi$, com $0^\circ \leq \phi \leq 90^\circ$.
+			\item O \textbf{expoente de reflexão especular} $n_s$ é determinado pelo tipo de superfície.
+			\begin{itemize}
+				\item Superfícies brilhantes possuem possuem valores altos de $n_S$ (100,200 ou mais).
+				\item Para refletores perfeitos $n_s \to \infty$.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/RefEspSup}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=1.0\textwidth]{Figures/VarExp}
+		\caption{Diferentes gráficos de $cos^{n_s} \phi$ usando diferentes valores de $n_s$.}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item A intensidade da reflexão especular depende das propriedades da superfície e do ângulo de incidência $\theta$.
+				\begin{itemize}
+					\item É possível aproximar as variações da intensidade especular usando um \textbf{coeficiente de reflexão especular} $W(\theta)$.
+				\end{itemize}
+				\item A variação da intensidade especular é descrita pela \textbf{Lei de Reflexão de Fresnel}.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.35\textwidth]{Figures/Fres}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Usando a função $W(\theta)$ podemos escrever o modelo de Phong 	de reflexão especular.
+			\begin{equation*}
+				I_{l,spec} = W(\theta) \cdot I_l \cdot cos^{n_s} \phi
+			\end{equation*}
+			\item Onde $I_l$ é a intensidade da luz e $\phi$ o ângulo de visão relativo a \textbf{R}.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.6\textwidth]{Figures/RefEspSup}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Para a maioria dos materiais opacos, a reflexão especular é quase constantes para todos os ângulos de incidência $\theta$.
+			\begin{itemize}
+				\item Assim podemos substituir $W(\theta)$ por um coeficiente de reflexão especular $k_s$.
+				\item O mesmo pode ser feito para materiais transparentes.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.35\textwidth]{Figures/Fres}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Como \textbf{V} e \textbf{R} são vetores unitários, então $cos \phi = V \cdot R$.
+			\item Se \textbf{V} e \textbf{L} estiverem do mesmo lado da normal, então nenhum efeito especular precisa ser calculado.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Assumindo as Constantes}
+		\begin{itemize}
+			\item Assumindo que os coeficientes de reflexão especular são constantes para qualquer material, podemos calcular
+			\begin{equation*}
+					I_{l,spec} = \left\{
+					\begin{array}{l l}
+   						 k_s \cdot I_l \cdot (\textbf{V} \cdot \textbf{R})^{n_s} & \quad \text{se } \textbf{V} \cdot \textbf{R} > 0\\
+    						0 & \quad \text{se } \textbf{V} \cdot \textbf{R} \leq 0 
+  					\end{array} \right.
+				\end{equation*}
+			\item A direção de \textbf{R} pode ser obtida a partir de \textbf{L} e \textbf{N}.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item A projeção de \textbf{L} em \textbf{N} é $cos \theta \cdot \textbf{N}$, sendo assim:
+			\begin{eqnarray*}
+				\textbf{R} - \textbf{S} = \textbf{N} \cdot cos \theta\\
+				\textbf{R} = \textbf{N} \cdot cos \theta + \textbf{S}\\
+				\\
+				\textbf{L} + \textbf{S} = \textbf{N} \cdot cos \theta\\
+				\textbf{S} = \textbf{N} \cdot cos \theta - \textbf{L}
+			\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.35\textwidth]{Figures/ProRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Assim podemos encontrar R da seguinte forma:
+				\begin{eqnarray*}
+					\textbf{R} = \textbf{N} \cdot cos \theta +  \textbf{N} \cdot cos \theta - \textbf{L}\\
+					\textbf{R} = \textbf{N} \cdot (2\cdot  \textbf{N} \cdot cos \theta) -\textbf{L} \\
+					\textbf{R} = \textbf{N}\cdot  \{2 (\textbf{L} \cdot \textbf{N})\} -\textbf{L}
+				\end{eqnarray*}
+		\end{itemize}
+	\end{block}
+	
+		\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.35\textwidth]{Figures/ProRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+		\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.8\textwidth]{Figures/ModPho}
+		\caption{Exemplo de reflexão especular variando $k_s$ e $n_s$ em uma superfície esférica iluminada por uma única fonte de luz puntual.}
+		\end{center}
+	\end{figure}	
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 \end{document} 
