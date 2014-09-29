@@ -231,7 +231,7 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 		\begin{itemize}
 			\item Para produzir efeitos mais realísticos com fonte de luz puntuais usamos:
 				\begin{equation*}
-					f(d_l) = \frac{1}{a_0 + a_1d_l + a_2d^{2}_{l}}
+					fl,_{radatten} = \frac{1}{a_0 + a_1d_l + a_2d^{2}_{l}}
 				\end{equation*}
 			\item Os valores de $a_0,a_1$ e $a_2$ podem ser ajustados para produzir efeitos de atenuações desejados.
 			\begin{itemize}
@@ -249,8 +249,8 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 		\begin{itemize}
 			\item Este cálculo não pode ser aplicado para fontes de luz no ``infinito'' porque a distância $d_l$ é indeterminada.
 			\item Um outro problema que é que quase todos os pontos estarão a mesma distância da fonte de luz. (baixo realismo).
-			\item Para resolver o problema:
-			$ f(d_l) = \left\{ 
+			\item Para resolver o problema: \\
+			$ fl,{radatten} = \left\{ 
   					\begin{array}{l l}
    						 1 & \quad \text{se a fonte de luz está no infinito}\\
     						\frac{1}{a_0 + a_1d_l + a_2d^{2}_{l}} & \quad \text{se a fonte de luz é local}
@@ -359,15 +359,17 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 
 	\begin{block}{Atenuação Angular de Intensidade}
 		\begin{itemize}
-			\item Considerando os vetores $\textbf{V}_{light}$ e $\textbf{V}_{obj}$ e assumindo $0^\circ \leq \theta_l \leq 90^\circ$ a equação geral da atenuação pode ser definida como:							$fa = \left\{
+			\item Considerando os vetores $\textbf{V}_{light}$ e $\textbf{V}_{obj}$ e assumindo $0^\circ \leq \theta_l \leq 90^\circ$ a equação geral da atenuação pode ser definida como:							
+		\end{itemize}
+		$fl,_{aatt}=\left\{
 					\begin{array}{l l}
    						 1 & \quad \text{se a fonte de luz não é direcional}\\
    						 0 & \quad \text{Se } \textbf{V}_{light} \cdot \textbf{V}_{obj} = cos \alpha < cos \theta_l\\
    						  & \quad \text{Objeto está fora}\\
     						(\textbf{V}_{light} \cdot \textbf{V}_{obj})^{al} & \quad \text{caso contrário}
   					\end{array} \right.$
-		\end{itemize}
 	\end{block}
+	
 	
 \end{frame}
 
@@ -980,6 +982,349 @@ Universidade Católica Don Bosco - UCDB \\ % Your institution for the title page
 		\begin{center}
 		\includegraphics[width=0.8\textwidth]{Figures/ModPho}
 		\caption{Exemplo de reflexão especular variando $k_s$ e $n_s$ em uma superfície esférica iluminada por uma única fonte de luz puntual.}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item O vetor \textbf{V} é calculado usando a posição da superfície e aposição de visão assim como o vetor \textbf{L}.
+			\item Se apenas \textbf{uma direção} for utilizada em todas as posições da tela, os cálculos da iluminação especular é acelerado.
+			\begin{itemize}
+				\item Contudo o resultado final é pior.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Uma simplificação do modelo de Phong é a utilização do vetor \textbf{H} que é \textbf{intermediário} entre \textbf{L} e \textbf{V}.
+			\begin{equation*}
+				\textbf{H} = \frac{\textbf{L+V}}{|\textbf{L+V}|}
+			\end{equation*}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/VecH}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Se $\textbf{N} \cdot H$ for usado no lugar de $\textbf{V} \cdot \textbf{R}$ então trocamos os cálculos de $cos \phi$ por $cos \theta$.
+			\item Se \textbf{V} for coplanar a \textbf{L} e \textbf{R} entre $\alpha = \phi/2$.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/VecH}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item Para \textbf{superfícies não planares}, $\textbf{N} \cdot \textbf{H}$ requer menos cálculos que $\textbf{R} \cdot \textbf{V}$ porque o cálculo de \textbf{R} em cada ponto da superfície envolve o vetor \textbf{N}.
+			\item Se a posição de \textbf{visão e a fonte de luz forem distantes} da superfícies, \textbf{V} e \textbf{L} são constantes, então \textbf{H} é constante para todos os pontos da superfície.
+			\item \textbf{H} é a direção onde haverá maior reflexão especular na direção da visão. 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Especular e Modelo de Phong}
+		\begin{itemize}
+			\item<1-> Para uma única fonte de luz puntual, podemos combinar as reflexões difusa e especular como:
+			\begin{eqnarray*}
+				I = I_{diff} + I_{spec} \\
+				I = (K_a I_a + k_d I_l (\textbf{N} \cdot \textbf{L})) + k_s I_l(\textbf{N}  \cdot \textbf{H})^{ns}
+			\end{eqnarray*}
+			\item<2-> A superfícies será iluminada pela luz ambiente quando a fonte de luz está atrás da superfície $(\textbf{N} \cdot \textbf{L} \leq 0)$.
+			\item<3-> Não existirá efeitos especulares se \textbf{V} e \textbf{L} estiverem do mesmo lado de \textbf{N}$(\textbf{N} \cdot \textbf{H} \leq 0)$.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/AllRef}
+		\caption{(a) Cena wide-frame. (b) Usando somente luz ambiente. (c) Usando reflexão difusa, luz ambiente e uma fonte de luz puntual. (d) Usando reflexão difusa e especular com uma fonte de luz puntual e luz ambiente.}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Reflexão Difusa e Especular de Várias Fontes de Luz}
+		\begin{itemize}
+			\item É possível criar o efeito de iluminação para a quantidade desejada de fontes de luz. Para este fim basta somar as contribuições de reflexão especular e difusa de cada fonte.
+			\begin{equation*}
+				I = I_{ambdiff} + \sum_{l=1}^{n}[I_{l,diff} + I_{l,spec}]
+			\end{equation*}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+
+	\begin{block}{Espaço de Cores RGB}
+		\begin{itemize}
+			\item O modelo de cor RGB é representado por um vetor de três posições que correspondem a intensidade das cores vermelho(red), Verde(Green) e Azul(Blue).
+			\begin{equation*}
+				I_l = (I_{lR},I_{lG},I_{lB}) 
+			\end{equation*}
+			\item Os coeficientes de de reflexão são também especificados de acordo com as 3 componentes de cor.
+			\begin{eqnarray*}
+				k_a = (k_{aR},k_{aG},k_{aB}) \\
+				k_d = (k_{dR},k_{dG},k_{dB}) \\
+				k_s = (k_{sR},k_{sG},k_{sB}) 
+			\end{eqnarray*}
+			\item Assim cada componente de cor de superfícies é calculado separadamente. 
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Modelos Básicos de Iluminação}
+		\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.8\textwidth]{Figures/MulMatLig}
+		\caption{Exemplos de reflexão utilizando vários materiais e múltiplas fontes de luz.}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Superfícies Transparentes}
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Superfícies Transparentes}
+		\begin{itemize}
+			\item Objetos \textbf{transparentes} (como o vidro) devem permitir que outros objetos sejam vistos através dos mesmos.
+			\item Caso não seja possível esta visualização os objetos são opacos.
+			\item Objetos intermediários onde a luz é transmitida e difundida em todas as direções são denominados \textbf{translúcidos} (ex. plástico).
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.3\textwidth]{Figures/ObjTra}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item \textbf{Imagens realísticas} de materiais transparentes são obtidas modelando o \textbf{caminho de refração} de um raio de luz através do material.
+			\begin{itemize}
+				\item Parte da luz é refletida e parte é refratada.
+				\item A velocidade da luz depende do material, assim o caminho da luz refratada é diferentes da luz incidente.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.3\textwidth]{Figures/LigRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item A direção do ângulo de refração ($\theta_r$) é a função do \textbf{índice de refração} do material e da direção da luz incidente.
+			\begin{itemize}
+				\item O índice de refração é a razão da velocidade da luz no vácuo sobre a velocidade da luz no material.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.4\textwidth]{Figures/LigRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item O ângulo de refração $\theta_r$ é calculado de acordo com a \textbf{Lei de Snell}.
+			\begin{equation*}
+				sen \theta_r = \frac{\eta_i}{\eta_r}sen \theta_i
+			\end{equation*}
+			\item Onde $\theta_i$ é o ângulo de incidência, $\eta_i$ é o índice de refração do material e $\eta_r$ é o índice do material refratado.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.4\textwidth]{Figures/LigRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item Por exemplo, luz incidindo em $\theta_i = 30^\circ$ sobre um vidro espeço ($\eta_r \approx 1.61$) a partir do ar ($\eta_i \approx 1.0$) será refratada em um ângulo de $\theta_r \approx 18^\circ$.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.4\textwidth]{Figures/LigRef}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item O efeito da refração é mudar o caminho da luz incidente para um caminho um pouco diferentes, mas paralelo ao original.
+			\item A computação da refração é computacionalmente cara, sendo assim, aproximações são usadas.
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.3\textwidth]{Figures/Ref}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Refração da Luz}
+		\begin{itemize}
+			\item O vetor e transmissão \textbf{T} na direção de refração $\delta_r$ é calculado como:
+			\begin{equation*}
+				\textbf{T} =\bigg( \frac{\eta_i}{\eta_r}cos \theta_i - \cos \theta_r \bigg) \textbf{N} - \frac{\eta_i}{\eta_r}\textbf{L}
+			\end{equation*}
+			\item Onde \textbf{N} é a normal da superfície, \textbf{L} é direção da luz.
+			\item \textbf{T} pode ser utilizado para localizar intersecções do caminho de refração com objetos atrás da superfície transparente.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Modelo Básico de Transparência}
+		\begin{itemize}
+			\item Um modelo simples de refração pode ser feitos sem levar em consideração a variação do caminho da luz.
+			\begin{itemize}
+				\item Não existe mudanças no índice de refração entre materiais diferentes.
+				\item O ângulo de incidência é igual ao de ângulo de refração.
+			\end{itemize}
+			\item Este método produz bons resultados e é rápido.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Modelo Básico de Transparência}
+		\begin{itemize}
+			\item Podemos combinar a intensidade transmitida $I_{trans}$ através da superfície transparente de um objeto de fundo com intensidade refletida $I_{ref}$ usando um \textbf{coeficiente de transmissão} $k_t$.
+			\begin{equation*}
+				I = (1-k_t) I_{refl} + k_t I_{trans}
+			\end{equation*}
+			\item Onde $(1-k_t)$ é o fator de opacidade.
+		\end{itemize}
+	\end{block}
+
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.3\textwidth]{Figures/OpcFac}
+		\end{center}
+	\end{figure}	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Superfícies Transparentes}
+
+	\begin{block}{Modelo Básico de Transparência}
+		\begin{itemize}
+			\item Este procedimentos pode ser usado com qualquer quantidade de objetos transparentes e opacos.
+			\begin{itemize}
+				\item Primeiro processa-se os objetos de traz depois os da frente da transparência.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+
+	\begin{figure}[!h]
+		\begin{center}
+		\includegraphics[width=0.5\textwidth]{Figures/TraPic}
 		\end{center}
 	\end{figure}	
 \end{frame}

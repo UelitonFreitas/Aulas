@@ -5,3 +5,4 @@
 \beamer@sectionintoc {3}{Fontes de Luz Direcional e Efeito de Holofote}{10}{0}{3}
 \beamer@sectionintoc {4}{Fontes de Luz em Superf\IeC {\'\i }cies}{16}{0}{4}
 \beamer@sectionintoc {5}{Modelos B\IeC {\'a}sicos de Ilumina\IeC {\c c}\IeC {\~a}o}{20}{0}{5}
+\beamer@sectionintoc {6}{Superf\IeC {\'\i }cies Transparentes}{57}{0}{6}
