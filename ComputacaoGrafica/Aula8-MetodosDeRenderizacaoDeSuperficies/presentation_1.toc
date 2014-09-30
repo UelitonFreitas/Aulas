@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Rendering de Superf\IeC {\'\i }cies com Intensidade Constante}{5}{0}{2}
+\beamer@sectionintoc {3}{Rendering de Superf\IeC {\'\i }cies de Gouraud}{7}{0}{3}
+\beamer@sectionintoc {4}{Rendering de Superf\IeC {\'\i }cies de Phong}{15}{0}{4}
