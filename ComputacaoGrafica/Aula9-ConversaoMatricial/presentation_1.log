@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  7 OCT 2014 16:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  18 OCT 2014 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,8 +1152,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./presentation_1.nav)
-Overfull \hbox (36.99335pt too wide) detected at line 107
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) detected at line 107
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 
@@ -1161,20 +1161,20 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 111.
 
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./presentation_1.toc)
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [2
 
-] <Figures/IMG.png, id=175, 860.21375pt x 783.92876pt>
+] <Figures/IMG.png, id=216, 860.21375pt x 783.92876pt>
 File: Figures/IMG.png Graphic file (type png)
  <use Figures/IMG.png>
 Package pdftex.def Info: Figures/IMG.png used on input line 144.
@@ -1189,248 +1189,362 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 144.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [3
 
  <./Figures/IMG.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [4
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [5
 
-] <Figures/DevSisCoo.png, id=302, 939.51pt x 714.67pt>
+] <Figures/DevSisCoo.png, id=370, 939.51pt x 714.67pt>
 File: Figures/DevSisCoo.png Graphic file (type png)
 
 <use Figures/DevSisCoo.png>
 Package pdftex.def Info: Figures/DevSisCoo.png used on input line 190.
 (pdftex.def)             Requested size: 184.3758pt x 140.24884pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [6
 
  <./Figures/DevSisCoo.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [7
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [8
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [9
 
-] <Figures/Cod.png, id=468, 1506.62875pt x 449.68pt>
+] <Figures/Cod.png, id=573, 1506.62875pt x 449.68pt>
 File: Figures/Cod.png Graphic file (type png)
  <use Figures/Cod.png>
 Package pdftex.def Info: Figures/Cod.png used on input line 271.
 (pdftex.def)             Requested size: 307.28987pt x 91.71155pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [10
 
  <./Figures/Cod.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [11
 
-] <Figures/Ret.png, id=550, 1301.86375pt x 575.14874pt>
+] <Figures/Ret.png, id=673, 1301.86375pt x 575.14874pt>
 File: Figures/Ret.png Graphic file (type png)
 
 <use Figures/Ret.png>
 Package pdftex.def Info: Figures/Ret.png used on input line 303.
 (pdftex.def)             Requested size: 307.28987pt x 135.75674pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [12
 
  <./Figures/Ret.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [18
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [19
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [21
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [22
 
-] <Figures/Bre.png, id=993, 921.4425pt x 492.84125pt>
+] <Figures/Bre.png, id=1216, 921.4425pt x 492.84125pt>
 File: Figures/Bre.png Graphic file (type png)
- <use Figures/Bre.png>
+
+<use Figures/Bre.png>
 Package pdftex.def Info: Figures/Bre.png used on input line 495.
 (pdftex.def)             Requested size: 307.28987pt x 164.35269pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [23
 
  <./Figures/Bre.png (PNG copy)>]
-<Figures/Bre1.png, id=1035, 391.4625pt x 293.095pt>
+<Figures/Bre1.png, id=1267, 391.4625pt x 293.095pt>
 File: Figures/Bre1.png Graphic file (type png)
  <use Figures/Bre1.png>
 Package pdftex.def Info: Figures/Bre1.png used on input line 512.
 (pdftex.def)             Requested size: 153.64493pt x 115.03555pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [24
 
  <./Figures/Bre1.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [26
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [29
 
 ]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [30
 
-] <Figures/AlgBre.png, id=1320, 1058.95625pt x 638.385pt>
+] <Figures/AlgBre.png, id=1615, 1058.95625pt x 638.385pt>
 File: Figures/AlgBre.png Graphic file (type png)
 
 <use Figures/AlgBre.png>
 Package pdftex.def Info: Figures/AlgBre.png used on input line 648.
 (pdftex.def)             Requested size: 307.28987pt x 185.24379pt.
 
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [31
 
  <./Figures/AlgBre.png (PNG copy)>]
-Overfull \hbox (36.99335pt too wide) has occurred while \output is active
-  [] [] [] [] [] [][][][][][][][][][][]  
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
  []
 
 [32
+
+] <Figures/Cir.pdf, id=1716, 287.0725pt x 291.0875pt>
+File: Figures/Cir.pdf Graphic file (type pdf)
+ <use Figures/Cir.pdf>
+Package pdftex.def Info: Figures/Cir.pdf used on input line 687.
+(pdftex.def)             Requested size: 76.82246pt x 77.89288pt.
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[33
+
+ <./Figures/Cir.pdf>]
+<Figures/1-4Cir.pdf, id=1771, 283.0575pt x 282.05376pt>
+File: Figures/1-4Cir.pdf Graphic file (type pdf)
+
+<use Figures/1-4Cir.pdf>
+Package pdftex.def Info: Figures/1-4Cir.pdf used on input line 704.
+(pdftex.def)             Requested size: 122.91406pt x 122.47719pt.
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[34
+
+ <./Figures/1-4Cir.pdf>]
+<Figures/Pon1-4Cir.pdf, id=1825, 279.0425pt x 279.0425pt>
+File: Figures/Pon1-4Cir.pdf Graphic file (type pdf)
+
+<use Figures/Pon1-4Cir.pdf>
+Package pdftex.def Info: Figures/Pon1-4Cir.pdf used on input line 723.
+(pdftex.def)             Requested size: 122.91406pt x 122.91106pt.
+
+Overfull \vbox (13.43604pt too high) detected at line 723
+ []
+
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[35
+
+ <./Figures/Pon1-4Cir.pdf>]
+<Figures/SimCir.pdf, id=1888, 285.065pt x 291.0875pt>
+File: Figures/SimCir.pdf Graphic file (type pdf)
+ <use Figures/SimCir.pdf>
+Package pdftex.def Info: Figures/SimCir.pdf used on input line 733.
+(pdftex.def)             Requested size: 215.10196pt x 219.64757pt.
+
+Overfull \vbox (14.23831pt too high) detected at line 733
+ []
+
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[36
+
+ <./Figures/SimCir.pdf>]
+<Figures/Sim8.png, id=1957, 1058.95625pt x 334.24875pt>
+File: Figures/Sim8.png Graphic file (type png)
+ <use Figures/Sim8.png>
+Package pdftex.def Info: Figures/Sim8.png used on input line 744.
+(pdftex.def)             Requested size: 307.28987pt x 96.99084pt.
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[37
+
+ <./Figures/Sim8.png (PNG copy)>]
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[39
+
+] <Figures/CirAlg.png, id=2107, 641.39626pt x 439.6425pt>
+File: Figures/CirAlg.png Graphic file (type png)
+
+<use Figures/CirAlg.png>
+Package pdftex.def Info: Figures/CirAlg.png used on input line 804.
+(pdftex.def)             Requested size: 184.3758pt x 126.37946pt.
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[40
+
+ <./Figures/CirAlg.png (PNG copy)>]
+File: Figures/CirAlg.png Graphic file (type png)
+ <use Figures/CirAlg.png>
+Package pdftex.def Info: Figures/CirAlg.png used on input line 824.
+(pdftex.def)             Requested size: 184.3758pt x 126.37946pt.
+
+Overfull \hbox (43.85358pt too wide) has occurred while \output is active
+  [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[41
 
 ]
 \tf@nav=\write6
@@ -1442,25 +1556,25 @@ Overfull \hbox (36.99335pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 826.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 826.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 665.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 826.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 826.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 092B9128F907EB872118A4038D641A68;370.
+(rerunfilecheck)             Checksum: BD29E789B3F5905091F3C1BCDDCEF04B;438.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 826.
  ) 
 Here is how much of TeX's memory you used:
- 17773 strings out of 493304
- 325872 string characters out of 6139871
- 415716 words of memory out of 5000000
- 20724 multiletter control sequences out of 15000+600000
+ 17843 strings out of 493304
+ 326836 string characters out of 6139871
+ 419716 words of memory out of 5000000
+ 20769 multiletter control sequences out of 15000+600000
  13620 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,20n,62p,403b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1470,11 +1584,12 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on presentation_1.pdf (32 pages, 1120873 bytes).
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb>
+Output written on presentation_1.pdf (41 pages, 1325498 bytes).
 PDF statistics:
- 1445 PDF objects out of 1728 (max. 8388607)
- 1351 compressed objects within 14 object streams
- 71 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2259 PDF objects out of 2487 (max. 8388607)
+ 2126 compressed objects within 22 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

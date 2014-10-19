@@ -6,3 +6,4 @@
 \beamer@sectionintoc {4}{Digital Differential Analyzer (DDA) }{14}{0}{4}
 \beamer@sectionintoc {5}{Algoritmo de Bresenham}{21}{0}{5}
 \beamer@subsectionintoc {5}{1}{Retas}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Circunfer\IeC {\^e}ncias}{33}{0}{5}

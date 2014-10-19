@@ -661,5 +661,166 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	\end{block}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Circunferências}
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências}
+		\begin{itemize}
+			\item Circunferências possuem um cento e um raio $R$.
+			\item Forma explícita:
+				\begin{equation*}
+					x^2+y^2 = R^2
+				\end{equation*}
+			\item Forma paramétrica:
+				\begin{equation*}
+					x = R \cdot cos \theta,y = R \cdot send \theta
+				\end{equation*}
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.25\textwidth]{Figures/Cir}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências}
+		\begin{itemize}
+			\item Por que não usar a equação paramétrica?
+			\item Por que não usar a equação explícita para traçar $\frac{1}{4}$ da circunferência?
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/1-4Cir}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências - Algoritmo do Ponto Médio}
+		\begin{itemize}
+			\item Traçando um arco de $45^\circ$ no segundo octante, de $x=0$ a $x = y = R/\sqrt{2}$
+			\item O restante da curva pode ser obtida por simetria:
+				\begin{itemize}
+					\item Se o ponto $(x,y)$ pertence a circunferência, os outros 7 pontos podem ser obtidos por simetria de forma trivial
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{Figures/Pon1-4Cir}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.7\textwidth]{Figures/SimCir}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=1.0\textwidth]{Figures/Sim8}
+			\caption{Simetria de Ordem 8.}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências - Algoritmo do Ponto Médio}
+		\begin{itemize}
+			\item Define um parâmetro de decisão para definir o pixel mais próximo da circunferência.
+			\item Como a equação da circunferência é não linear, raízes quadradas são utilizadas para encontrar alguns pontos para o calculo das distâncias.
+			\begin{itemize}
+				\item Bresenham evita as raízes comparando o quadrado das distâncias.
+			\end{itemize}
+			\item Baseado na equação da circunferência, defini-se qual o pixel mias próximo da mesma.
+			\begin{itemize}
+				\item Isto é feito em um único octante, o restante é feito por simetria.
+\end{itemize}					
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências - Algoritmo do Ponto Médio}
+		\begin{itemize}
+			\item $F_{circ}(x,y) = x^2 + y^2 - R^2$
+				\begin{itemize}
+					\item $F_{circ}(x,y) < 0$ se $(x,y)$ está dentro da circunferência.
+					\item $F_{circ}(x,y) = 0$ se $(x,y)$ está na circunferência
+					\item $F_{circ}(x,y) > 0$ se $(x,y)$ está fora da circunferência				
+				\end{itemize}
+			\item Incrementa $x$ e testa o pixel que está mais perto da circunferência.
+			\begin{itemize}
+				\item  $F_{circ}(x,y)$ é o parâmetro de decisão e cálculos incrementais podem ser feitos.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências - Algoritmo do Ponto Médio}
+		\begin{itemize}
+			\item Partindo de $(x_k,y_k)$, as opções são:
+				\begin{itemize}
+					\item $(x_k+1,y_k)$
+					\item $(x_k+1,y_k-1)$
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/CirAlg}
+			\end{center}
+		\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Algoritmo de Bresenham}
+		\begin{block}{Traçado de Circunferências - Algoritmo do Ponto Médio}
+		\begin{itemize}
+			\item A função de decisão é:
+				\begin{itemize}
+					\item $p_k = F_{circ}(x_k+1,y_k-\frac{1}{2})$
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/CirAlg}
+			\end{center}
+		\end{figure}
+\end{frame}
 %----------------------------------------------------------------------------------------
 \end{document} 
