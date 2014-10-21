@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Convers\IeC {\~a}o de Segmento de Reta}{7}{0}{2}
+\beamer@sectionintoc {3}{Convers\IeC {\~a}o de Segmento de Reta}{8}{0}{3}
+\beamer@sectionintoc {4}{Digital Differential Analyzer (DDA) }{14}{0}{4}
+\beamer@sectionintoc {5}{Algoritmo de Bresenham}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Retas}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Circunfer\IeC {\^e}ncias}{33}{0}{5}
+\beamer@sectionintoc {6}{Corre\IeC {\c c}\IeC {\~a}o de Tra\IeC {\c c}ado (Anti-Aliasing)}{46}{0}{6}
