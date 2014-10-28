@@ -311,5 +311,214 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Introdução}
+
+		\begin{block}{Dividindo Polígonos em Triângulos}
+		\begin{itemize}
+			\item Um \textbf{polígono convexo} pode ser divididos em \textbf{triângulos}.
+			\begin{itemize}
+				\item Pegue quaisquer três vértices consecutivos no sentido anti-horário e forme um triângulo.
+				\item Caso as arestas do triângulo não cruze nenhuma outra aresta do polígono, retire o vértice da lista de vértices.
+				\item Repita o procedimento até que sobrem apenas três vértices;
+			\end{itemize}
+		\end{itemize}
+		\end{block}
+		
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.45\textwidth]{Figures/TriVan}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+\section{Teste de Interior e Exterior}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{block}{Teste de Interior e Exterior}
+		\begin{itemize}
+			\item Vários processos gráficos precisam \textbf{identificar regiões interiores} de objetos mais \textbf{complexos} que quadrados e círculos.
+			\item Serão apresentados dois algoritmos:
+			\begin{itemize}
+				\item Regra \textbf{par-ímpar}(ou regra da paridade ímpar).
+				\item Regra do \textbf{winding-number} não zero.
+			\end{itemize}
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{block}{Regra Par-Impar}
+		\begin{itemize}
+			\item Desenhar um segmento de reta de um ponto $P$ a um ponto distante e fora dos limites das coordenadas do polígono.
+			\item Contar os cruzamentos de arestas com esse segmento.
+				\begin{itemize}
+					\item Se o número for \textbf{ímpar}, $P$ está dentro.
+					\item Caso contrário $P$ está \textbf{fora}.
+				\end{itemize}
+				\item Deve-se assegurar que o segmento de reta não intercepte nenhum vértice do polígono.
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{Figures/IntPol}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{block}{Regra do Winding-Number não-zero}
+		\begin{itemize}
+			\item Conta o número de \textbf{vezes} que a \textbf{fronteira} de um objeto \textbf{gira} em volta de um ponto particular na \textbf{direção anti-horária}
+			\begin{itemize}
+				\item Um ponto é dito \textbf{interior} se sua contagem for \textbf{diferente de zero}.
+			\end{itemize}			 
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{block}{Algoritmo - Regra do Winding-Number não-zero}
+		\begin{itemize}
+			\item<1-> Inicia-se a contagem com zero.
+			\item<2-> Defini-se um segmento de reta de uma posição $P$ até um ponto distante.
+				\begin{itemize}
+					\item Não pode passar pelo vértice.
+				\end{itemize}
+			\item<3-> Conta a quantidade de cruzamentos com as arestas (direcionais)
+				\begin{itemize}
+					\item +1 toda vez que cruzar uma aresta da \textbf{direita para esquerda}.
+					\item -1 toda vez que cruzar uma aresta da \textbf{esquerda para direita}.
+				\end{itemize}
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{Figures/WinNum}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Teste de Interior e Exterior}
+
+		\begin{block}{Regra do Winding-Number não-zero \\ Processo Baseado em Produto Vetorial}
+		\begin{itemize}
+			\item Calcular o produto vetorial entre o vetor definido pela aresta e pelo vetor que define a reta.
+			\begin{itemize}
+				\item +1 se o componente-z do produto for positivo.
+				\item -1 caso contrário.
+			\end{itemize}
+		\end{itemize}
+		\end{block}
+		
+		\begin{block}{Regra do Winding-Number não-zero \\ Processo Baseado em Produto Escalar}
+		\begin{itemize}
+			\item Encontrar um vetor perpendicular ao vetor do segmento de reta $(v_x,v_y) \to (-v_y,v_x)$ e fazer produto escalar com o vetor da aresta.
+			\begin{itemize}
+				\item +1 se o produto for positivo.
+				\item -1 caso contrário.
+			\end{itemize}
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preenchimento de Áreas}
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+		\begin{block}{Preenchimento de Áreas}
+		\begin{itemize}
+			\item A maioria das API's limita o preenchimento de áreas.
+				\begin{itemize}
+					\item \textbf{Polígonos} porque são descritos por equações lineares.
+					\item \textbf{Polígonos Convexos} porque assim somente duas arestas são cruzadas.
+					\item Contudo é possível preencher o interior de qualquer tipo de forma utilizando ferramentas de desenho.
+				\end{itemize}
+		\end{itemize}
+		\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+		\begin{block}{Preenchimento de Áreas}
+		\begin{itemize}
+			\item Existem basicamente duas formas:
+				\begin{enumerate}
+					\item Determinar os intervalos de preenchimento usando \textbf{scanlines} e preencher o interior.
+					\begin{itemize}
+						\item Indicado para \textbf{polígonos}.
+					\end{itemize}
+					\item A partir de um ponto, colorir a vizinhança até encontrar as \textbf{bordas}.
+					\begin{itemize}
+						\item Indicado para formas mais complexas.
+					\end{itemize}
+				\end{enumerate}
+		\end{itemize}
+		\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algoritmo Scanline}
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+		\begin{block}{Algoritmo Scanline}
+		\begin{itemize}
+			\item Primeiro determina-se as \textbf{intersecções} das \textit{scanlines} com o \textbf{polígonos}.
+			\item Então, as \textbf{secções} da \textit{scanline} que residirem \textbf{dentro} do polígono são \textbf{coloridas}.
+				\begin{itemize}
+					\item Usa a \textbf{regra par-ímpar}.	
+				\end{itemize}				 
+		\end{itemize}
+		\end{block}
+		\begin{block}{}
+			Para polígonos, 2 equações lineares são utilizadas para encontrar as intersecções.
+			\begin{itemize}
+				\item Calcula-se as intersecções de um polígono da esquerda para a direita.
+			\end{itemize}
+		\end{block}
+\end{frame}
 %----------------------------------------------------------------------------------------
 \end{document} 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  23 OCT 2014 16:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.11)  27 OCT 2014 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,7 +1229,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] <Figures/WirFra.png, id=125, 281.05pt x 347.2975pt>
+] <Figures/WirFra.png, id=158, 281.05pt x 347.2975pt>
 File: Figures/WirFra.png Graphic file (type png)
 
 <use Figures/WirFra.png>
@@ -1250,7 +1250,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 220.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Pol.png, id=179, 779.91376pt x 396.48125pt>
+<Figures/Pol.png, id=217, 779.91376pt x 396.48125pt>
 File: Figures/Pol.png Graphic file (type png)
  <use Figures/Pol.png>
 Package pdftex.def Info: Figures/Pol.png used on input line 220.
@@ -1259,7 +1259,7 @@ Package pdftex.def Info: Figures/Pol.png used on input line 220.
 [6
 
  <./Figures/Pol.png (PNG copy)>]
-<Figures/PolDeg.pdf, id=207, 379.4175pt x 391.4625pt>
+<Figures/PolDeg.pdf, id=248, 379.4175pt x 391.4625pt>
 File: Figures/PolDeg.pdf Graphic file (type pdf)
  <use Figures/PolDeg.pdf>
 Package pdftex.def Info: Figures/PolDeg.pdf used on input line 242.
@@ -1268,7 +1268,7 @@ Package pdftex.def Info: Figures/PolDeg.pdf used on input line 242.
 [7
 
  <./Figures/PolDeg.pdf>]
-<Figures/TriMes.png, id=239, 323.2075pt x 451.6875pt>
+<Figures/TriMes.png, id=284, 323.2075pt x 451.6875pt>
 File: Figures/TriMes.png Graphic file (type png)
  <use Figures/TriMes.png>
 Package pdftex.def Info: Figures/TriMes.png used on input line 264.
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: Figures/TriMes.png used on input line 264.
 [8
 
  <./Figures/TriMes.png>]
-<Figures/PolConAre.png, id=267, 567.11874pt x 352.31625pt>
+<Figures/PolConAre.png, id=314, 567.11874pt x 352.31625pt>
 File: Figures/PolConAre.png Graphic file (type png)
 
 <use Figures/PolConAre.png>
@@ -1286,7 +1286,7 @@ Package pdftex.def Info: Figures/PolConAre.png used on input line 285.
  [9
 
  <./Figures/PolConAre.png (PNG copy)>]
-<Figures/PolConVexDiv.png, id=293, 352.31625pt x 339.2675pt>
+<Figures/PolConVexDiv.png, id=344, 352.31625pt x 339.2675pt>
 File: Figures/PolConVexDiv.png Graphic file (type png)
 
 <use Figures/PolConVexDiv.png>
@@ -1295,6 +1295,57 @@ Package pdftex.def Info: Figures/PolConVexDiv.png used on input line 312.
  [10
 
  <./Figures/PolConVexDiv.png (PNG copy)>]
+<Figures/TriVan.png, id=376, 485.815pt x 361.35pt>
+File: Figures/TriVan.png Graphic file (type png)
+ <use Figures/TriVan.png>
+Package pdftex.def Info: Figures/TriVan.png used on input line 336.
+(pdftex.def)             Requested size: 138.2795pt x 102.84798pt.
+
+Overfull \vbox (0.75064pt too high) detected at line 336
+ []
+
+[11
+
+ <./Figures/TriVan.png (PNG copy)>] [12
+
+] [13
+
+]
+<Figures/IntPol.png, id=465, 635.37375pt x 592.2125pt>
+File: Figures/IntPol.png Graphic file (type png)
+
+<use Figures/IntPol.png>
+Package pdftex.def Info: Figures/IntPol.png used on input line 385.
+(pdftex.def)             Requested size: 184.3758pt x 171.84566pt.
+ [14
+
+ <./Figures/IntPol.png (PNG copy)>] [15
+
+] [16
+
+]
+[17
+
+] [18
+
+] <Figures/WinNum.png, id=613, 654.445pt x 628.3475pt>
+File: Figures/WinNum.png Graphic file (type png)
+
+<use Figures/WinNum.png>
+Package pdftex.def Info: Figures/WinNum.png used on input line 433.
+(pdftex.def)             Requested size: 184.3758pt x 177.01952pt.
+ [19
+
+ <./Figures/WinNum.png (PNG copy)>] [20
+
+] [21
+
+]
+[22
+
+] [23
+
+]
 \tf@nav=\write9
 \openout9 = `presentation_1.nav'.
 
@@ -1304,41 +1355,42 @@ Package pdftex.def Info: Figures/PolConVexDiv.png used on input line 312.
 \tf@snm=\write11
 \openout11 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
-
-(./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+ (./presentation_1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: 5E19A2C867A6BE84360D54E0479D51BD;51.
+(rerunfilecheck)             Checksum: 39F5EAC72BD5DA12A2D546BA275B696F;242.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
  ) 
 Here is how much of TeX's memory you used:
- 19422 strings out of 493304
- 355097 string characters out of 6139871
- 460777 words of memory out of 5000000
- 22373 multiletter control sequences out of 15000+600000
- 14208 words of font info for 53 fonts, out of 8000000 for 9000
+ 19577 strings out of 493304
+ 358339 string characters out of 6139871
+ 463777 words of memory out of 5000000
+ 22495 multiletter control sequences out of 15000+600000
+ 14808 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,60p,952b,800s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb>
-Output written on presentation_1.pdf (10 pages, 334598 bytes).
+ 49i,20n,62p,952b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb>
+Output written on presentation_1.pdf (23 pages, 1012575 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 22 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 808 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
