@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx} % para inserção de figuras
+
+
+\author{Universidade Católica Dom Bosco \\ Computação Gráfica - Engenharia da Computação \\Uéliton Freitas}
+\title{Lista de Exercícios II}
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+	\item Apresente a matriz de transformação para a mudança de coordenada em um sistema 3D composto com origem em (2,2,2) e com os vetores (1,1,3),(-1,1,0) e (-3,-3,2). Com esse novo sistema de coordenadas calcule a nova coordenada dos pontos (2,2,2) e (1,1,1).
+	
+	\item Considere uma fonte de luz direcional com limite angular de $cos \theta_l = \frac{3}{5}$. A fonte de luz está posicionada em (0,0,-3) e apontando para (0,0,0). Marque um X nos pontos que serão iluminados pela fonte de luz.\\
+	( )-(0,0,0)\\
+	( )-(0,1,1)\\
+	( )-(0,6,0)\\
+	( )-(1,1,0)\\
+	( )-(0,1,2)\\
+	( )-(0,3,3)\\
+	( )-(1,0,0)\\
+	( )-(1,1,1)\\
+
+	\item Explique o que são os vetores L, N, R e V utilizados na reflexão especular.
+Faça um desenho mostrando as direções desses vetores em um cenário com uma mesa, uma fonte de luz e um observador.
+
+	\item O que é um refletor ideal? Explique utilizando os vetores V e R.
+	
+	\item O que é o modelo de Phong? Quais são os efeitos do expoente de reflexão
+especular?
+
+	\item Na simplificação do modelo de Phong é utilizado o vetor intermediário H
+entre L e V. Quais são as vantagens de se utilizar este vetor?
+
+	\item Considere um cenário onde a fonte de luz está posicionada em (-4,3,0) apontando para (0,0,0), um observador em (3,2,0), e uma mesa cuja superfícies está no plano xz e contém os pontos (0,0,0), (1,0,0) e (0,0,1).
+		\begin{enumerate}
+			\item Encontre o os vetores N,L e H.
+			\item Calcule a intensidade do ponto (0,0,0) visualizado pelo observador considerando um modelo que utiliza reflexão difusa e especular. Considere  $k_a I_a = 0.2, k_d I_l = 0.2, K_s I_l =0.1$ e $n_s =1$ na equação $I = K_a I_a + k_d I_l(N \cdot L)+k_s I_l(N \cdot H)^{n_s}$
+		\end{enumerate}
+		
+	\item Como podemos utilizar o cálculo realizado no item anterior para um sistema de cores RGB?
+	
+	\item Qual a diferença entre luz refletida e luz refratada?
+	
+	\item Em uma luz incidindo em $\theta_i = 30^\circ$ sobre um vidro espesso ($\eta_i \approx 1.61$) a partir do ar ($\eta_i \approx 1.00$). Qual  é o ângulo de refração?
+
+
+\end{enumerate}
+
+
+\end{document}
