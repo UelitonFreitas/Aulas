@@ -520,5 +520,102 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 			\end{itemize}
 		\end{block}
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{Figures/ScaLin}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{}
+		\begin{itemize}
+			\item \textbf{Problemas} quando a \textit{scanline} passa por um \textbf{vértice}.
+			\begin{itemize}
+				\item Intersecta dois polígonos simultaneamente.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/ScaLinPro}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{}
+		\begin{itemize}
+			\item A \textbf{contagem} da intersecção deve ser diferente dependendo da \textbf{topologia}
+			\begin{itemize}
+				\item Duas arestas de \textbf{lados opostos} da \textit{scanline}: conta \textbf{uma intersecção}.
+				\item Duas arestas de \textbf{mesmo lado} da \textit{scanline}: conta \textbf{duas intersecção}
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/ScaLinPro}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{Solução para o Problema da \textit{scanline}}
+		\begin{itemize}
+			\item Para descobrir se as arestas são opostas:
+			\begin{itemize}
+				\item Definir a \textbf{fronteira} do polígono de forma \textbf{anti-horária} (ou horária) e observas as mudanças em $y$.
+				\item Se os 3 vértices de duas \textbf{arestas consecutivas} são monotonicamente \textbf{crescentes} (ou decrescentes) conta somente \textbf{uma intersecção}.
+				\item Caso \textbf{contrário} \textbf{duas}.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{Solução para o Problema da \textit{scanline} - Pré processada}
+		\begin{itemize}
+			\item Para descobrir se as arestas são opostas:
+			\begin{itemize}
+				\item Definir a \textbf{fronteira} do polígono de forma \textbf{anti-horária} (ou horária) e observas as mudanças em $y$.
+				\item Neste caso a \textbf{aresta inferior} pode ser \textbf{reduzida} para assegurar somente uma intersecção.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/ScaPro}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
 %----------------------------------------------------------------------------------------
 \end{document} 
