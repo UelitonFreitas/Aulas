@@ -617,5 +617,256 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 	
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{Algoritmo \textit{scanline} (intersecção)}
+		\begin{itemize}
+			\item A intersecção da i-ésima \textit{scanline} com uma aresta ${(x_1,y_1),(x_2,y_2)}$ é calculada com duas equações.
+			\begin{align*}
+				y &= i \\
+				x &= y/m-b \\
+				m &= (y_2-y_1)/(x_2-x_1)\\
+				b &= y_1/m-x_1
+			\end{align*}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{Algoritmo \textit{scanline} (intersecção)}
+		\begin{itemize}
+			\item É possível acelerar esse processo usando um abordagem incremental.
+				\begin{align*}
+					m &= (y_{k+1} - y_k)/(x_{k+1} - x_k)
+				\end{align*}
+			\item Como entre duas \textit{scanlines} consecutivas:
+				\begin{align*}
+					y_{k+1} - y_k &= 1
+				\end{align*}
+			\item Então:
+				\begin{align*}
+					m &= 1/(x_{k+1} - x_k)\\
+					x_{k+1} &= x_k + 1/m
+				\end{align*}
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/Sca}
+			\end{center}
+		\end{figure}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+
+	\begin{block}{Algoritmo \textit{scanline} (intersecção)}
+	\begin{itemize}
+		\item Mas ainda é possível utilizar somente inteiros, lembrando que:
+			\begin{equation*}
+				m = \frac{\Delta y}{\Delta x} 
+			\end{equation*}
+		\item então:
+				\begin{equation*}
+					x_{k+1} = x_k +\frac{\Delta y}{\Delta x}
+				\end{equation*}
+	\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Áreas}
+	\begin{block}{Algoritmo \textit{scanline} (intersecção)}
+	\begin{itemize}
+		\item Para polígonos \textbf{convexos}, só existe \textbf{um bloco de pixels} subsequente em cada \textit{scanline}.
+			\begin{itemize}
+				\item Só processa a \textit{scanline} até encontrar \textbf{duas intersecções}.
+			\end{itemize}
+	\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preenchimento de Regiões Irregulares}
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+	
+	\begin{block}{Preenchimento de Regiões Irregulares}
+
+		\begin{itemize}
+			\item É possível preencher uma região irregular selecionando um pixel e \textbf{pintando} os \textbf{pixels vizinhos} até alcançar as bordas.
+		\end{itemize}
+	\end{block}
+
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/RegIrr}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{block}{Preenchimento de Regiões Irregulares}
+		\begin{itemize}
+			\item Se a borda de uma região tem a mesma cor, é possível preencher essa região pixel por pixel até atingir a cor da borda.
+				\begin{itemize}
+					\item Normalmente usado em programas gráficos.
+					\item Começa com um ponto inicial (x,y) e testa os vizinhos para ver a cor, se não for borda, preenche.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{Figures/PreViz}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{figure}[!h]
+			\begin{flushleft}
+				\includegraphics[width=0.9\textwidth]{Figures/AlgFil}
+			\end{flushleft}
+	\end{figure}
+	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{block}{Preenchimento de Regiões Irregulares}
+		\begin{itemize}
+			\item \textbf{Porblemas} se algum \textbf{pixel interior} já for da \textbf{cor escolhida} para ser preenchida.
+			\begin{itemize}
+				\item Algum ramo da recursão pode ser descartado.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{}
+		\begin{itemize}
+			\item Pode levar ao consumo excessivo de memória devido a recursão.
+				\begin{itemize}
+					\item Uma solução é empilhar, ao invés de pixels vizinhos, blocos de pixels sucessivos (o pixel inicial desses).
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{Figures/BloFil}
+			\end{center}
+	\end{figure}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{block}{Algoritmo \textit{Fill-flood}}
+		\begin{itemize}
+			\item As vezes é necessário colorir uma área que \textbf{não é definida} apenas por uma \textbf{cor de borda}.
+				\begin{itemize}
+					\item Ao invés de procurar uma cor de borda, procurar por uma \textbf{cor de interior}.
+					\item Se o interior tem mais de uma cor, pode-se inicialmente substituir esta cor para que todos os pixels do interior tenham a mesma cor.
+				\end{itemize}
+		\end{itemize}
+	\end{block}
+	
+	\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.3\textwidth]{Figures/FilFlo}
+			\end{center}
+	\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{figure}[!h]
+			\begin{flushleft}
+				\includegraphics[width=0.9\textwidth]{Figures/FilFloAlg}
+			\end{flushleft}
+	\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{figure}[!h]
+			\begin{flushleft}
+				\includegraphics[width=1.0\textwidth]{Figures/FilFloAlg}
+			\end{flushleft}
+	\end{figure}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Preenchimento de Regiões Irregulares}
+
+	\begin{block}{Algoritmo \textit{Fill-flood}}
+		\begin{itemize}
+			\item No caso de preenchimento de áreas irregulares, cada pixel está sendo ``pintado'' com uma cor.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{}
+		No caso de rendering de superfícies, cada pixel é pintado com a cor determinada pela aplicação do algoritmo de iluminação + tonalização (shading).
+	\end{block}
+\end{frame}
+
 %----------------------------------------------------------------------------------------
 \end{document} 

@@ -4,3 +4,4 @@
 \beamer@sectionintoc {2}{Teste de Interior e Exterior}{12}{0}{2}
 \beamer@sectionintoc {3}{Preenchimento de \IeC {\'A}reas}{21}{0}{3}
 \beamer@subsectionintoc {3}{1}{Algoritmo Scanline}{23}{0}{3}
+\beamer@sectionintoc {4}{Preenchimento de Regi\IeC {\~o}es Irregulares}{34}{0}{4}
