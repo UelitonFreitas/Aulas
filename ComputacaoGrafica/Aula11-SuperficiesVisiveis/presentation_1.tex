@@ -84,6 +84,12 @@
 \usepackage{subfigure}
 \usepackage[english,brazil]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
 
 %Renomeia o nome padrao das figuras.
 \renewcommand{\figurename}{Figura}
@@ -297,22 +303,218 @@ Universidade Católica Dom Bosco - UCDB \\ % Your institution for the title page
 
 		\begin{block}{Back-Face Culling}
 			\begin{itemize}	
-				\item Uma \textbf{face} é uma face de ``faces de trás'' (não visível) de um polígono se o \textbf{ângulo} entre o vetor normal a face \textbf{N} e o vetor direção de observação \textbf{V} é \textbf{menor do que} $90^\circ $.\\
-				\begin{equation*}
-					V \cdot N > 0
-				\end{equation*}				 
+				\item Eficiente quando os testes são feitos no sistema de coordenadas de visão.
+					\begin{itemize}
+						\item Vetor de direção de observação paralelo ao eixo $z_v$
+						\item Assim $V = (0, 0, V_z)$, e $V \cdot N = V_z \cdot V_n$
+					\end{itemize}
 			\end{itemize}
 		\end{block}
 
-
-		\begin{figure}[!h]
-			\begin{center}
-				\includegraphics[width=0.8\textwidth]{Figures/CamCub}
-			\end{center}
-		\end{figure}
+		\begin{block}{}
+			\begin{itemize}
+				\item Portanto, para fazer o teste $V \cdot N > 0$ basta verificar o sinal do componente $z$ do vetor normal a face.
+			\end{itemize}
+		
+		\end{block}
 		
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Back-Face Culling}
+
+		\begin{block}{Back-Face Culling}
+			\begin{itemize}	
+				\item Muito importante para \textit{rendering} mais eficiente (simplifica muito a cena) em geral é o primeiro passo do processo.
+			\end{itemize}
+		\end{block}
+
+		\begin{block}{}
+			\begin{itemize}
+				\item Assim, restam apenas os polígonos/faces potencialmente visíveis para a câmera.
+			\end{itemize}
+		\end{block}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Algoritmo Z-Buffer}
+\begin{frame}
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item Algumas faces ficam ocultas atrás das outras: só queremos renderizar (desenhar) as faces (ou partes delas) totalmente visíveis.
+			\end{itemize}
+		\end{block}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.5\textwidth]{Figures/Cam}
+			\end{center}
+		\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item Considere que as faces passaram pela transformação de projeção, e tiveram suas coordenadas $z$ armazenadas -- suponha valores de $z$ normalizados no intervalo 0 e 1 (0 plano \textit{near} e 1 plano \textit{far})
+			\end{itemize}
+		\end{block}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{Figures/ProCam}
+			\end{center}
+		\end{figure}		
+		
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item Para cada pixel $(x,y)$, queremos traçar a face mais próxima da câmera, i.e, com menor valor $z$.
+			\end{itemize}
+		\end{block}
+
+		\begin{figure}[!h]
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{Figures/ProCam}
+			\end{center}
+		\end{figure}		
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item O algoritmo usa dois buffers:
+					\begin{itemize}
+						\item \textbf{Frame Buffer}: Armazena os valores RGB que definem a cor de cada pixel, tipicamente 24 bits, mais 8 bits de transparência (alfa).
+						\item \textbf{Z-Buffer}: para manter informações de profundidade associada a cada pixel, tipicamente 16, 24 ou 32 bits.
+					\end{itemize}
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Inicialização}
+			\begin{itemize}	
+				\item Todas as posições do Z-Buffer são inicializadas são inicializadas com a maior profundidade. \\depthBuffer(x,y) = 1.0
+				\item O frame buffer com a cor do fundo da cena.\\ frameBuffer(x,y) = cor de fundo
+			\end{itemize}
+		\end{block}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=C++,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{red}\ttfamily,
+                numbers=left,
+                numberstyle=\tiny\color{mygray},
+                morecomment=[l][\color{magenta}]{\#}
+}
+
+\begin{frame}[fragile]
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item A medida em que cada face é renderizada, ou seja, os pixel são determinados através do algoritmo \textit{scanline}.
+			\end{itemize}
+		\end{block}
+		
+		\begin{lstlisting}[language=C++]
+			//calcula (se necessario) a profundidade de z
+			//para cada pixel (x,y) da face.
+			if (z < depth(x,y)){
+			    deph_buffer(x,y) = z;
+			    frame_buffer(x,y) = cor pixel;
+			}
+		\end{lstlisting}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item Os valores de profundidade estão normalizados entre 0.0 e 1.0 com o plano de visão na profundidade 0.0.
+			\end{itemize}
+		\end{block}
+		
+		\begin{lstlisting}[language=C++]
+			//calcula (se necessario) a profundidade de z
+			//para cada pixel (x,y) da face.
+			if (z < depth(x,y)){
+			    deph_buffer(x,y) = z;
+			    frame_buffer(x,y) = cor pixel;
+			}
+		\end{lstlisting}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Z-Buffer}
+
+		\begin{block}{Z-Buffer}
+			\begin{itemize}	
+				\item \textbf{Implementação eficiente:} o valor de \textbf{profundidade de um pixel} em uma \textit{scanline} pode ser calculado usando \textbf{o valor do pixel precedente} usando uma única adição.
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{}
+			\begin{itemize}		
+				\item Depois de todas as faces processadas, o \textbf{depth buffer} contém as \textbf{profundidades} das superfícies visíveis	, e o \textit{frame buffer} contém as \textbf{cores} dessas superfícies.
+				\begin{itemize}
+					\item Cena pronta para ser exibida.
+				\end{itemize}
+			\end{itemize}
+		\end{block}
+		
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Z-Buffer}
+
+		\begin{block}{Vantagem}
+			\begin{itemize}	
+				\item Simplicidade.
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{Desvantagens}
+			\begin{itemize}		
+				\item Quantidade de \textbf{memória} necessária (em um sistema 1280 x 1024 precisa de 1.3mi de posições).
+				\item Alguns \textbf{cálculos desnecessários}...por que?
+				\item \textbf{Precisão limitada} para o cálculo de profundidade em cenas complexas pode ser um problema: quantização de valores de profundidade pode introduzir artefatos.
+			\end{itemize}
+		\end{block}
+		
+		\begin{block}{}
+			\begin{itemize}		
+				\item Placas gráficas otimizam operações do Z-buffer.
+			\end{itemize}
+		\end{block}
+		
+\end{frame}
 
 %----------------------------------------------------------------------------------------
 \end{document} 

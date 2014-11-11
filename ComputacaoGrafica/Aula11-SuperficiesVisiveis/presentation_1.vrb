@@ -1,0 +1,22 @@
+\frametitle{Z-Buffer}
+
+\begin{block}{Vantagem}
+\begin{itemize}
+\item Simplicidade.
+\end{itemize}
+\end{block}
+
+\begin{block}{Desvantagens}
+\begin{itemize}
+\item Quantidade de \textbf{memória} necessária (em um sistema 1280 x 1024 precisa de 1.3mi de posições).
+\item Alguns \textbf{cálculos desnecessários}...por que?
+\item \textbf{Precisão limitada} para o cálculo de profundidade em cenas complexas pode ser um problema: quantização de valores de profundidade pode introduzir artefatos.
+\end{itemize}
+\end{block}
+
+\begin{block}{}
+\begin{itemize}
+\item Placas gráficas otimizam operações do Z-buffer.
+\end{itemize}
+\end{block}
+
